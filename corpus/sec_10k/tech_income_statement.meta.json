@@ -1,0 +1,10 @@
+{
+  "cik": "0001045810",
+  "accession": "0001045810-26-000021",
+  "primary_document": "nvda-20260125.htm",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+  "section_keywords": [
+    "consolidated statements of income"
+  ],
+  "snippet_html_path": "corpus\\sec_10k\\tech_income_statement.snippet.html"
+}

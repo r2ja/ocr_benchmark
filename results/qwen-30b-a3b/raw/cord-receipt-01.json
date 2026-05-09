@@ -1,0 +1,13 @@
+{
+  "page_id": "cord-receipt-01",
+  "stack_id": "qwen3-vl-30b-a3b",
+  "model_revision": "qwen/qwen3-vl-30b-a3b-instruct",
+  "raw_text": "```markdown\n901016 -TICKET CP\n2 60.000 \u20ac0.000\nTOTAL DISC $ -60.000\nTAX 5.455\nSubtotal 60.000\nTOTAL (Qty 2.00 60.000\n- EDC CIMB NIAGA No: xx7730 60.000\nCUSTOMER INFO\n```",
+  "text_blocks": [],
+  "layout": [],
+  "tables": [],
+  "kv_pairs": [],
+  "latency_ms": 3916.6406000149436,
+  "raw_response_path": null,
+  "error": null
+}

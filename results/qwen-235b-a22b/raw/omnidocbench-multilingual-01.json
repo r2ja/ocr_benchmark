@@ -1,0 +1,49 @@
+{
+  "page_id": "omnidocbench-multilingual-01",
+  "stack_id": "qwen3-vl-235b-a22b",
+  "model_revision": "qwen/qwen3-vl-235b-a22b-instruct",
+  "raw_text": "```markdown\n# PDF Types\n\n- Exam Paper\n- Slides\n- Academic Papers\n- Book\n- Textbook\n- Magazine\n- Notes\n- Newspaper\n- Financial Reports\n\n---\n\n## Page Attributes\n\n- PDF Type: Text Book\n- Layout Type: Single Column\n- Language: English\n- Fuzzy Scan: False\n- Watermark: False\n\n---\n\n## Recognition Annotations\n\n- Text span\n- Ignore Formula\n- Inline Equation\n- Footnote Marker\n- Isolated Equation\n- Table\n- Text\n- Latex\n- HTML\n- With Reading Order\n- With Text Attributes\n- With Relation Link\n- With Table Attributes\n\n---\n\n## Layout Annotations\n\n- Title\n- Text Block\n- Isolated Equation\n- Figure\n- Figure Caption\n- Figure Footnote\n- Table\n- Table Caption\n- Table Footnote\n- Reference\n- Code Block\n- Code Caption\n- Header\n- Footer\n- Page Footnote\n\n---\n\n## Annotation Attributes\n\n### Text Attributes\n\n| Language       | Background       | Rotate         |\n|----------------|------------------|----------------|\n| English        | White            | Normal         |\n| Chinese        | Single-Colored   | Horizontal     |\n| EN-CH-Mixed    | Multi-Colored    | Rotate 90\u00b0     |\n|                |                  | Rotate 270\u00b0    |\n\n### Table Attributes\n\n| Language       | Frame Type       | Special Issues       |\n|----------------|------------------|----------------------|\n| English        | Full Frame       | With Merge Cell      |\n| Chinese        | Omission Line    | With Formula         |\n| EN-CH-Mixed    | Three Line       | Vertical Rotate      |\n|                | No Frame         | Colorful Background  |\n\nKey-Value Pairs:\nPDF Type :: Text Book\nLayout Type :: Single Column\nLanguage :: English\nFuzzy Scan :: False\nWatermark :: False\n```",
+  "text_blocks": [],
+  "layout": [],
+  "tables": [],
+  "kv_pairs": [
+    {
+      "key": "PDF Type",
+      "value": "Text Book",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Layout Type",
+      "value": "Single Column",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Language",
+      "value": "English",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Fuzzy Scan",
+      "value": "False",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Watermark",
+      "value": "False",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    }
+  ],
+  "latency_ms": 14139.570500003174,
+  "raw_response_path": null,
+  "error": null
+}

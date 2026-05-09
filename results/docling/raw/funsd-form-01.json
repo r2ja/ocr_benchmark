@@ -1,0 +1,477 @@
+{
+  "page_id": "funsd-form-01",
+  "stack_id": "docling",
+  "model_revision": "docling@local-pip",
+  "raw_text": "CONFIDENTIALFACSIMILE TRANSMISSION COVERSHEET\n\nFAX NO.(614) 466-5087\n\nTO:George Baroody\n\nFAXNUMBER:\n\n(336)335-7392\n\nPHONENUMBER:(336)335-7363\n\nDATE:\n\n12/10/98\n\nNUMBEROFPAGESINCLUDINGCOVERSHEET:\n\n3\n\nSENDER/PHONENUMBER:JuneF1ynnforEricB1own/(614)466-8980\n\nSPECLALINSTRUCTIONS:\n\nIFYOUDONOTRECEIVEANYOFTHEPAGESPROPERLY PLEASECONTACTSENDER ASSOONASPOSSIBLE\n\nNOTE:\n\nreader of this message is not the intended recipient or the employee or agent responsible for delivering the message to the intended recipient, you are hereby uotified that any dissemination, disaribution, received this communication in error,please notily us immediately by telephone und_reuurnthe cooperation.\n\nStateOfficeTower/30EastBroadStreet/Columbus.Ohio43215-3428 www.ag.state.oh.us AnEquelOpportunityEmployer",
+  "text_blocks": [
+    {
+      "text": "ATT.GEN.ADMIN.0FFICEFaX:614-466-5087",
+      "bbox": {
+        "x0": 102.27127075195312,
+        "y0": 913.8104858398438,
+        "x1": 353.4375,
+        "y1": 901.2096761067709
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Dec 10'98 17:46 P.01",
+      "bbox": {
+        "x0": 418.6103515625,
+        "y0": 917.3387095133463,
+        "x1": 591.0678304036459,
+        "y1": 899.6975809733073
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "8 0 6 2",
+      "bbox": {
+        "x0": 631.675537109375,
+        "y0": 225.30240885416663,
+        "x1": 652.7313639322916,
+        "y1": 160.78629557291663
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Attorney General Betty D. Montgomery",
+      "bbox": {
+        "x0": 145.886962890625,
+        "y0": 848.2862955729166,
+        "x1": 306.81382242838544,
+        "y1": 810.4838663736979
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "01",
+      "bbox": {
+        "x0": 64.17021179199219,
+        "y0": 840.2217712402344,
+        "x1": 73.69547526041667,
+        "y1": 815.5241902669271
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "CONFIDENTIALFACSIMILE TRANSMISSION COVERSHEET",
+      "bbox": {
+        "x0": 262.69679768880206,
+        "y0": 748.4879150390625,
+        "x1": 468.7433268229167,
+        "y1": 717.2379150390625
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "FAX NO.(614) 466-5087",
+      "bbox": {
+        "x0": 293.7792561848958,
+        "y0": 702.116943359375,
+        "x1": 437.660888671875,
+        "y1": 685.483866373698
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "TO:George Baroody",
+      "bbox": {
+        "x0": 102.77260335286458,
+        "y0": 654.23388671875,
+        "x1": 236.6276652018229,
+        "y1": 639.1129150390625
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "FAXNUMBER:",
+      "bbox": {
+        "x0": 102.77260335286458,
+        "y0": 622.4798583984375,
+        "x1": 203.0385538736979,
+        "y1": 608.8709716796875
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "(336)335-7392",
+      "bbox": {
+        "x0": 223.09175618489584,
+        "y0": 622.4798583984375,
+        "x1": 311.32578531901044,
+        "y1": 609.375
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "PHONENUMBER:(336)335-7363",
+      "bbox": {
+        "x0": 383.0159505208333,
+        "y0": 623.4879150390625,
+        "x1": 591.0678304036459,
+        "y1": 607.8629150390625
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "DATE:",
+      "bbox": {
+        "x0": 102.77260335286458,
+        "y0": 591.73388671875,
+        "x1": 149.8976033528646,
+        "y1": 576.10888671875
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "12/10/98",
+      "bbox": {
+        "x0": 184.4893595377604,
+        "y0": 591.2298583984375,
+        "x1": 236.1263224283854,
+        "y1": 577.116943359375
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "NUMBEROFPAGESINCLUDINGCOVERSHEET:",
+      "bbox": {
+        "x0": 102.27127075195312,
+        "y0": 559.475830078125,
+        "x1": 422.1196695963542,
+        "y1": 543.850830078125
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "3",
+      "bbox": {
+        "x0": 463.7300618489583,
+        "y0": 556.9556477864583,
+        "x1": 472.2526448567708,
+        "y1": 546.3709716796875
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "SENDER/PHONENUMBER:JuneF1ynnforEricB1own/(614)466-8980",
+      "bbox": {
+        "x0": 102.77260335286458,
+        "y0": 526.7137044270833,
+        "x1": 535.9215494791666,
+        "y1": 512.0967610677083
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "SPECLALINSTRUCTIONS:",
+      "bbox": {
+        "x0": 102.77260335286458,
+        "y0": 494.9596761067708,
+        "x1": 275.73138427734375,
+        "y1": 481.8548583984375
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "IFYOUDONOTRECEIVEANYOFTHEPAGESPROPERLY PLEASECONTACTSENDER ASSOONASPOSSIBLE",
+      "bbox": {
+        "x0": 173.4601033528646,
+        "y0": 400.20161946614587,
+        "x1": 556.47607421875,
+        "y1": 353.32661946614587
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "NOTE:",
+      "bbox": {
+        "x0": 100.7672831217448,
+        "y0": 307.96370442708337,
+        "x1": 142.87898763020834,
+        "y1": 292.33870442708337
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "reader of this message is not the intended recipient or the employee or agent responsible for delivering the message to the intended recipient, you are hereby uotified that any dissemination, disaribution, received this communication in error,please notily us immediately by telephone und_reuurnthe cooperation.",
+      "bbox": {
+        "x0": 160.9268595377604,
+        "y0": 268.14518229166663,
+        "x1": 627.16357421875,
+        "y1": 185.98787434895837
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "StateOfficeTower/30EastBroadStreet/Columbus.Ohio43215-3428 www.ag.state.oh.us AnEquelOpportunityEmployer",
+      "bbox": {
+        "x0": 180.98004150390625,
+        "y0": 111.89518229166663,
+        "x1": 538.9295247395834,
+        "y1": 71.57259114583337
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Printen enReayalod Feper",
+      "bbox": {
+        "x0": 291.27260335286456,
+        "y0": 57.96370442708337,
+        "x1": 427.1329752604167,
+        "y1": 44.85888671875
+      },
+      "confidence": null,
+      "reading_order": null
+    }
+  ],
+  "layout": [
+    {
+      "label": "page_header",
+      "bbox": {
+        "x0": 102.27127075195312,
+        "y0": 913.8104858398438,
+        "x1": 353.4375,
+        "y1": 901.2096761067709
+      },
+      "confidence": null
+    },
+    {
+      "label": "page_header",
+      "bbox": {
+        "x0": 418.6103515625,
+        "y0": 917.3387095133463,
+        "x1": 591.0678304036459,
+        "y1": 899.6975809733073
+      },
+      "confidence": null
+    },
+    {
+      "label": "page_header",
+      "bbox": {
+        "x0": 631.675537109375,
+        "y0": 225.30240885416663,
+        "x1": 652.7313639322916,
+        "y1": 160.78629557291663
+      },
+      "confidence": null
+    },
+    {
+      "label": "section_header",
+      "bbox": {
+        "x0": 145.886962890625,
+        "y0": 848.2862955729166,
+        "x1": 306.81382242838544,
+        "y1": 810.4838663736979
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 64.17021179199219,
+        "y0": 840.2217712402344,
+        "x1": 73.69547526041667,
+        "y1": 815.5241902669271
+      },
+      "confidence": null
+    },
+    {
+      "label": "section_header",
+      "bbox": {
+        "x0": 262.69679768880206,
+        "y0": 748.4879150390625,
+        "x1": 468.7433268229167,
+        "y1": 717.2379150390625
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 293.7792561848958,
+        "y0": 702.116943359375,
+        "x1": 437.660888671875,
+        "y1": 685.483866373698
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 102.77260335286458,
+        "y0": 654.23388671875,
+        "x1": 236.6276652018229,
+        "y1": 639.1129150390625
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 102.77260335286458,
+        "y0": 622.4798583984375,
+        "x1": 203.0385538736979,
+        "y1": 608.8709716796875
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 223.09175618489584,
+        "y0": 622.4798583984375,
+        "x1": 311.32578531901044,
+        "y1": 609.375
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 383.0159505208333,
+        "y0": 623.4879150390625,
+        "x1": 591.0678304036459,
+        "y1": 607.8629150390625
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 102.77260335286458,
+        "y0": 591.73388671875,
+        "x1": 149.8976033528646,
+        "y1": 576.10888671875
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 184.4893595377604,
+        "y0": 591.2298583984375,
+        "x1": 236.1263224283854,
+        "y1": 577.116943359375
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 102.27127075195312,
+        "y0": 559.475830078125,
+        "x1": 422.1196695963542,
+        "y1": 543.850830078125
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 463.7300618489583,
+        "y0": 556.9556477864583,
+        "x1": 472.2526448567708,
+        "y1": 546.3709716796875
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 102.77260335286458,
+        "y0": 526.7137044270833,
+        "x1": 535.9215494791666,
+        "y1": 512.0967610677083
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 102.77260335286458,
+        "y0": 494.9596761067708,
+        "x1": 275.73138427734375,
+        "y1": 481.8548583984375
+      },
+      "confidence": null
+    },
+    {
+      "label": "section_header",
+      "bbox": {
+        "x0": 173.4601033528646,
+        "y0": 400.20161946614587,
+        "x1": 556.47607421875,
+        "y1": 353.32661946614587
+      },
+      "confidence": null
+    },
+    {
+      "label": "section_header",
+      "bbox": {
+        "x0": 100.7672831217448,
+        "y0": 307.96370442708337,
+        "x1": 142.87898763020834,
+        "y1": 292.33870442708337
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 160.9268595377604,
+        "y0": 268.14518229166663,
+        "x1": 627.16357421875,
+        "y1": 185.98787434895837
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 180.98004150390625,
+        "y0": 111.89518229166663,
+        "x1": 538.9295247395834,
+        "y1": 71.57259114583337
+      },
+      "confidence": null
+    },
+    {
+      "label": "page_footer",
+      "bbox": {
+        "x0": 291.27260335286456,
+        "y0": 57.96370442708337,
+        "x1": 427.1329752604167,
+        "y1": 44.85888671875
+      },
+      "confidence": null
+    }
+  ],
+  "tables": [],
+  "kv_pairs": [],
+  "latency_ms": 1933.8192999712192,
+  "raw_response_path": null,
+  "error": null
+}

@@ -1,0 +1,63 @@
+{
+  "page_id": "funsd-form-01",
+  "stack_id": "qwen3-vl-235b-a22b",
+  "model_revision": "qwen/qwen3-vl-235b-a22b-instruct",
+  "raw_text": "```markdown\nATT. GEN. ADMIN. OFFICE Fax:614-466-5087 Dec 10 '98 17:46 P.01\n\n# Attorney General\n## Betty D. Montgomery\n\n---\n\n## CONFIDENTIAL FACSIMILE TRANSMISSION COVER SHEET\n\nFAX NO. (614) 466-5087\n\n---\n\n**TO:** George Baroody\n\n**FAX NUMBER:** (336) 335-7392  \n**PHONE NUMBER:** (336) 335-7363\n\n**DATE:** 12/10/98\n\n**NUMBER OF PAGES INCLUDING COVER SHEET:** 3\n\n**SENDER/PHONE NUMBER:** June Flynn for Eric Brown/(614) 466-8980\n\n**SPECIAL INSTRUCTIONS:**\n\n---\n\n> **IF YOU DO NOT RECEIVE ANY OF THE PAGES PROPERLY, PLEASE CONTACT SENDER AS SOON AS POSSIBLE**\n\n---\n\n**NOTE:** THIS MESSAGE IS INTENDED ONLY FOR THE USE OF THE INDIVIDUAL OR ENTITY TO WHOM IT IS ADDRESSED AND MAY CONTAIN INFORMATION THAT IS PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM DISCLOSURE UNDER APPLICABLE LAW. IF THE READER OF THIS MESSAGE IS NOT THE INTENDED RECIPIENT OR THE EMPLOYEE OR AGENT RESPONSIBLE FOR DELIVERING THE MESSAGE TO THE INTENDED RECIPIENT, YOU ARE HEREBY NOTIFIED THAT ANY DISSEMINATION, DISTRIBUTION, COPYING, OR CONVEYING OF THIS COMMUNICATION IN ANY MANNER IS STRICTLY PROHIBITED. IF YOU HAVE RECEIVED THIS COMMUNICATION IN ERROR, PLEASE NOTIFY US IMMEDIATELY BY TELEPHONE AND RETURN THE ORIGINAL MESSAGE TO US AT THE ADDRESS BELOW VIA THE U.S. POSTAL SERVICE. THANK YOU FOR YOUR COOPERATION.\n\n---\n\nState Office Tower / 30 East Broad Street / Columbus, Ohio 43215-3428  \nwww.ag.state.oh.us  \nAn Equal Opportunity Employer\n\n*Printed on Recycled Paper*\n\n---\n\nKey-Value Pairs:\nTO :: George Baroody\nFAX NUMBER :: (336) 335-7392\nPHONE NUMBER :: (336) 335-7363\nDATE :: 12/10/98\nNUMBER OF PAGES INCLUDING COVER SHEET :: 3\nSENDER/PHONE NUMBER :: June Flynn for Eric Brown/(614) 466-8980\nSPECIAL INSTRUCTIONS :: \n```",
+  "text_blocks": [],
+  "layout": [],
+  "tables": [],
+  "kv_pairs": [
+    {
+      "key": "TO",
+      "value": "George Baroody",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "FAX NUMBER",
+      "value": "(336) 335-7392",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "PHONE NUMBER",
+      "value": "(336) 335-7363",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "DATE",
+      "value": "12/10/98",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "NUMBER OF PAGES INCLUDING COVER SHEET",
+      "value": "3",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "SENDER/PHONE NUMBER",
+      "value": "June Flynn for Eric Brown/(614) 466-8980",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "SPECIAL INSTRUCTIONS",
+      "value": "",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    }
+  ],
+  "latency_ms": 16476.937400002498,
+  "raw_response_path": null,
+  "error": null
+}

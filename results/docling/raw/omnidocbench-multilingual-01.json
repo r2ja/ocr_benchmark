@@ -1,0 +1,2479 @@
+{
+  "page_id": "omnidocbench-multilingual-01",
+  "stack_id": "docling",
+  "model_revision": "docling@local-pip",
+  "raw_text": "PDF Types\n\nExam Paper\n\nSlides\n\nBook\n\nAcademic Papers\n\nTextbook\n\nRecognition Annotations\n\nMagazine\n\nNotes\n\nNewspaper\n\n\u5236\u6da6\u7387\u7ef4\u6301\u7a33\u5b9a\uff0c\u5229\u6da6\u5e76\u5408\u9884\u671f\n\nFinancial Reports\n\nLayout Annotations\n\nAnnotation Attributes\n\n| Text Attributes             | Text Attributes                    | Text Attributes                          |\n|-----------------------------|------------------------------------|------------------------------------------|\n| Language                    | Background                         | Rotate                                   |\n| English Chinese EN-CH-Mixed | White Single-Colored Multi-Colored | Normal Horizontal Rotate 90\u00b0 Rotate 270\u00b0 |",
+  "text_blocks": [
+    {
+      "text": "PDF Types",
+      "bbox": {
+        "x0": 552.6083577473959,
+        "y0": 3326.171427408854,
+        "x1": 1176.2223307291667,
+        "y1": 3188.5999959309897
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Exam Paper",
+      "bbox": {
+        "x0": 277.8477783203125,
+        "y0": 2503.7999674479165,
+        "x1": 682.2706705729166,
+        "y1": 2412.085693359375
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Defect Ampliication Model",
+      "bbox": {
+        "x0": 910.7233072916666,
+        "y0": 2986.828572591146,
+        "x1": 1262.663818359375,
+        "y1": 2937.914265950521
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "20.2 Defect Ampliication and Removal",
+      "bbox": {
+        "x0": 984.8160807291666,
+        "y0": 3038.800008138021,
+        "x1": 1515.81396484375,
+        "y1": 2983.7714029947915
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Slides",
+      "bbox": {
+        "x0": 1151.5247395833333,
+        "y0": 2503.7999674479165,
+        "x1": 1358.366943359375,
+        "y1": 2418.199951171875
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Book",
+      "bbox": {
+        "x0": 2506.8045247395835,
+        "y0": 2512.971435546875,
+        "x1": 2704.3850911458335,
+        "y1": 2424.3142903645835
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Page Attributes",
+      "bbox": {
+        "x0": 916.897705078125,
+        "y0": 2320.371419270833,
+        "x1": 1802.92333984375,
+        "y1": 2191.971435546875
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "LibreTexts",
+      "bbox": {
+        "x0": 265.49900309244794,
+        "y0": 2274.514241536458,
+        "x1": 475.4284261067708,
+        "y1": 2210.314290364583
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "5.8:Naming Molecular(Covalent) C",
+      "bbox": {
+        "x0": 243.88861083984375,
+        "y0": 2170.571451822917,
+        "x1": 879.851318359375,
+        "y1": 2109.428548177083
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "PDF Type: Text Book",
+      "bbox": {
+        "x0": 944.6824544270834,
+        "y0": 2195.028564453125,
+        "x1": 1651.6507161458333,
+        "y1": 2112.485677083333
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Learning Obiectives",
+      "bbox": {
+        "x0": 305.632568359375,
+        "y0": 2094.142822265625,
+        "x1": 577.3059488932291,
+        "y1": 2042.17138671875
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "\u00b7 Layout Type: Single Column",
+      "bbox": {
+        "x0": 950.8568522135416,
+        "y0": 2112.485677083333,
+        "x1": 1833.79541015625,
+        "y1": 2042.17138671875
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Deemine he name of a simple mlecular comc",
+      "bbox": {
+        "x0": 265.49900309244794,
+        "y0": 2042.17138671875,
+        "x1": 876.76416015625,
+        "y1": 1987.1429036458333
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": ". Language: English",
+      "bbox": {
+        "x0": 941.5952962239584,
+        "y0": 2051.3427734375,
+        "x1": 1549.7732747395833,
+        "y1": 1953.5143229166667
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "\u00b7 Fuzzy Scan: False",
+      "bbox": {
+        "x0": 950.8568522135416,
+        "y0": 1974.9142252604167,
+        "x1": 1543.5987955729167,
+        "y1": 1883.2000325520833
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "ater 0 and carbon dioxide 0",
+      "bbox": {
+        "x0": 429.1204833984375,
+        "y0": 1874.0284830729167,
+        "x1": 876.76416015625,
+        "y1": 1822.05712890625
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": ".Watermark: False",
+      "bbox": {
+        "x0": 953.944091796875,
+        "y0": 1895.4285481770833,
+        "x1": 1543.5987955729167,
+        "y1": 1815.94287109375
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "What holds the a",
+      "bbox": {
+        "x0": 293.2837727864583,
+        "y0": 1751.7428385416667,
+        "x1": 481.6028238932292,
+        "y1": 1702.82861328125
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Tinscations:",
+      "bbox": {
+        "x0": 308.7197672526042,
+        "y0": 1791.4856770833333,
+        "x1": 447.6436360677083,
+        "y1": 1751.7428385416667
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "ms of a molecule together?Rather than fom",
+      "bbox": {
+        "x0": 493.9516194661458,
+        "y0": 1745.6285807291667,
+        "x1": 990.9903971354166,
+        "y1": 1705.8857421875
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Recognition Annotations",
+      "bbox": {
+        "x0": 237.7142130533854,
+        "y0": 1537.7428385416667,
+        "x1": 960.1184895833334,
+        "y1": 1461.3142903645833
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Largermolecule anhvemanymaybonds at sere o keep thmolecule togehe Ilage samlef a gienmle",
+      "bbox": {
+        "x0": 243.88861083984375,
+        "y0": 1427.6857096354167,
+        "x1": 1682.5226236979167,
+        "y1": 1360.4285481770835
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Naming Binary Molecular Compounds",
+      "bbox": {
+        "x0": 243.88861083984375,
+        "y0": 1317.6285807291665,
+        "x1": 818.1073404947916,
+        "y1": 1265.6570638020835
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Reallthatmolecularfomua showsthenumberfatosofeachelementthatmoleculecontainsAmoleculefwate",
+      "bbox": {
+        "x0": 243.88861083984375,
+        "y0": 1262.5999348958335,
+        "x1": 1633.1276041666667,
+        "y1": 1213.6857096354165
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Layout Annotations",
+      "bbox": {
+        "x0": 1157.6991373697917,
+        "y0": 984.39990234375,
+        "x1": 1744.2666015625,
+        "y1": 904.9142252604165
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Figure 5.8.2:Nitro",
+      "bbox": {
+        "x0": 324.15574137369794,
+        "y0": 871.28564453125,
+        "x1": 527.9108072916666,
+        "y1": 837.6570638020835
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "e q_ pa",
+      "bbox": {
+        "x0": 1481.8548177083333,
+        "y0": 880.45703125,
+        "x1": 1654.7379557291667,
+        "y1": 822.3714192708335
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "he suffix-kde.",
+      "bbox": {
+        "x0": 259.32460530598956,
+        "y0": 718.4285481770835,
+        "x1": 429.1204833984375,
+        "y1": 687.8570963541665
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "A system of numerical prefixes is used to specify the number of atoms in a molecule. Table 5.8.1 lists 1",
+      "bbox": {
+        "x0": 416.7716878255208,
+        "y0": 724.5428059895835,
+        "x1": 1670.1739908854167,
+        "y1": 678.685546875
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "using the name of the element.The second ele",
+      "bbox": {
+        "x0": 429.1204833984375,
+        "y0": 758.17138671875,
+        "x1": 963.2056477864584,
+        "y1": 718.4285481770835
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "stem ot thc",
+      "bbox": {
+        "x0": 1284.2742513020833,
+        "y0": 749.0,
+        "x1": 1413.9365234375,
+        "y1": 727.5999348958335
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "eicalnrefixes",
+      "bbox": {
+        "x0": 308.7197672526042,
+        "y0": 684.8001302083335,
+        "x1": 475.4284261067708,
+        "y1": 645.0569661458335
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "1",
+      "bbox": {
+        "x0": 623.6139322916666,
+        "y0": 538.0569661458335,
+        "x1": 648.3114827473959,
+        "y1": 507.4856770833335
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "N",
+      "bbox": {
+        "x0": 623.6139322916666,
+        "y0": 495.2571614583335,
+        "x1": 648.3114827473959,
+        "y1": 458.5712890625
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "mno-*",
+      "bbox": {
+        "x0": 1296.6229654947917,
+        "y0": 544.1715494791665,
+        "x1": 1376.89013671875,
+        "y1": 501.3714192708335
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "3",
+      "bbox": {
+        "x0": 623.6139322916666,
+        "y0": 440.228515625,
+        "x1": 648.3114827473959,
+        "y1": 409.6572265625
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "tera",
+      "bbox": {
+        "x0": 1305.8846028645833,
+        "y0": 406.5999348958335,
+        "x1": 1373.8028971354167,
+        "y1": 342.4000651041665
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "pena-",
+      "bbox": {
+        "x0": 1302.79736328125,
+        "y0": 348.5143229166665,
+        "x1": 1376.89013671875,
+        "y1": 293.4856770833335
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "hexa-",
+      "bbox": {
+        "x0": 1312.0590006510417,
+        "y0": 296.54296875,
+        "x1": 1367.6285807291667,
+        "y1": 259.8570963541665
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Academic Papers",
+      "bbox": {
+        "x0": 1670.1739908854167,
+        "y0": 2500.7428385416665,
+        "x1": 2232.0439453125,
+        "y1": 2418.199951171875
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Textbook",
+      "bbox": {
+        "x0": 3065.5872395833335,
+        "y0": 2509.914306640625,
+        "x1": 3389.7428385416665,
+        "y1": 2427.3714192708335
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Recognition Annotations",
+      "bbox": {
+        "x0": 2000.5040690104167,
+        "y0": 2326.485677083333,
+        "x1": 3411.353515625,
+        "y1": 2201.142822265625
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Text span",
+      "bbox": {
+        "x0": 2083.8583984375,
+        "y0": 2130.828531901042,
+        "x1": 2423.4501953125,
+        "y1": 2033.0
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Ignore Formula",
+      "bbox": {
+        "x0": 2874.1809895833335,
+        "y0": 2118.600016276042,
+        "x1": 3374.3069661458335,
+        "y1": 2036.05712890625
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Inline Equation",
+      "bbox": {
+        "x0": 2086.9456380208335,
+        "y0": 1947.39990234375,
+        "x1": 2599.42041015625,
+        "y1": 1849.5714518229167
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Footnote Marker",
+      "bbox": {
+        "x0": 2874.1809895833335,
+        "y0": 1938.228515625,
+        "x1": 3429.8766276041665,
+        "y1": 1858.7428385416667
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "TEX",
+      "bbox": {
+        "x0": 1997.4168294270833,
+        "y0": 1745.6285807291667,
+        "x1": 2052.9864908854165,
+        "y1": 1712.0
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Isolated Equation",
+      "bbox": {
+        "x0": 2093.1199544270835,
+        "y0": 1776.2000325520833,
+        "x1": 2661.1643880208335,
+        "y1": 1696.7141927083333
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "&Table",
+      "bbox": {
+        "x0": 2756.8675130208335,
+        "y0": 1797.5999348958333,
+        "x1": 3253.90625,
+        "y1": 1684.4856770833333
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "\u56fd",
+      "bbox": {
+        "x0": 1981.9807942708333,
+        "y0": 1601.94287109375,
+        "x1": 2074.5968424479165,
+        "y1": 1528.5714518229167
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Text",
+      "bbox": {
+        "x0": 2090.03271484375,
+        "y0": 1601.94287109375,
+        "x1": 2253.654296875,
+        "y1": 1522.4571940104167
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "E",
+      "bbox": {
+        "x0": 2367.8805338541665,
+        "y0": 1614.17138671875,
+        "x1": 2475.9324544270835,
+        "y1": 1522.4571940104167
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Latex",
+      "bbox": {
+        "x0": 2454.3221028645835,
+        "y0": 1611.1142578125,
+        "x1": 2673.51318359375,
+        "y1": 1519.39990234375
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "HTML",
+      "bbox": {
+        "x0": 2732.169921875,
+        "y0": 1611.1142578125,
+        "x1": 3047.0641276041665,
+        "y1": 1525.5143229166667
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "With Reading Order",
+      "bbox": {
+        "x0": 2090.03271484375,
+        "y0": 1482.7141927083333,
+        "x1": 2676.6002604166665,
+        "y1": 1394.05712890625
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "%",
+      "bbox": {
+        "x0": 2738.3444010416665,
+        "y0": 1479.6570638020833,
+        "x1": 2827.873046875,
+        "y1": 1403.228515625
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "With Text Attributes",
+      "bbox": {
+        "x0": 2843.3089192708335,
+        "y0": 1476.5999348958333,
+        "x1": 3442.2252604166665,
+        "y1": 1397.1142578125
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "With Relation Link",
+      "bbox": {
+        "x0": 2090.03271484375,
+        "y0": 1351.2571614583335,
+        "x1": 2642.64111328125,
+        "y1": 1271.771484375
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "With Table Attributes",
+      "bbox": {
+        "x0": 2852.5706380208335,
+        "y0": 1357.3714192708335,
+        "x1": 3482.3590494791665,
+        "y1": 1287.05712890625
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Magazine",
+      "bbox": {
+        "x0": 3692.2884114583335,
+        "y0": 2512.971435546875,
+        "x1": 4025.7057291666665,
+        "y1": 2421.2571614583335
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "\u5f69\u971e\u852c\u83dc\u51bb",
+      "bbox": {
+        "x0": 3590.4108072916665,
+        "y0": 3274.2000020345054,
+        "x1": 3840.4739583333335,
+        "y1": 3210.0
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "3.SP1",
+      "bbox": {
+        "x0": 3605.8466796875,
+        "y0": 3041.857137044271,
+        "x1": 3670.6780598958335,
+        "y1": 3011.2857259114585
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "ANERI",
+      "bbox": {
+        "x0": 3797.2529296875,
+        "y0": 2720.8570963541665,
+        "x1": 3849.7353515625,
+        "y1": 2699.4571126302085
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Notes",
+      "bbox": {
+        "x0": 4399.256510416667,
+        "y0": 2516.028564453125,
+        "x1": 4609.186197916667,
+        "y1": 2421.2571614583335
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "\u4e00\u4e2a\u519c\u6751\u8001\u4eba\u7684\u517b\u8001\u4e4b\u56f0",
+      "bbox": {
+        "x0": 4865.423502604167,
+        "y0": 3323.114288330078,
+        "x1": 5208.1025390625,
+        "y1": 3271.142852783203
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Newspaper",
+      "bbox": {
+        "x0": 4939.516276041667,
+        "y0": 2509.914306640625,
+        "x1": 5319.241536458333,
+        "y1": 2418.199951171875
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "\u5236\u6da6\u7387\u7ef4\u6301\u7a33\u5b9a\uff0c\u5229\u6da6\u5e76\u5408\u9884\u671f",
+      "bbox": {
+        "x0": 5578.56640625,
+        "y0": 3268.0857137044272,
+        "x1": 5915.070963541667,
+        "y1": 3216.1142781575522
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Financial Reports",
+      "bbox": {
+        "x0": 5485.949869791667,
+        "y0": 2512.971435546875,
+        "x1": 6050.907552083333,
+        "y1": 2424.3142903645835
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Layout Annotations",
+      "bbox": {
+        "x0": 4167.716796875,
+        "y0": 2323.428548177083,
+        "x1": 5309.979817708333,
+        "y1": 2195.028564453125
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Text Block",
+      "bbox": {
+        "x0": 4303.553385416667,
+        "y0": 2124.714274088542,
+        "x1": 4874.684895833333,
+        "y1": 2020.771484375
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "#",
+      "bbox": {
+        "x0": 5038.306640625,
+        "y0": 2140.0,
+        "x1": 5164.881510416667,
+        "y1": 2017.7141927083333
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Isolated Equation",
+      "bbox": {
+        "x0": 5254.410481770833,
+        "y0": 2124.714274088542,
+        "x1": 5825.541666666667,
+        "y1": 2036.05712890625
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Figure",
+      "bbox": {
+        "x0": 3892.9560546875,
+        "y0": 1950.4571940104167,
+        "x1": 4124.49609375,
+        "y1": 1852.6285807291667
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Figure Caption",
+      "bbox": {
+        "x0": 4300.466145833333,
+        "y0": 1971.8570963541667,
+        "x1": 4998.1728515625,
+        "y1": 1825.1142578125
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "C Figure Footnote",
+      "bbox": {
+        "x0": 5032.132161458333,
+        "y0": 1981.0284830729167,
+        "x1": 5800.844401041667,
+        "y1": 1846.5143229166667
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Table",
+      "bbox": {
+        "x0": 3899.1305338541665,
+        "y0": 1776.2000325520833,
+        "x1": 4099.798502604167,
+        "y1": 1699.771484375
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Table Caption",
+      "bbox": {
+        "x0": 4312.815104166667,
+        "y0": 1785.3714192708333,
+        "x1": 4970.388020833333,
+        "y1": 1666.1429036458333
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Table Footnote",
+      "bbox": {
+        "x0": 5041.3935546875,
+        "y0": 1794.5428059895833,
+        "x1": 5757.623697916667,
+        "y1": 1678.3714192708333
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Reference",
+      "bbox": {
+        "x0": 3902.2177734375,
+        "y0": 1611.1142578125,
+        "x1": 4235.635091145833,
+        "y1": 1519.39990234375
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Code Block",
+      "bbox": {
+        "x0": 4297.379231770833,
+        "y0": 1635.5714518229167,
+        "x1": 4893.208333333333,
+        "y1": 1491.8857421875
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Code Caption",
+      "bbox": {
+        "x0": 5038.306640625,
+        "y0": 1644.7428385416667,
+        "x1": 5714.402994791667,
+        "y1": 1485.771484375
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Header",
+      "bbox": {
+        "x0": 3794.166015625,
+        "y0": 1458.2571614583333,
+        "x1": 4149.193684895833,
+        "y1": 1351.2571614583335
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Footer",
+      "bbox": {
+        "x0": 4408.518229166667,
+        "y0": 1449.0856119791667,
+        "x1": 4741.935546875,
+        "y1": 1339.0284830729165
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Page Footnote",
+      "bbox": {
+        "x0": 5171.055989583333,
+        "y0": 1436.8570963541667,
+        "x1": 5729.838541666667,
+        "y1": 1354.3142903645835
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Annotation Attributes",
+      "bbox": {
+        "x0": 3300.2141927083335,
+        "y0": 1170.8857421875,
+        "x1": 4550.529296875,
+        "y1": 1054.7141927083335
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Text Attributes",
+      "bbox": {
+        "x0": 2617.9435221354165,
+        "y0": 947.7141927083335,
+        "x1": 3229.2086588541665,
+        "y1": 865.17138671875
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Language",
+      "bbox": {
+        "x0": 2161.0384114583335,
+        "y0": 807.0856119791665,
+        "x1": 2559.2867838541665,
+        "y1": 700.0856119791665
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Background",
+      "bbox": {
+        "x0": 2722.9083658854165,
+        "y0": 804.0284830729165,
+        "x1": 3213.7727864583335,
+        "y1": 712.3142903645835
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Rotate",
+      "bbox": {
+        "x0": 3399.0045572916665,
+        "y0": 807.0856119791665,
+        "x1": 3679.939453125,
+        "y1": 715.3714192708335
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "English",
+      "bbox": {
+        "x0": 2204.2591145833335,
+        "y0": 642.0,
+        "x1": 2482.10693359375,
+        "y1": 544.1715494791665
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "White",
+      "bbox": {
+        "x0": 2830.9602864583335,
+        "y0": 648.1142578125,
+        "x1": 3059.4127604166665,
+        "y1": 553.3427734375
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Normal",
+      "bbox": {
+        "x0": 3386.6559244791665,
+        "y0": 645.0569661458335,
+        "x1": 3664.5035807291665,
+        "y1": 553.3427734375
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Chinese",
+      "bbox": {
+        "x0": 2191.9103190104165,
+        "y0": 504.4283854166665,
+        "x1": 2494.4557291666665,
+        "y1": 400.4856770833335
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Single-Colored",
+      "bbox": {
+        "x0": 2676.6002604166665,
+        "y0": 498.3141276041665,
+        "x1": 3213.7727864583335,
+        "y1": 397.4283854166665
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Horizontal",
+      "bbox": {
+        "x0": 3331.0862630208335,
+        "y0": 498.3141276041665,
+        "x1": 3723.1604817708335,
+        "y1": 406.5999348958335
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "EN-CH-Mixed",
+      "bbox": {
+        "x0": 2093.1199544270835,
+        "y0": 339.3427734375,
+        "x1": 2593.2459309895835,
+        "y1": 265.9713541666665
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Multi-Colored",
+      "bbox": {
+        "x0": 2695.12353515625,
+        "y0": 339.3427734375,
+        "x1": 3189.0751953125,
+        "y1": 265.9713541666665
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Rotate 90\u00b0",
+      "bbox": {
+        "x0": 3334.1735026041665,
+        "y0": 345.45703125,
+        "x1": 3716.9860026041665,
+        "y1": 262.9143880208335
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Rotate 270\u00b0",
+      "bbox": {
+        "x0": 3327.9990234375,
+        "y0": 204.82845052083348,
+        "x1": 3754.0322265625,
+        "y1": 122.28580729166652
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Table Attributes",
+      "bbox": {
+        "x0": 4720.3251953125,
+        "y0": 953.82861328125,
+        "x1": 5374.811197916667,
+        "y1": 865.17138671875
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Language",
+      "bbox": {
+        "x0": 4102.8857421875,
+        "y0": 813.2000325520835,
+        "x1": 4498.046875,
+        "y1": 703.1429036458335
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Frame Type",
+      "bbox": {
+        "x0": 4630.796549479167,
+        "y0": 816.2571614583335,
+        "x1": 5127.835286458333,
+        "y1": 709.2571614583335
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Special Issues",
+      "bbox": {
+        "x0": 5309.979817708333,
+        "y0": 807.0856119791665,
+        "x1": 5871.849609375,
+        "y1": 715.3714192708335
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "English",
+      "bbox": {
+        "x0": 4143.019205729167,
+        "y0": 648.1142578125,
+        "x1": 4423.9541015625,
+        "y1": 553.3427734375
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Full Frame",
+      "bbox": {
+        "x0": 4680.191731770833,
+        "y0": 648.1142578125,
+        "x1": 5084.614583333333,
+        "y1": 556.4000651041665
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "With Merge Cell",
+      "bbox": {
+        "x0": 5266.759114583333,
+        "y0": 651.1715494791665,
+        "x1": 5850.239583333333,
+        "y1": 550.2858072916665
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Chinese",
+      "bbox": {
+        "x0": 4130.670572916667,
+        "y0": 510.54296875,
+        "x1": 4433.2158203125,
+        "y1": 409.6572265625
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Omission Line",
+      "bbox": {
+        "x0": 4621.534830729167,
+        "y0": 501.3714192708335,
+        "x1": 5137.097005208333,
+        "y1": 418.8284505208335
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "With Formula",
+      "bbox": {
+        "x0": 5309.979817708333,
+        "y0": 507.4856770833335,
+        "x1": 5810.106119791667,
+        "y1": 415.771484375
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "EN-CH-Mixed",
+      "bbox": {
+        "x0": 4031.8802083333335,
+        "y0": 339.3427734375,
+        "x1": 4532.006184895833,
+        "y1": 265.9713541666665
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Three Line",
+      "bbox": {
+        "x0": 4683.278645833333,
+        "y0": 348.5143229166665,
+        "x1": 5087.701822916667,
+        "y1": 256.7998046875
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Vertical Rotate",
+      "bbox": {
+        "x0": 5288.369466145833,
+        "y0": 348.5143229166665,
+        "x1": 5828.62890625,
+        "y1": 259.8570963541665
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "No Frame",
+      "bbox": {
+        "x0": 4692.540364583333,
+        "y0": 210.94270833333348,
+        "x1": 5066.091145833333,
+        "y1": 113.1142578125
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Colorful Background",
+      "bbox": {
+        "x0": 5195.753580729167,
+        "y0": 198.71419270833348,
+        "x1": 5924.33203125,
+        "y1": 116.17154947916652
+      },
+      "confidence": null,
+      "reading_order": null
+    }
+  ],
+  "layout": [
+    {
+      "label": "section_header",
+      "bbox": {
+        "x0": 552.6083577473959,
+        "y0": 3326.171427408854,
+        "x1": 1176.2223307291667,
+        "y1": 3188.5999959309897
+      },
+      "confidence": null
+    },
+    {
+      "label": "caption",
+      "bbox": {
+        "x0": 277.8477783203125,
+        "y0": 2503.7999674479165,
+        "x1": 682.2706705729166,
+        "y1": 2412.085693359375
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 910.7233072916666,
+        "y0": 2986.828572591146,
+        "x1": 1262.663818359375,
+        "y1": 2937.914265950521
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 984.8160807291666,
+        "y0": 3038.800008138021,
+        "x1": 1515.81396484375,
+        "y1": 2983.7714029947915
+      },
+      "confidence": null
+    },
+    {
+      "label": "caption",
+      "bbox": {
+        "x0": 1151.5247395833333,
+        "y0": 2503.7999674479165,
+        "x1": 1358.366943359375,
+        "y1": 2418.199951171875
+      },
+      "confidence": null
+    },
+    {
+      "label": "caption",
+      "bbox": {
+        "x0": 2506.8045247395835,
+        "y0": 2512.971435546875,
+        "x1": 2704.3850911458335,
+        "y1": 2424.3142903645835
+      },
+      "confidence": null
+    },
+    {
+      "label": "section_header",
+      "bbox": {
+        "x0": 916.897705078125,
+        "y0": 2320.371419270833,
+        "x1": 1802.92333984375,
+        "y1": 2191.971435546875
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 265.49900309244794,
+        "y0": 2274.514241536458,
+        "x1": 475.4284261067708,
+        "y1": 2210.314290364583
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 243.88861083984375,
+        "y0": 2170.571451822917,
+        "x1": 879.851318359375,
+        "y1": 2109.428548177083
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 944.6824544270834,
+        "y0": 2195.028564453125,
+        "x1": 1651.6507161458333,
+        "y1": 2112.485677083333
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 305.632568359375,
+        "y0": 2094.142822265625,
+        "x1": 577.3059488932291,
+        "y1": 2042.17138671875
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 950.8568522135416,
+        "y0": 2112.485677083333,
+        "x1": 1833.79541015625,
+        "y1": 2042.17138671875
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 265.49900309244794,
+        "y0": 2042.17138671875,
+        "x1": 876.76416015625,
+        "y1": 1987.1429036458333
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 941.5952962239584,
+        "y0": 2051.3427734375,
+        "x1": 1549.7732747395833,
+        "y1": 1953.5143229166667
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 950.8568522135416,
+        "y0": 1974.9142252604167,
+        "x1": 1543.5987955729167,
+        "y1": 1883.2000325520833
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 429.1204833984375,
+        "y0": 1874.0284830729167,
+        "x1": 876.76416015625,
+        "y1": 1822.05712890625
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 953.944091796875,
+        "y0": 1895.4285481770833,
+        "x1": 1543.5987955729167,
+        "y1": 1815.94287109375
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 293.2837727864583,
+        "y0": 1751.7428385416667,
+        "x1": 481.6028238932292,
+        "y1": 1702.82861328125
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 308.7197672526042,
+        "y0": 1791.4856770833333,
+        "x1": 447.6436360677083,
+        "y1": 1751.7428385416667
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 493.9516194661458,
+        "y0": 1745.6285807291667,
+        "x1": 990.9903971354166,
+        "y1": 1705.8857421875
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 237.7142130533854,
+        "y0": 1537.7428385416667,
+        "x1": 960.1184895833334,
+        "y1": 1461.3142903645833
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 243.88861083984375,
+        "y0": 1427.6857096354167,
+        "x1": 1682.5226236979167,
+        "y1": 1360.4285481770835
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 243.88861083984375,
+        "y0": 1317.6285807291665,
+        "x1": 818.1073404947916,
+        "y1": 1265.6570638020835
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 243.88861083984375,
+        "y0": 1262.5999348958335,
+        "x1": 1633.1276041666667,
+        "y1": 1213.6857096354165
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 1157.6991373697917,
+        "y0": 984.39990234375,
+        "x1": 1744.2666015625,
+        "y1": 904.9142252604165
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 324.15574137369794,
+        "y0": 871.28564453125,
+        "x1": 527.9108072916666,
+        "y1": 837.6570638020835
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 1481.8548177083333,
+        "y0": 880.45703125,
+        "x1": 1654.7379557291667,
+        "y1": 822.3714192708335
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 259.32460530598956,
+        "y0": 718.4285481770835,
+        "x1": 429.1204833984375,
+        "y1": 687.8570963541665
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 416.7716878255208,
+        "y0": 724.5428059895835,
+        "x1": 1670.1739908854167,
+        "y1": 678.685546875
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 429.1204833984375,
+        "y0": 758.17138671875,
+        "x1": 963.2056477864584,
+        "y1": 718.4285481770835
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 1284.2742513020833,
+        "y0": 749.0,
+        "x1": 1413.9365234375,
+        "y1": 727.5999348958335
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 308.7197672526042,
+        "y0": 684.8001302083335,
+        "x1": 475.4284261067708,
+        "y1": 645.0569661458335
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 623.6139322916666,
+        "y0": 538.0569661458335,
+        "x1": 648.3114827473959,
+        "y1": 507.4856770833335
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 623.6139322916666,
+        "y0": 495.2571614583335,
+        "x1": 648.3114827473959,
+        "y1": 458.5712890625
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 1296.6229654947917,
+        "y0": 544.1715494791665,
+        "x1": 1376.89013671875,
+        "y1": 501.3714192708335
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 623.6139322916666,
+        "y0": 440.228515625,
+        "x1": 648.3114827473959,
+        "y1": 409.6572265625
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 1305.8846028645833,
+        "y0": 406.5999348958335,
+        "x1": 1373.8028971354167,
+        "y1": 342.4000651041665
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 1302.79736328125,
+        "y0": 348.5143229166665,
+        "x1": 1376.89013671875,
+        "y1": 293.4856770833335
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 1312.0590006510417,
+        "y0": 296.54296875,
+        "x1": 1367.6285807291667,
+        "y1": 259.8570963541665
+      },
+      "confidence": null
+    },
+    {
+      "label": "caption",
+      "bbox": {
+        "x0": 1670.1739908854167,
+        "y0": 2500.7428385416665,
+        "x1": 2232.0439453125,
+        "y1": 2418.199951171875
+      },
+      "confidence": null
+    },
+    {
+      "label": "caption",
+      "bbox": {
+        "x0": 3065.5872395833335,
+        "y0": 2509.914306640625,
+        "x1": 3389.7428385416665,
+        "y1": 2427.3714192708335
+      },
+      "confidence": null
+    },
+    {
+      "label": "section_header",
+      "bbox": {
+        "x0": 2000.5040690104167,
+        "y0": 2326.485677083333,
+        "x1": 3411.353515625,
+        "y1": 2201.142822265625
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 2083.8583984375,
+        "y0": 2130.828531901042,
+        "x1": 2423.4501953125,
+        "y1": 2033.0
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 2874.1809895833335,
+        "y0": 2118.600016276042,
+        "x1": 3374.3069661458335,
+        "y1": 2036.05712890625
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 2086.9456380208335,
+        "y0": 1947.39990234375,
+        "x1": 2599.42041015625,
+        "y1": 1849.5714518229167
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 2874.1809895833335,
+        "y0": 1938.228515625,
+        "x1": 3429.8766276041665,
+        "y1": 1858.7428385416667
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 1997.4168294270833,
+        "y0": 1745.6285807291667,
+        "x1": 2052.9864908854165,
+        "y1": 1712.0
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 2093.1199544270835,
+        "y0": 1776.2000325520833,
+        "x1": 2661.1643880208335,
+        "y1": 1696.7141927083333
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 2756.8675130208335,
+        "y0": 1797.5999348958333,
+        "x1": 3253.90625,
+        "y1": 1684.4856770833333
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 1981.9807942708333,
+        "y0": 1601.94287109375,
+        "x1": 2074.5968424479165,
+        "y1": 1528.5714518229167
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 2090.03271484375,
+        "y0": 1601.94287109375,
+        "x1": 2253.654296875,
+        "y1": 1522.4571940104167
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 2367.8805338541665,
+        "y0": 1614.17138671875,
+        "x1": 2475.9324544270835,
+        "y1": 1522.4571940104167
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 2454.3221028645835,
+        "y0": 1611.1142578125,
+        "x1": 2673.51318359375,
+        "y1": 1519.39990234375
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 2732.169921875,
+        "y0": 1611.1142578125,
+        "x1": 3047.0641276041665,
+        "y1": 1525.5143229166667
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 2090.03271484375,
+        "y0": 1482.7141927083333,
+        "x1": 2676.6002604166665,
+        "y1": 1394.05712890625
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 2738.3444010416665,
+        "y0": 1479.6570638020833,
+        "x1": 2827.873046875,
+        "y1": 1403.228515625
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 2843.3089192708335,
+        "y0": 1476.5999348958333,
+        "x1": 3442.2252604166665,
+        "y1": 1397.1142578125
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 2090.03271484375,
+        "y0": 1351.2571614583335,
+        "x1": 2642.64111328125,
+        "y1": 1271.771484375
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 2852.5706380208335,
+        "y0": 1357.3714192708335,
+        "x1": 3482.3590494791665,
+        "y1": 1287.05712890625
+      },
+      "confidence": null
+    },
+    {
+      "label": "caption",
+      "bbox": {
+        "x0": 3692.2884114583335,
+        "y0": 2512.971435546875,
+        "x1": 4025.7057291666665,
+        "y1": 2421.2571614583335
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 3590.4108072916665,
+        "y0": 3274.2000020345054,
+        "x1": 3840.4739583333335,
+        "y1": 3210.0
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 3605.8466796875,
+        "y0": 3041.857137044271,
+        "x1": 3670.6780598958335,
+        "y1": 3011.2857259114585
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 3797.2529296875,
+        "y0": 2720.8570963541665,
+        "x1": 3849.7353515625,
+        "y1": 2699.4571126302085
+      },
+      "confidence": null
+    },
+    {
+      "label": "caption",
+      "bbox": {
+        "x0": 4399.256510416667,
+        "y0": 2516.028564453125,
+        "x1": 4609.186197916667,
+        "y1": 2421.2571614583335
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 4865.423502604167,
+        "y0": 3323.114288330078,
+        "x1": 5208.1025390625,
+        "y1": 3271.142852783203
+      },
+      "confidence": null
+    },
+    {
+      "label": "caption",
+      "bbox": {
+        "x0": 4939.516276041667,
+        "y0": 2509.914306640625,
+        "x1": 5319.241536458333,
+        "y1": 2418.199951171875
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 5578.56640625,
+        "y0": 3268.0857137044272,
+        "x1": 5915.070963541667,
+        "y1": 3216.1142781575522
+      },
+      "confidence": null
+    },
+    {
+      "label": "caption",
+      "bbox": {
+        "x0": 5485.949869791667,
+        "y0": 2512.971435546875,
+        "x1": 6050.907552083333,
+        "y1": 2424.3142903645835
+      },
+      "confidence": null
+    },
+    {
+      "label": "section_header",
+      "bbox": {
+        "x0": 4167.716796875,
+        "y0": 2323.428548177083,
+        "x1": 5309.979817708333,
+        "y1": 2195.028564453125
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 4303.553385416667,
+        "y0": 2124.714274088542,
+        "x1": 4874.684895833333,
+        "y1": 2020.771484375
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 5038.306640625,
+        "y0": 2140.0,
+        "x1": 5164.881510416667,
+        "y1": 2017.7141927083333
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 5254.410481770833,
+        "y0": 2124.714274088542,
+        "x1": 5825.541666666667,
+        "y1": 2036.05712890625
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 3892.9560546875,
+        "y0": 1950.4571940104167,
+        "x1": 4124.49609375,
+        "y1": 1852.6285807291667
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 4300.466145833333,
+        "y0": 1971.8570963541667,
+        "x1": 4998.1728515625,
+        "y1": 1825.1142578125
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 5032.132161458333,
+        "y0": 1981.0284830729167,
+        "x1": 5800.844401041667,
+        "y1": 1846.5143229166667
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 3899.1305338541665,
+        "y0": 1776.2000325520833,
+        "x1": 4099.798502604167,
+        "y1": 1699.771484375
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 4312.815104166667,
+        "y0": 1785.3714192708333,
+        "x1": 4970.388020833333,
+        "y1": 1666.1429036458333
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 5041.3935546875,
+        "y0": 1794.5428059895833,
+        "x1": 5757.623697916667,
+        "y1": 1678.3714192708333
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 3902.2177734375,
+        "y0": 1611.1142578125,
+        "x1": 4235.635091145833,
+        "y1": 1519.39990234375
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 4297.379231770833,
+        "y0": 1635.5714518229167,
+        "x1": 4893.208333333333,
+        "y1": 1491.8857421875
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 5038.306640625,
+        "y0": 1644.7428385416667,
+        "x1": 5714.402994791667,
+        "y1": 1485.771484375
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 3794.166015625,
+        "y0": 1458.2571614583333,
+        "x1": 4149.193684895833,
+        "y1": 1351.2571614583335
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 4408.518229166667,
+        "y0": 1449.0856119791667,
+        "x1": 4741.935546875,
+        "y1": 1339.0284830729165
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 5171.055989583333,
+        "y0": 1436.8570963541667,
+        "x1": 5729.838541666667,
+        "y1": 1354.3142903645835
+      },
+      "confidence": null
+    },
+    {
+      "label": "section_header",
+      "bbox": {
+        "x0": 3300.2141927083335,
+        "y0": 1170.8857421875,
+        "x1": 4550.529296875,
+        "y1": 1054.7141927083335
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 2617.9435221354165,
+        "y0": 947.7141927083335,
+        "x1": 3229.2086588541665,
+        "y1": 865.17138671875
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 2161.0384114583335,
+        "y0": 807.0856119791665,
+        "x1": 2559.2867838541665,
+        "y1": 700.0856119791665
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 2722.9083658854165,
+        "y0": 804.0284830729165,
+        "x1": 3213.7727864583335,
+        "y1": 712.3142903645835
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 3399.0045572916665,
+        "y0": 807.0856119791665,
+        "x1": 3679.939453125,
+        "y1": 715.3714192708335
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 2204.2591145833335,
+        "y0": 642.0,
+        "x1": 2482.10693359375,
+        "y1": 544.1715494791665
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 2830.9602864583335,
+        "y0": 648.1142578125,
+        "x1": 3059.4127604166665,
+        "y1": 553.3427734375
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 3386.6559244791665,
+        "y0": 645.0569661458335,
+        "x1": 3664.5035807291665,
+        "y1": 553.3427734375
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 2191.9103190104165,
+        "y0": 504.4283854166665,
+        "x1": 2494.4557291666665,
+        "y1": 400.4856770833335
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 2676.6002604166665,
+        "y0": 498.3141276041665,
+        "x1": 3213.7727864583335,
+        "y1": 397.4283854166665
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 3331.0862630208335,
+        "y0": 498.3141276041665,
+        "x1": 3723.1604817708335,
+        "y1": 406.5999348958335
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 2093.1199544270835,
+        "y0": 339.3427734375,
+        "x1": 2593.2459309895835,
+        "y1": 265.9713541666665
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 2695.12353515625,
+        "y0": 339.3427734375,
+        "x1": 3189.0751953125,
+        "y1": 265.9713541666665
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 3334.1735026041665,
+        "y0": 345.45703125,
+        "x1": 3716.9860026041665,
+        "y1": 262.9143880208335
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 3327.9990234375,
+        "y0": 204.82845052083348,
+        "x1": 3754.0322265625,
+        "y1": 122.28580729166652
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 4720.3251953125,
+        "y0": 953.82861328125,
+        "x1": 5374.811197916667,
+        "y1": 865.17138671875
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 4102.8857421875,
+        "y0": 813.2000325520835,
+        "x1": 4498.046875,
+        "y1": 703.1429036458335
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 4630.796549479167,
+        "y0": 816.2571614583335,
+        "x1": 5127.835286458333,
+        "y1": 709.2571614583335
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 5309.979817708333,
+        "y0": 807.0856119791665,
+        "x1": 5871.849609375,
+        "y1": 715.3714192708335
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 4143.019205729167,
+        "y0": 648.1142578125,
+        "x1": 4423.9541015625,
+        "y1": 553.3427734375
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 4680.191731770833,
+        "y0": 648.1142578125,
+        "x1": 5084.614583333333,
+        "y1": 556.4000651041665
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 5266.759114583333,
+        "y0": 651.1715494791665,
+        "x1": 5850.239583333333,
+        "y1": 550.2858072916665
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 4130.670572916667,
+        "y0": 510.54296875,
+        "x1": 4433.2158203125,
+        "y1": 409.6572265625
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 4621.534830729167,
+        "y0": 501.3714192708335,
+        "x1": 5137.097005208333,
+        "y1": 418.8284505208335
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 5309.979817708333,
+        "y0": 507.4856770833335,
+        "x1": 5810.106119791667,
+        "y1": 415.771484375
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 4031.8802083333335,
+        "y0": 339.3427734375,
+        "x1": 4532.006184895833,
+        "y1": 265.9713541666665
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 4683.278645833333,
+        "y0": 348.5143229166665,
+        "x1": 5087.701822916667,
+        "y1": 256.7998046875
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 5288.369466145833,
+        "y0": 348.5143229166665,
+        "x1": 5828.62890625,
+        "y1": 259.8570963541665
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 4692.540364583333,
+        "y0": 210.94270833333348,
+        "x1": 5066.091145833333,
+        "y1": 113.1142578125
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 5195.753580729167,
+        "y0": 198.71419270833348,
+        "x1": 5924.33203125,
+        "y1": 116.17154947916652
+      },
+      "confidence": null
+    }
+  ],
+  "tables": [
+    {
+      "cells": [
+        {
+          "row": 0,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 3,
+          "text": "Text Attributes",
+          "is_header": true
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Language",
+          "is_header": true
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Background",
+          "is_header": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Rotate",
+          "is_header": true
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "English Chinese EN-CH-Mixed",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "White Single-Colored Multi-Colored",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Normal Horizontal Rotate 90\u00b0 Rotate 270\u00b0",
+          "is_header": false
+        }
+      ],
+      "bbox": {
+        "x0": 2027.931884765625,
+        "y0": 995.490478515625,
+        "x1": 3825.6259765625,
+        "y1": 46.7724609375
+      },
+      "html": "<table><tbody><tr><th colspan=\"3\">Text Attributes</th></tr><tr><th>Language</th><th>Background</th><th>Rotate</th></tr><tr><td>English Chinese EN-CH-Mixed</td><td>White Single-Colored Multi-Colored</td><td>Normal Horizontal Rotate 90\u00b0 Rotate 270\u00b0</td></tr></tbody></table>",
+      "n_rows": 3,
+      "n_cols": 3
+    }
+  ],
+  "kv_pairs": [],
+  "latency_ms": 9124.076099949889,
+  "raw_response_path": null,
+  "error": null
+}

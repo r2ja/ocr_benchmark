@@ -1,0 +1,294 @@
+{
+  "page_id": "sec-10k-tech-01",
+  "stack_id": "qwen3-vl-32b",
+  "model_revision": "qwen/qwen3-vl-32b-instruct",
+  "raw_text": "# Consolidated Financial Data\n\nThe following table sets forth, for the periods indicated, certain items in our Consolidated Statements of Income expressed as a percentage of revenue.\n\n## Consolidated Statements of Income (as a percentage of revenue)\n\n| | Year Ended | | |\n|---|---|---|---|\n| | **Jan 25, 2026** | | **Jan 26, 2025** |\n| Revenue | 100.0 % | | 100.0 % |\n| Cost of revenue | 28.9 | | 25.0 |\n| Gross profit | 71.1 | | 75.0 |\n| Operating expenses | | | |\n| &nbsp;&nbsp;&nbsp;&nbsp;Research and development | 8.6 | | 9.9 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Sales, general and administrative | 2.1 | | 2.7 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Total operating expenses | 10.7 | | 12.6 |\n| Operating income | 60.4 | | 62.4 |\n| Interest income | 1.1 | | 1.4 |\n| Interest expense | (0.1) | | (0.2) |\n| Other income, net | 4.2 | | 0.8 |\n| Total other income, net | 5.2 | | 2.0 |\n| Income before income tax | 65.5 | | 64.4 |\n| Income tax expense | 9.9 | | 8.6 |\n| Net income | **55.6 %** | | **55.8 %** |\n\n---\n\n## Reportable Segments\n\n### Revenue by Reportable Segments\n\n| | Year Ended | | | | |\n|---|---|---|---|---|---|\n| | **Jan 25, 2026** | **Jan 26, 2025** | **$ Change** | **% Change** | |\n| | ($ in millions) | | | | |\n| Compute & Networking | $ 193,479 | $ 116,193 | $ 77,286 | 67 % | |\n| Graphics | 22,459 | 14,304 | 8,155 | 57 % | |\n| **Total** | **$ 215,938** | **$ 130,497** | **$ 85,441** | **65 %** | |\n\n### Operating Income by Reportable Segments\n\n| | Year Ended | | | | |\n|---|---|---|---|---|---|\n| | **Jan 25, 2026** | **Jan 26, 2025** | **$ Change** | **% Change** | |\n| | ($ in millions) | | | | |\n| Compute & Networking | $ 130,141 | $ 82,875 | $ 47,266 | 57 % | |\n| Graphics | 9,156 | 5,085 | 4,071 | 80 % | |\n| **Total** | **$ 139,297** | **$ 87,960** | **$ 51,337** | **58 %** | |\n\n---\n\n### Compute & Networking revenue\nThe year over year increase was driven by the major platform shifts \u2013 accelerated computing and AI. Revenue from Data Center computing grew 59% driven by demand for our Blackwell computing platform. Revenue from Data Center networking grew 142% driven by the introduction and continued ramp of NVLink compute fabric for GB200 and GB300 systems and the growth of Ethernet and InfiniBand platforms.\n\n---\n\n## Key-Value Pairs:\n\nRevenue (Jan 25, 2026) :: 100.0 %\nRevenue (Jan 26, 2025) :: 100.0 %\nCost of revenue (Jan 25, 2026) :: 28.9\nCost of revenue (Jan 26, 2025) :: 25.0\nGross profit (Jan 25, 2026) :: 71.1\nGross profit (Jan 26, 2025) :: 75.0\nResearch and development (Jan 25, 2026) :: 8.6\nResearch and development (Jan 26, 2025) :: 9.9\nSales, general and administrative (Jan 25, 2026) :: 2.1\nSales, general and administrative (Jan 26, 2025) :: 2.7\nTotal operating expenses (Jan 25, 2026) :: 10.7\nTotal operating expenses (Jan 26, 2025) :: 12.6\nOperating income (Jan 25, 2026) :: 60.4\nOperating income (Jan 26, 2025) :: 62.4\nInterest income (Jan 25, 2026) :: 1.1\nInterest income (Jan 26, 2025) :: 1.4\nInterest expense (Jan 25, 2026) :: (0.1)\nInterest expense (Jan 26, 2025) :: (0.2)\nOther income, net (Jan 25, 2026) :: 4.2\nOther income, net (Jan 26, 2025) :: 0.8\nTotal other income, net (Jan 25, 2026) :: 5.2\nTotal other income, net (Jan 26, 2025) :: 2.0\nIncome before income tax (Jan 25, 2026) :: 65.5\nIncome before income tax (Jan 26, 2025) :: 64.4\nIncome tax expense (Jan 25, 2026) :: 9.9\nIncome tax expense (Jan 26, 2025) :: 8.6\nNet income (Jan 25, 2026) :: 55.6 %\nNet income (Jan 26, 2025) :: 55.8 %\nCompute & Networking Revenue (Jan 25, 2026) :: $ 193,479\nCompute & Networking Revenue (Jan 26, 2025) :: $ 116,193\nGraphics Revenue (Jan 25, 2026) :: $ 22,459\nGraphics Revenue (Jan 26, 2025) :: $ 14,304\nTotal Revenue (Jan 25, 2026) :: $ 215,938\nTotal Revenue (Jan 26, 2025) :: $ 130,497\nCompute & Networking Operating Income (Jan 25, 2026) :: $ 130,141\nCompute & Networking Operating Income (Jan 26, 2025) :: $ 82,875\nGraphics Operating Income (Jan 25, 2026) :: $ 9,156\nGraphics Operating Income (Jan 26, 2025) :: $ 5,085\nTotal Operating Income (Jan 25, 2026) :: $ 139,297\nTotal Operating Income (Jan 26, 2025) :: $ 87,960",
+  "text_blocks": [],
+  "layout": [],
+  "tables": [],
+  "kv_pairs": [
+    {
+      "key": "Revenue (Jan 25, 2026)",
+      "value": "100.0 %",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Revenue (Jan 26, 2025)",
+      "value": "100.0 %",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Cost of revenue (Jan 25, 2026)",
+      "value": "28.9",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Cost of revenue (Jan 26, 2025)",
+      "value": "25.0",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Gross profit (Jan 25, 2026)",
+      "value": "71.1",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Gross profit (Jan 26, 2025)",
+      "value": "75.0",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Research and development (Jan 25, 2026)",
+      "value": "8.6",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Research and development (Jan 26, 2025)",
+      "value": "9.9",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Sales, general and administrative (Jan 25, 2026)",
+      "value": "2.1",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Sales, general and administrative (Jan 26, 2025)",
+      "value": "2.7",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Total operating expenses (Jan 25, 2026)",
+      "value": "10.7",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Total operating expenses (Jan 26, 2025)",
+      "value": "12.6",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Operating income (Jan 25, 2026)",
+      "value": "60.4",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Operating income (Jan 26, 2025)",
+      "value": "62.4",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Interest income (Jan 25, 2026)",
+      "value": "1.1",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Interest income (Jan 26, 2025)",
+      "value": "1.4",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Interest expense (Jan 25, 2026)",
+      "value": "(0.1)",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Interest expense (Jan 26, 2025)",
+      "value": "(0.2)",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Other income, net (Jan 25, 2026)",
+      "value": "4.2",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Other income, net (Jan 26, 2025)",
+      "value": "0.8",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Total other income, net (Jan 25, 2026)",
+      "value": "5.2",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Total other income, net (Jan 26, 2025)",
+      "value": "2.0",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Income before income tax (Jan 25, 2026)",
+      "value": "65.5",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Income before income tax (Jan 26, 2025)",
+      "value": "64.4",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Income tax expense (Jan 25, 2026)",
+      "value": "9.9",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Income tax expense (Jan 26, 2025)",
+      "value": "8.6",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Net income (Jan 25, 2026)",
+      "value": "55.6 %",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Net income (Jan 26, 2025)",
+      "value": "55.8 %",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Compute & Networking Revenue (Jan 25, 2026)",
+      "value": "$ 193,479",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Compute & Networking Revenue (Jan 26, 2025)",
+      "value": "$ 116,193",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Graphics Revenue (Jan 25, 2026)",
+      "value": "$ 22,459",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Graphics Revenue (Jan 26, 2025)",
+      "value": "$ 14,304",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Total Revenue (Jan 25, 2026)",
+      "value": "$ 215,938",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Total Revenue (Jan 26, 2025)",
+      "value": "$ 130,497",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Compute & Networking Operating Income (Jan 25, 2026)",
+      "value": "$ 130,141",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Compute & Networking Operating Income (Jan 26, 2025)",
+      "value": "$ 82,875",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Graphics Operating Income (Jan 25, 2026)",
+      "value": "$ 9,156",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Graphics Operating Income (Jan 26, 2025)",
+      "value": "$ 5,085",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Total Operating Income (Jan 25, 2026)",
+      "value": "$ 139,297",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Total Operating Income (Jan 26, 2025)",
+      "value": "$ 87,960",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    }
+  ],
+  "latency_ms": 25779.813200002536,
+  "raw_response_path": null,
+  "error": null
+}

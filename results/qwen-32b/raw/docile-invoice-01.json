@@ -1,0 +1,147 @@
+{
+  "page_id": "docile-invoice-01",
+  "stack_id": "qwen3-vl-32b",
+  "model_revision": "qwen/qwen3-vl-32b-instruct",
+  "raw_text": "# Invoice\n\n## Invoice Details\n\n**Invoice no:** 40378170  \n**Date of issue:** 10/15/2012\n\n---\n\n## Seller:\n\n**Patel, Thompson and Montgomery**  \n356 Kyle Vista  \nNew James, MA 46228  \n\n**Tax Id:** 958-74-3511  \n**IBAN:** GB77WRBQ31965128414006\n\n---\n\n## Client:\n\n**Jackson, Odonnell and Jackson**  \n267 John Track Suite 841  \nJenniferville, PA 98601  \n\n**Tax Id:** 998-87-7723\n\n---\n\n## ITEMS\n\n| No. | Description                                      | Qty  | UM   | Net price | Net worth | VAT [%] | Gross worth |\n|-----|--------------------------------------------------|------|------|-----------|-----------|---------|-------------|\n| 1.  | Leed's Wine Companion Bottle Corkscrew Opener Gift Box Set with Foil Cutter | 1,00 | each | 7,50      | 7,50      | 10%     | 8,25        |\n\n---\n\n## SUMMARY\n\n| VAT [%] | Net worth | VAT   | Gross worth |\n|---------|-----------|-------|-------------|\n| 10%     | 7,50      | 0,75  | 8,25        |\n| **Total** | **$ 7,50** | **$ 0,75** | **$ 8,25** |\n\n---\n\n## Key-Value Pairs:\n\nInvoice no :: 40378170  \nDate of issue :: 10/15/2012  \nSeller :: Patel, Thompson and Montgomery  \nSeller Address :: 356 Kyle Vista, New James, MA 46228  \nSeller Tax Id :: 958-74-3511  \nSeller IBAN :: GB77WRBQ31965128414006  \nClient :: Jackson, Odonnell and Jackson  \nClient Address :: 267 John Track Suite 841, Jenniferville, PA 98601  \nClient Tax Id :: 998-87-7723  \nItem Description :: Leed's Wine Companion Bottle Corkscrew Opener Gift Box Set with Foil Cutter  \nItem Quantity :: 1,00  \nItem Unit :: each  \nItem Net Price :: 7,50  \nItem Net Worth :: 7,50  \nItem VAT Rate :: 10%  \nItem Gross Worth :: 8,25  \nTotal Net Worth :: $ 7,50  \nTotal VAT :: $ 0,75  \nTotal Gross Worth :: $ 8,25",
+  "text_blocks": [],
+  "layout": [],
+  "tables": [],
+  "kv_pairs": [
+    {
+      "key": "Invoice no",
+      "value": "40378170",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Date of issue",
+      "value": "10/15/2012",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Seller",
+      "value": "Patel, Thompson and Montgomery",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Seller Address",
+      "value": "356 Kyle Vista, New James, MA 46228",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Seller Tax Id",
+      "value": "958-74-3511",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Seller IBAN",
+      "value": "GB77WRBQ31965128414006",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Client",
+      "value": "Jackson, Odonnell and Jackson",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Client Address",
+      "value": "267 John Track Suite 841, Jenniferville, PA 98601",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Client Tax Id",
+      "value": "998-87-7723",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Item Description",
+      "value": "Leed's Wine Companion Bottle Corkscrew Opener Gift Box Set with Foil Cutter",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Item Quantity",
+      "value": "1,00",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Item Unit",
+      "value": "each",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Item Net Price",
+      "value": "7,50",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Item Net Worth",
+      "value": "7,50",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Item VAT Rate",
+      "value": "10%",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Item Gross Worth",
+      "value": "8,25",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Total Net Worth",
+      "value": "$ 7,50",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Total VAT",
+      "value": "$ 0,75",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Total Gross Worth",
+      "value": "$ 8,25",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    }
+  ],
+  "latency_ms": 10441.139500006102,
+  "raw_response_path": null,
+  "error": null
+}

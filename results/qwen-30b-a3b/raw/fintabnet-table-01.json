@@ -1,0 +1,98 @@
+{
+  "page_id": "fintabnet-table-01",
+  "stack_id": "qwen3-vl-30b-a3b",
+  "model_revision": "qwen/qwen3-vl-30b-a3b-instruct",
+  "raw_text": "| Kinetic parameter | ND | D | D + dn-RhoA | D + dn-Rac1 |\n| :--- | :--- | :--- | :--- | :--- |\n| Vmax | 19.6 \u00b1 0.75 | 26.2 \u00b1 0.86* | 31.3 \u00b1 0.88* | 21.6 \u00b1 0.9 |\n| K' for H+ | 0.150 \u00b1 0.02 | 0.113 \u00b1 0.05* | 0.105 \u00b1 0.07* | 0.137 \u00b1 0.023 |\n| \u03b7app | 2.19 | 2.16 | 2.03 | 2.23 |\n\nKey-Value Pairs:\nVmax :: 19.6 \u00b1 0.75\nVmax :: 26.2 \u00b1 0.86*\nVmax :: 31.3 \u00b1 0.88*\nVmax :: 21.6 \u00b1 0.9\nK' for H+ :: 0.150 \u00b1 0.02\nK' for H+ :: 0.113 \u00b1 0.05*\nK' for H+ :: 0.105 \u00b1 0.07*\nK' for H+ :: 0.137 \u00b1 0.023\n\u03b7app :: 2.19\n\u03b7app :: 2.16\n\u03b7app :: 2.03\n\u03b7app :: 2.23",
+  "text_blocks": [],
+  "layout": [],
+  "tables": [],
+  "kv_pairs": [
+    {
+      "key": "Vmax",
+      "value": "19.6 \u00b1 0.75",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Vmax",
+      "value": "26.2 \u00b1 0.86*",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Vmax",
+      "value": "31.3 \u00b1 0.88*",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Vmax",
+      "value": "21.6 \u00b1 0.9",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "K' for H+",
+      "value": "0.150 \u00b1 0.02",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "K' for H+",
+      "value": "0.113 \u00b1 0.05*",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "K' for H+",
+      "value": "0.105 \u00b1 0.07*",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "K' for H+",
+      "value": "0.137 \u00b1 0.023",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "\u03b7app",
+      "value": "2.19",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "\u03b7app",
+      "value": "2.16",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "\u03b7app",
+      "value": "2.03",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "\u03b7app",
+      "value": "2.23",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    }
+  ],
+  "latency_ms": 14127.437999995891,
+  "raw_response_path": null,
+  "error": null
+}

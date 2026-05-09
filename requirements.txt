@@ -1,0 +1,12 @@
+pillow==11.0.0
+pypdfium2==4.30.0
+pandas==2.2.3
+pyarrow==18.1.0
+tqdm==4.67.1
+python-dotenv==1.0.1
+jiwer==3.0.5
+seqeval==1.2.2
+datasets==3.2.0
+huggingface_hub==0.27.0
+requests==2.32.3
+tenacity==9.0.0

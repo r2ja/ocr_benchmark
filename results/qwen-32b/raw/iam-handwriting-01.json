@@ -1,0 +1,35 @@
+{
+  "page_id": "iam-handwriting-01",
+  "stack_id": "qwen3-vl-32b",
+  "model_revision": "qwen/qwen3-vl-32b-instruct",
+  "raw_text": "# Document Content\n\nassuredness \"Bella Bella Marie\" (Parlophone), a lively song that changes tempo mid-way.\n\n---\n\n**Key-Value Pairs:**\n\nSong Title :: \"Bella Bella Marie\"  \nRecord Label :: Parlophone  \nDescription :: a lively song that changes tempo mid-way",
+  "text_blocks": [],
+  "layout": [],
+  "tables": [],
+  "kv_pairs": [
+    {
+      "key": "Song Title",
+      "value": "\"Bella Bella Marie\"",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Record Label",
+      "value": "Parlophone",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Description",
+      "value": "a lively song that changes tempo mid-way",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    }
+  ],
+  "latency_ms": 2551.8048999947496,
+  "raw_response_path": null,
+  "error": null
+}

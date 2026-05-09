@@ -1,0 +1,13 @@
+{
+  "page_id": "sec-10k-bank-01",
+  "stack_id": "qwen3-vl-235b-a22b",
+  "model_revision": "qwen/qwen3-vl-235b-a22b-instruct",
+  "raw_text": "```markdown\n# JPMorgan Chase & Co.\n## Consolidated statements of income\n\n| Year ended December 31, (in millions, except per share data) | 2025 | 2024 | 2023 |\n|--- | --- | --- | ---|\n| **Revenue** |  |  |  |\n| Investment banking fees | $ 9,615 | $ 8,910 | $ 6,519 |\n| Principal transactions | 27,212 | 24,787 | 24,460 |\n| Lending- and deposit-related fees | 9,093 | 7,606 | 7,413 |\n| Asset management fees | 20,327 | 17,801 | 15,220 |\n| Commissions and other fees | 8,539 | 7,530 | 6,836 |\n| Investment securities losses | (57) | (1,021) | (3,180) |\n| Mortgage fees and related income | 1,381 | 1,401 | 1,176 |\n| Card income | 4,720 | 5,497 | 4,784 |\n| Other income | 6,174 | 12,462 | 5,609 |\n| **Noninterest revenue** | 87,004 | 84,973 | 68,837 |\n| Interest income | 193,341 | 193,933 | 170,588 |\n| Interest expense | 97,898 | 101,350 | 81,321 |\n| **Net interest income** | 95,443 | 92,583 | 89,267 |\n| **Total net revenue** | 182,447 | 177,556 | 158,104 |\n| Provision for credit losses | 14,212 | 10,678 | 9,320 |\n| **Noninterest expense** |  |  |  |\n| Compensation expense | 54,487 | 51,357 | 46,465 |\n| Occupancy expense | 5,461 | 5,026 | 4,590 |\n| Technology, communications and equipment expense | 11,029 | 9,831 | 9,246 |\n| Professional and outside services | 12,356 | 11,057 | 10,235 |\n| Marketing | 5,531 | 4,974 | 4,591 |\n| Other expense | 6,776 | 9,552 | 12,045 |\n| **Total noninterest expense** | 95,640 | 91,797 | 87,172 |\n| Income before income tax expense | 72,595 | 75,081 | 61,612 |\n| Income tax expense | 15,547 | 16,610 | 12,060 |\n| **Net income** | $ 57,048 | $ 58,471 | $ 49,552 |\n| Net income applicable to common stockholders | $ 55,681 | $ 56,868 | $ 47,760 |\n| **Net income per common share data** |  |  |  |\n| Basic earnings per share | $ 20.05 | $ 19.79 | $ 16.25 |\n| Diluted earnings per share | 20.02 | 19.75 | 16.23 |\n| **Weighted-average basic shares** | 2,776.5 | 2,873.9 | 2,938.6 |\n| **Weighted-average diluted shares** | 2,781.5 | 2,879.0 | 2,943.1 |\n\nThe Notes to Consolidated Financial Statements are an integral part of these statements.\n\n---\n\nJPMorgan Chase & Co./2025 Form 10-K 165\n\n```",
+  "text_blocks": [],
+  "layout": [],
+  "tables": [],
+  "kv_pairs": [],
+  "latency_ms": 19374.596100009512,
+  "raw_response_path": null,
+  "error": null
+}

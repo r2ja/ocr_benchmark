@@ -1,0 +1,14 @@
+# Shell scripts must use LF — broken by CRLF when run on Linux pods.
+*.sh text eol=lf
+
+# Python is line-ending agnostic but pin to LF for cross-platform sanity.
+*.py text eol=lf
+
+# Docs use LF.
+*.md text eol=lf
+*.csv text eol=lf
+
+# Binary assets should not be touched.
+*.png binary
+*.pdf binary
+*.parquet binary

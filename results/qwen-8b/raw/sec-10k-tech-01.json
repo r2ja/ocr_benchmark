@@ -1,0 +1,13 @@
+{
+  "page_id": "sec-10k-tech-01",
+  "stack_id": "qwen3-vl-8b",
+  "model_revision": "qwen/qwen3-vl-8b-instruct",
+  "raw_text": "```markdown\nThe following table sets forth, for the periods indicated, certain items in our Consolidated Statements of Income expressed as a percentage of revenue.\n\n| | Year Ended | | |\n|---|---|---|---|\n| | Jan 25, 2026 | | Jan 26, 2025 |\n| Revenue | 100.0 % | | 100.0 % |\n| Cost of revenue | 28.9 | | 25.0 |\n| Gross profit | 71.1 | | 75.0 |\n| Operating expenses | | | |\n| Research and development | 8.6 | | 9.9 |\n| Sales, general and administrative | 2.1 | | 2.7 |\n| Total operating expenses | 10.7 | | 12.6 |\n| Operating income | 60.4 | | 62.4 |\n| Interest income | 1.1 | | 1.4 |\n| Interest expense | (0.1) | | (0.2) |\n| Other income, net | 4.2 | | 0.8 |\n| Total other income, net | 5.2 | | 2.0 |\n| Income before income tax | 65.5 | | 64.4 |\n| Income tax expense | 9.9 | | 8.6 |\n| Net income | 55.6 % | | 55.8 % |\n\n## Reportable Segments\n\n### Revenue by Reportable Segments\n\n| | Year Ended | | | | |\n|---|---|---|---|---|---|\n| | Jan 25, 2026 | | Jan 26, 2025 | | |\n| | | | $ Change | | % Change |\n| | ($ in millions) | | | | |\n| Compute & Networking | $ 193,479 | | $ 116,193 | | $ 77,286 | | 67 % |\n| Graphics | 22,459 | | 14,304 | | 8,155 | | 57 % |\n| Total | $ 215,938 | | $ 130,497 | | $ 85,441 | | 65 % |\n\n### Operating Income by Reportable Segments\n\n| | Year Ended | | | | |\n|---|---|---|---|---|---|\n| | Jan 25, 2026 | | Jan 26, 2025 | | |\n| | | | $ Change | | % Change |\n| | ($ in millions) | | | | |\n| Compute & Networking | $ 130,141 | | $ 82,875 | | $ 47,266 | | 57 % |\n| Graphics | 9,156 | | 5,085 | | 4,071 | | 80 % |\n| Total | $ 139,297 | | $ 87,960 | | $ 51,337 | | 58 % |\n\n**Compute & Networking revenue** \u2013 The year over year increase was driven by the major platform shifts \u2013 accelerated computing and AI. Revenue from Data Center computing grew 59% driven by demand for our Blackwell computing platform. Revenue from Data Center networking grew 142% driven by the introduction and continued ramp of NVLink compute fabric for GB200 and GB300 systems and the growth of Ethernet and InfiniBand platforms.\n```",
+  "text_blocks": [],
+  "layout": [],
+  "tables": [],
+  "kv_pairs": [],
+  "latency_ms": 7457.017699955031,
+  "raw_response_path": null,
+  "error": null
+}

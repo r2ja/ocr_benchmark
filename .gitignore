@@ -1,0 +1,15 @@
+.venv/
+.env
+__pycache__/
+*.pyc
+.DS_Store
+
+# Claude Code per-machine permissions (no secrets, just local tool allowlist)
+.claude/settings.local.json
+
+# local-only artifacts use leading-underscore convention
+results/_*
+corpus/_smoke/
+
+# DocILE invoice page is research-only license — do not redistribute
+corpus/docile/

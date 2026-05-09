@@ -1,0 +1,57 @@
+{
+  "page_id": "iam-handwriting-01",
+  "stack_id": "docling",
+  "model_revision": "docling@local-pip",
+  "raw_text": "assuredness Bella Bella Harie song\n\n(Parlophone),alively thal changes tempo mid-way",
+  "text_blocks": [
+    {
+      "text": "assuredness Bella Bella Harie song",
+      "bbox": {
+        "x0": 0.0,
+        "y0": 100.0,
+        "x1": 338.21923828125,
+        "y1": 41.33333333333333
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "(Parlophone),alively thal changes tempo mid-way",
+      "bbox": {
+        "x0": 987.0211588541666,
+        "y0": 122.66666666666667,
+        "x1": 1631.875,
+        "y1": 13.333333333333329
+      },
+      "confidence": null,
+      "reading_order": null
+    }
+  ],
+  "layout": [
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 0.0,
+        "y0": 100.0,
+        "x1": 338.21923828125,
+        "y1": 41.33333333333333
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 987.0211588541666,
+        "y0": 122.66666666666667,
+        "x1": 1631.875,
+        "y1": 13.333333333333329
+      },
+      "confidence": null
+    }
+  ],
+  "tables": [],
+  "kv_pairs": [],
+  "latency_ms": 564.8191999644041,
+  "raw_response_path": null,
+  "error": null
+}

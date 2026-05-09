@@ -1,0 +1,91 @@
+{
+  "page_id": "cord-receipt-01",
+  "stack_id": "qwen3-vl-32b",
+  "model_revision": "qwen/qwen3-vl-32b-instruct",
+  "raw_text": "```markdown\n# Receipt\n\n---\n\n## Itemized Breakdown\n\n| Item Code | Description     | Quantity | Unit Price | Total Price |\n|-----------|-----------------|----------|------------|-------------|\n| 901016    | -TICKET CP      | 2        | 60,000     | 60,000      |\n\n---\n\n## Summary\n\n- **TOTAL DISC $**: -60,000\n- **TAX**: 5,455\n- **Subtotal**: 60,000\n- **TOTAL (Qty 2.00 60,000)**: 60,000\n\n---\n\n## Payment Details\n\n- **EDC CIMB NIAGA No**: xx7730\n- **Amount**: 60,000\n\n---\n\n## Customer Info\n\n*(Partially visible or redacted)*\n\n---\n\n## Key-Value Pairs:\n\nITEM_CODE :: 901016\nDESCRIPTION :: -TICKET CP\nQUANTITY :: 2\nUNIT_PRICE :: 60,000\nTOTAL_PRICE :: 60,000\nTOTAL_DISC :: -60,000\nTAX :: 5,455\nSUBTOTAL :: 60,000\nTOTAL_AMOUNT :: 60,000\nPAYMENT_METHOD :: EDC CIMB NIAGA\nCARD_LAST_4 :: xx7730\n```",
+  "text_blocks": [],
+  "layout": [],
+  "tables": [],
+  "kv_pairs": [
+    {
+      "key": "ITEM_CODE",
+      "value": "901016",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "DESCRIPTION",
+      "value": "-TICKET CP",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "QUANTITY",
+      "value": "2",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "UNIT_PRICE",
+      "value": "60,000",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "TOTAL_PRICE",
+      "value": "60,000",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "TOTAL_DISC",
+      "value": "-60,000",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "TAX",
+      "value": "5,455",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "SUBTOTAL",
+      "value": "60,000",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "TOTAL_AMOUNT",
+      "value": "60,000",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "PAYMENT_METHOD",
+      "value": "EDC CIMB NIAGA",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "CARD_LAST_4",
+      "value": "xx7730",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    }
+  ],
+  "latency_ms": 6535.921900009271,
+  "raw_response_path": null,
+  "error": null
+}

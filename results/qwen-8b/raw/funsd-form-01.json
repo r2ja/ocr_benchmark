@@ -1,0 +1,63 @@
+{
+  "page_id": "funsd-form-01",
+  "stack_id": "qwen3-vl-8b",
+  "model_revision": "qwen/qwen3-vl-8b-instruct",
+  "raw_text": "```markdown\nATT. GEN. ADMIN. OFFICE Fax:614-466-5087\nDec 10 '98 17:46 P.01\n\n# Attorney General\nBetty D. Montgomery\n\n## CONFIDENTIAL FACSIMILE\n## TRANSMISSION COVER SHEET\n\nFAX NO. (614) 466-5087\n\n**TO:** George Baroody\n\n**FAX NUMBER:** (336) 335-7392\n**PHONE NUMBER:** (336) 335-7363\n\n**DATE:** 12/10/98\n\n**NUMBER OF PAGES INCLUDING COVER SHEET:** 3\n\n**SENDER/PHONE NUMBER:** June Flynn for Eric Brown/(614) 466-8980\n\n**SPECIAL INSTRUCTIONS:**\n\n---\n\n## IF YOU DO NOT RECEIVE ANY OF THE PAGES PROPERLY,\n## PLEASE CONTACT SENDER\n## AS SOON AS POSSIBLE.\n\n---\n\n**NOTE:** THIS MESSAGE IS INTENDED ONLY FOR THE USE OF THE INDIVIDUAL OR ENTITY TO WHOM IT IS ADDRESSED AND MAY CONTAIN INFORMATION THAT IS PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM DISCLOSURE UNDER APPLICABLE LAW. If the reader of this message is not the intended recipient or the employee or agent responsible for delivering the message to the intended recipient, you are hereby notified that any dissemination, distribution, copying, or conveying of this communication in any manner is strictly prohibited. If you have received this communication in error, please notify us immediately by telephone and return the original message to us at the address below via the U.S. Postal Service. Thank you for your cooperation.\n\n---\n\nState Office Tower / 30 East Broad Street / Columbus, Ohio 43215-3428\nwww.ag.state.oh.us\nAn Equal Opportunity Employer\n\n\u00a9Printed on Recycled Paper\n\nKey-Value Pairs:\nFAX_NO :: (614) 466-5087\nTO :: George Baroody\nFAX_NUMBER :: (336) 335-7392\nPHONE_NUMBER :: (336) 335-7363\nDATE :: 12/10/98\nNUMBER_OF_PAGES_INCLUDING_COVER_SHEET :: 3\nSENDER_PHONE_NUMBER :: June Flynn for Eric Brown/(614) 466-8980\n```",
+  "text_blocks": [],
+  "layout": [],
+  "tables": [],
+  "kv_pairs": [
+    {
+      "key": "FAX_NO",
+      "value": "(614) 466-5087",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "TO",
+      "value": "George Baroody",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "FAX_NUMBER",
+      "value": "(336) 335-7392",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "PHONE_NUMBER",
+      "value": "(336) 335-7363",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "DATE",
+      "value": "12/10/98",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "NUMBER_OF_PAGES_INCLUDING_COVER_SHEET",
+      "value": "3",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "SENDER_PHONE_NUMBER",
+      "value": "June Flynn for Eric Brown/(614) 466-8980",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    }
+  ],
+  "latency_ms": 13690.59810001636,
+  "raw_response_path": null,
+  "error": null
+}

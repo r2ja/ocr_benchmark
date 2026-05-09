@@ -1,0 +1,175 @@
+{
+  "page_id": "docile-invoice-01",
+  "stack_id": "qwen3-vl-8b",
+  "model_revision": "qwen/qwen3-vl-8b-instruct",
+  "raw_text": "```markdown\n# Invoice no: 40378170\n\n**Date of issue:** 10/15/2012\n\n## Seller:\n\nPatel, Thompson and Montgomery  \n356 Kyle Vista  \nNew James, MA 46228  \n\nTax Id: 958-74-3511  \nIBAN: GB77WRBQ31965128414006  \n\n## Client:\n\nJackson, Odonnell and Jackson  \n267 John Track Suite 841  \nJenniferville, PA 98601  \n\nTax Id: 998-87-7723  \n\n## ITEMS\n\n| No. | Description                             | Qty | UM  | Net price | Net worth | VAT [%] | Gross worth |\n|-----|-----------------------------------------|-----|-----|-----------|-----------|---------|-------------|\n| 1.  | Leed's Wine Companion Bottle Corkscrew Opener Gift Box Set with Foil Cutter | 1,00 | each | 7,50      | 7,50      | 10%     | 8,25        |\n\n## SUMMARY\n\n| VAT [%] | Net worth | VAT    | Gross worth |\n|----------|-----------|--------|-------------|\n| 10%      | 7,50      | 0,75   | 8,25        |\n| **Total** | **$ 7,50** | **$ 0,75** | **$ 8,25** |\n\nKey-Value Pairs:\nINVOICE_NO :: 40378170\nDATE_OF_ISSUE :: 10/15/2012\nSELLER_NAME :: Patel, Thompson and Montgomery\nSELLER_ADDRESS :: 356 Kyle Vista, New James, MA 46228\nSELLER_TAX_ID :: 958-74-3511\nSELLER_IBAN :: GB77WRBQ31965128414006\nCLIENT_NAME :: Jackson, Odonnell and Jackson\nCLIENT_ADDRESS :: 267 John Track Suite 841, Jenniferville, PA 98601\nCLIENT_TAX_ID :: 998-87-7723\nITEM_DESCRIPTION :: Leed's Wine Companion Bottle Corkscrew Opener Gift Box Set with Foil Cutter\nITEM_QUANTITY :: 1,00\nITEM_UNIT_MEASURE :: each\nITEM_NET_PRICE :: 7,50\nITEM_NET_WORTH :: 7,50\nITEM_VAT_PERCENTAGE :: 10%\nITEM_GROSS_WORTH :: 8,25\nSUMMARY_VAT_PERCENTAGE :: 10%\nSUMMARY_NET_WORTH :: 7,50\nSUMMARY_VAT_AMOUNT :: 0,75\nSUMMARY_GROSS_WORTH :: 8,25\nSUMMARY_TOTAL_NET_WORTH :: $ 7,50\nSUMMARY_TOTAL_VAT_AMOUNT :: $ 0,75\nSUMMARY_TOTAL_GROSS_WORTH :: $ 8,25\n```",
+  "text_blocks": [],
+  "layout": [],
+  "tables": [],
+  "kv_pairs": [
+    {
+      "key": "INVOICE_NO",
+      "value": "40378170",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "DATE_OF_ISSUE",
+      "value": "10/15/2012",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "SELLER_NAME",
+      "value": "Patel, Thompson and Montgomery",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "SELLER_ADDRESS",
+      "value": "356 Kyle Vista, New James, MA 46228",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "SELLER_TAX_ID",
+      "value": "958-74-3511",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "SELLER_IBAN",
+      "value": "GB77WRBQ31965128414006",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "CLIENT_NAME",
+      "value": "Jackson, Odonnell and Jackson",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "CLIENT_ADDRESS",
+      "value": "267 John Track Suite 841, Jenniferville, PA 98601",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "CLIENT_TAX_ID",
+      "value": "998-87-7723",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "ITEM_DESCRIPTION",
+      "value": "Leed's Wine Companion Bottle Corkscrew Opener Gift Box Set with Foil Cutter",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "ITEM_QUANTITY",
+      "value": "1,00",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "ITEM_UNIT_MEASURE",
+      "value": "each",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "ITEM_NET_PRICE",
+      "value": "7,50",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "ITEM_NET_WORTH",
+      "value": "7,50",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "ITEM_VAT_PERCENTAGE",
+      "value": "10%",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "ITEM_GROSS_WORTH",
+      "value": "8,25",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "SUMMARY_VAT_PERCENTAGE",
+      "value": "10%",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "SUMMARY_NET_WORTH",
+      "value": "7,50",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "SUMMARY_VAT_AMOUNT",
+      "value": "0,75",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "SUMMARY_GROSS_WORTH",
+      "value": "8,25",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "SUMMARY_TOTAL_NET_WORTH",
+      "value": "$ 7,50",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "SUMMARY_TOTAL_VAT_AMOUNT",
+      "value": "$ 0,75",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "SUMMARY_TOTAL_GROSS_WORTH",
+      "value": "$ 8,25",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    }
+  ],
+  "latency_ms": 12474.966200010385,
+  "raw_response_path": null,
+  "error": null
+}

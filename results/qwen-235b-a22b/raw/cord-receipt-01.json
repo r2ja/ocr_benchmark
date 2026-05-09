@@ -1,0 +1,56 @@
+{
+  "page_id": "cord-receipt-01",
+  "stack_id": "qwen3-vl-235b-a22b",
+  "model_revision": "qwen/qwen3-vl-235b-a22b-instruct",
+  "raw_text": "```markdown\n901016 -TICKET CP\n2 60.000 \u20ac0.000\n\nTOTAL DISC $ -60.000\nTAX 5.455\nSubtotal 60.000\n\nTOTAL (Qty 2.00 60.000\n\n- EDC CIMB NIAGA No: xx7730 60.000\n\nCUSTOMER INFO\n\nKey-Value Pairs:\nTICKET CP :: 60.000\nTOTAL DISC $ :: -60.000\nTAX :: 5.455\nSubtotal :: 60.000\nTOTAL (Qty 2.00 :: 60.000\nEDC CIMB NIAGA No: :: xx7730\n```",
+  "text_blocks": [],
+  "layout": [],
+  "tables": [],
+  "kv_pairs": [
+    {
+      "key": "TICKET CP",
+      "value": "60.000",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "TOTAL DISC $",
+      "value": "-60.000",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "TAX",
+      "value": "5.455",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "Subtotal",
+      "value": "60.000",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "TOTAL (Qty 2.00",
+      "value": "60.000",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    },
+    {
+      "key": "EDC CIMB NIAGA No:",
+      "value": "xx7730",
+      "key_bbox": null,
+      "value_bbox": null,
+      "confidence": null
+    }
+  ],
+  "latency_ms": 5521.903200016823,
+  "raw_response_path": null,
+  "error": null
+}
