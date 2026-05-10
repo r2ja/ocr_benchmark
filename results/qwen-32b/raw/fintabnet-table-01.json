@@ -5,7 +5,176 @@
   "raw_text": "# Kinetic Parameter Table\n\nThe following table presents kinetic parameters for different experimental conditions:\n\n| Kinetic parameter | ND | D | D + dn-RhoA | D + dn-Rac1 |\n|-------------------|-----|-----|--------------|--------------|\n| Vmax              | 19.6 \u00b1 0.75 | 26.2 \u00b1 0.86* | 31.3 \u00b1 0.88\u2020 | 21.6 \u00b1 0.9 |\n| K' for H\u207a         | 0.150 \u00b1 0.02 | 0.113 \u00b1 0.05\u2020 | 0.105 \u00b1 0.07\u2020 | 0.137 \u00b1 0.023 |\n| n_app             | 2.19 | 2.16 | 2.03 | 2.23 |\n\n*Note: Superscripts * and \u2020 likely denote statistical significance or experimental conditions, but specific definitions are not provided in the document.*\n\n---\n\n## Key-Value Pairs:\n\nKinetic parameter :: Vmax\nND :: 19.6 \u00b1 0.75\nD :: 26.2 \u00b1 0.86*\nD + dn-RhoA :: 31.3 \u00b1 0.88\u2020\nD + dn-Rac1 :: 21.6 \u00b1 0.9\nKinetic parameter :: K' for H\u207a\nND :: 0.150 \u00b1 0.02\nD :: 0.113 \u00b1 0.05\u2020\nD + dn-RhoA :: 0.105 \u00b1 0.07\u2020\nD + dn-Rac1 :: 0.137 \u00b1 0.023\nKinetic parameter :: n_app\nND :: 2.19\nD :: 2.16\nD + dn-RhoA :: 2.03\nD + dn-Rac1 :: 2.23",
   "text_blocks": [],
   "layout": [],
-  "tables": [],
+  "tables": [
+    {
+      "cells": [
+        {
+          "row": 0,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Kinetic parameter",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "ND",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "D",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "D + dn-RhoA",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "D + dn-Rac1",
+          "is_header": true
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Vmax",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "19.6 \u00b1 0.75",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "26.2 \u00b1 0.86*",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "31.3 \u00b1 0.88\u2020",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "21.6 \u00b1 0.9",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "K' for H\u207a",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "0.150 \u00b1 0.02",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "0.113 \u00b1 0.05\u2020",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "0.105 \u00b1 0.07\u2020",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "0.137 \u00b1 0.023",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "n_app",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "2.19",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "2.16",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "2.03",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "2.23",
+          "is_header": false
+        }
+      ],
+      "bbox": null,
+      "html": null,
+      "n_rows": 4,
+      "n_cols": 5
+    }
+  ],
   "kv_pairs": [
     {
       "key": "Kinetic parameter",

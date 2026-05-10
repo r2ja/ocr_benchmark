@@ -1,0 +1,13 @@
+{
+  "page_id": "checkboxes_w9",
+  "stack_id": "qwen3-vl-8b",
+  "model_revision": "qwen/qwen3-vl-8b-instruct",
+  "raw_text": "Individual/sole proprietor :: UNCHECKED\nC corporation :: UNCHECKED\nS corporation :: UNCHECKED\nPartnership :: UNCHECKED\nTrust/estate :: UNCHECKED\nLLC :: UNCHECKED\nOther (see instructions) :: UNCHECKED",
+  "text_blocks": [],
+  "layout": [],
+  "tables": [],
+  "kv_pairs": [],
+  "latency_ms": 5014.727399997355,
+  "raw_response_path": null,
+  "error": null
+}

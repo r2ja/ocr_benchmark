@@ -1,0 +1,136 @@
+{
+  "page_id": "sec-10k-bank-01",
+  "stack_id": "deepseek-ocr-2",
+  "model_revision": "deepseek/deepseek-ocr-2",
+  "raw_text": "sub_title[[65, 52, 401, 89]]\n## JPMorgan Chase & Co.\nConsolidated statements of income\n\ntable[[66, 123, 928, 655]]\n<table>Year ended December 31, (in millions, except per share data)<td colspan=\"2\">2025<td colspan=\"2\">2024<td colspan=\"2\">2023RevenueInvestment banking fees\\( 9,615\\) 8,910\\( 6,519Principal transactions27,21224,78724,460Lending- and deposit-related fees9,0937,6067,413Asset management fees20,32717,80115,220Commissions and other fees8,5397,5306,836Investment securities losses(57)(1,021)(3,180)Mortgage fees and related income1,3811,4011,176Card income4,7205,4974,784Other income6,17412,4625,609Noninterest revenue87,00484,97368,837Interest income193,341193,933170,588Interest expense97,898101,35081,321Net interest income95,44392,58389,267Total net revenue182,447177,556158,104Provision for credit losses14,21210,6789,320Noninterest expenseCompensation expense54,48751,35746,465Occupancy expense5,4615,0264,590Technology, communications and equipment expense11,0299,8319,246Professional and outside services12,35611,05710,235Marketing5,5314,9744,591Other expense6,7769,55212,045Total noninterest expense95,64091,79787,172Income before income tax expense72,59575,08161,612Income tax expense15,54716,61012,060Net income\\( 57,048\\) 58,471\\( 49,552Net income applicable to common stockholders\\) 55,681\\( 56,868\\) 47,760Net income per common share dataBasic earnings per share\\( 20.05\\) 19.79\\( 16.25Diluted earnings per share20.0219.7516.23Weighted-average basic shares2,776.52,873.92,938.6Weighted-average diluted shares2,781.52,879.02,943.1</table>\n\ntext[[206, 661, 791, 677]]\nThe Notes to Consolidated Financial Statements are an integral part of these statements.\n\ntable[[68, 712, 928, 747]]\n<table>JPMorgan Chase &amp; Co./2025 Form 10-K165</table>",
+  "text_blocks": [
+    {
+      "text": "## JPMorgan Chase & Co.\nConsolidated statements of income",
+      "bbox": {
+        "x0": 65,
+        "y0": 52,
+        "x1": 401,
+        "y1": 89
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "The Notes to Consolidated Financial Statements are an integral part of these statements.",
+      "bbox": {
+        "x0": 206,
+        "y0": 661,
+        "x1": 791,
+        "y1": 677
+      },
+      "confidence": null,
+      "reading_order": null
+    }
+  ],
+  "layout": [
+    {
+      "label": "sub_title",
+      "bbox": {
+        "x0": 65,
+        "y0": 52,
+        "x1": 401,
+        "y1": 89
+      },
+      "confidence": null
+    },
+    {
+      "label": "table",
+      "bbox": {
+        "x0": 66,
+        "y0": 123,
+        "x1": 928,
+        "y1": 655
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 206,
+        "y0": 661,
+        "x1": 791,
+        "y1": 677
+      },
+      "confidence": null
+    },
+    {
+      "label": "table",
+      "bbox": {
+        "x0": 68,
+        "y0": 712,
+        "x1": 928,
+        "y1": 747
+      },
+      "confidence": null
+    }
+  ],
+  "tables": [
+    {
+      "cells": [
+        {
+          "row": 0,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "2025",
+          "is_header": false
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "2024",
+          "is_header": false
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "2023RevenueInvestment banking fees\\( 9,615\\) 8,910\\( 6,519Principal transactions27,21224,78724,460Lending- and deposit-related fees9,0937,6067,413Asset management fees20,32717,80115,220Commissions and other fees8,5397,5306,836Investment securities losses(57)(1,021)(3,180)Mortgage fees and related income1,3811,4011,176Card income4,7205,4974,784Other income6,17412,4625,609Noninterest revenue87,00484,97368,837Interest income193,341193,933170,588Interest expense97,898101,35081,321Net interest income95,44392,58389,267Total net revenue182,447177,556158,104Provision for credit losses14,21210,6789,320Noninterest expenseCompensation expense54,48751,35746,465Occupancy expense5,4615,0264,590Technology, communications and equipment expense11,0299,8319,246Professional and outside services12,35611,05710,235Marketing5,5314,9744,591Other expense6,7769,55212,045Total noninterest expense95,64091,79787,172Income before income tax expense72,59575,08161,612Income tax expense15,54716,61012,060Net income\\( 57,048\\) 58,471\\( 49,552Net income applicable to common stockholders\\) 55,681\\( 56,868\\) 47,760Net income per common share dataBasic earnings per share\\( 20.05\\) 19.79\\( 16.25Diluted earnings per share20.0219.7516.23Weighted-average basic shares2,776.52,873.92,938.6Weighted-average diluted shares2,781.52,879.02,943.1",
+          "is_header": false
+        }
+      ],
+      "bbox": {
+        "x0": 66,
+        "y0": 123,
+        "x1": 928,
+        "y1": 655
+      },
+      "html": null,
+      "n_rows": 1,
+      "n_cols": 3
+    },
+    {
+      "cells": [
+        {
+          "row": 0,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "JPMorgan Chase &amp; Co./2025 Form 10-K165",
+          "is_header": false
+        }
+      ],
+      "bbox": {
+        "x0": 68,
+        "y0": 712,
+        "x1": 928,
+        "y1": 747
+      },
+      "html": null,
+      "n_rows": 1,
+      "n_cols": 1
+    }
+  ],
+  "kv_pairs": [],
+  "latency_ms": 5753.483699999379,
+  "raw_response_path": null,
+  "error": null
+}

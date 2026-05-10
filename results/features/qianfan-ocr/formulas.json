@@ -1,0 +1,13 @@
+{
+  "page_id": "formulas_arxiv",
+  "stack_id": "qianfan-ocr-fast:free",
+  "model_revision": "baidu/qianfan-ocr-fast:free",
+  "raw_text": "(1) The Pythagorean theorem:\n(2) Euler's identity:\n(3) The Gaussian integral:\n\\[\\int_{-\\infty}^{\\infty} e^{-x^{2}} d x=\\sqrt{\\pi}\\]",
+  "text_blocks": [],
+  "layout": [],
+  "tables": [],
+  "kv_pairs": [],
+  "latency_ms": 3019.907300000341,
+  "raw_response_path": null,
+  "error": null
+}

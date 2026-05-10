@@ -31,15 +31,16 @@ if _env_path.exists():
     load_dotenv(_env_path)
 
 ADAPTER_REGISTRY = {
-    "docling":   ("adapters.docling_adapter",  "DoclingAdapter"),
-    "paddle-vl": ("adapters.paddle_vl_adapter", "PaddleVLAdapter"),
-    "dots":      ("adapters.dots_adapter",      "DotsAdapter"),
-    "deepseek":  ("adapters.deepseek_adapter",  "DeepSeekOCRAdapter"),
-    "qwen-32b":  ("adapters.qwen_adapter",      "QwenVLAdapter"),
+    "docling":      ("adapters.docling_adapter",  "DoclingAdapter"),
+    "paddle-vl":    ("adapters.paddle_vl_adapter", "PaddleVLAdapter"),
+    "dots":         ("adapters.dots_adapter",      "DotsAdapter"),
+    "deepseek-ocr": ("adapters.deepseek_adapter",  "DeepSeekOCRAdapter"),
+    "qianfan-ocr":  ("adapters.baidu_adapter",     "BaiduQianfanOCRAdapter"),
+    "qwen-32b":     ("adapters.qwen_adapter",      "QwenVLAdapter"),
     # Optional Qwen size variants (same adapter, different OpenRouter slug)
-    "qwen-8b":   ("adapters.qwen_adapter",      "QwenVLAdapter"),
-    "qwen-30b-a3b":  ("adapters.qwen_adapter",  "QwenVLAdapter"),
-    "qwen-235b-a22b":("adapters.qwen_adapter",  "QwenVLAdapter"),
+    "qwen-8b":      ("adapters.qwen_adapter",      "QwenVLAdapter"),
+    "qwen-30b-a3b": ("adapters.qwen_adapter",      "QwenVLAdapter"),
+    "qwen-235b-a22b":("adapters.qwen_adapter",     "QwenVLAdapter"),
 }
 
 # For the Qwen-* variants, override the slug at instantiation time.

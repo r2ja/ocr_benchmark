@@ -1,0 +1,162 @@
+{
+  "page_id": "signatures_jpm",
+  "stack_id": "docling",
+  "model_revision": "docling@local-pip",
+  "raw_text": "SIGNATURES\n\nPursuant to the requirements of Section 13 or 15(d) of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned, thereunto duly authorized.\n\n/s/ Jamie Dimon\n\nJamie Dimon Chairman and Chief Executive Officer\n\n/s/ J. Barnum Jeremy Barnum Executive Vice President and Chief Financial Officer\n\n/s/ E. Korablina\n\nElena Korablina Managing Director and Firmwide Controller",
+  "text_blocks": [
+    {
+      "text": "SIGNATURES",
+      "bbox": {
+        "x0": 39.91935475667318,
+        "y0": 766.6666666666666,
+        "x1": 224.5463663736979,
+        "y1": 740.5555572509766
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Pursuant to the requirements of Section 13 or 15(d) of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned, thereunto duly authorized.",
+      "bbox": {
+        "x0": 37.70161437988281,
+        "y0": 719.4444478352865,
+        "x1": 722.98388671875,
+        "y1": 647.7777811686198
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "/s/ Jamie Dimon",
+      "bbox": {
+        "x0": 57.66129048665365,
+        "y0": 580.5555623372396,
+        "x1": 217.89314778645834,
+        "y1": 554.4444580078125
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Jamie Dimon Chairman and Chief Executive Officer",
+      "bbox": {
+        "x0": 58.215728759765625,
+        "y0": 536.6666666666667,
+        "x1": 363.1552327473958,
+        "y1": 496.6666666666667
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "/s/ J. Barnum Jeremy Barnum Executive Vice President and Chief Financial Officer",
+      "bbox": {
+        "x0": 57.66129048665365,
+        "y0": 449.4444580078125,
+        "x1": 477.9233805338542,
+        "y1": 367.2222493489583
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "/s/ E. Korablina",
+      "bbox": {
+        "x0": 57.10685729980469,
+        "y0": 320.5555826822917,
+        "x1": 210.68548583984375,
+        "y1": 295.0
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Elena Korablina Managing Director and Firmwide Controller",
+      "bbox": {
+        "x0": 58.215728759765625,
+        "y0": 277.77779134114587,
+        "x1": 405.2923583984375,
+        "y1": 236.66666666666663
+      },
+      "confidence": null,
+      "reading_order": null
+    }
+  ],
+  "layout": [
+    {
+      "label": "section_header",
+      "bbox": {
+        "x0": 39.91935475667318,
+        "y0": 766.6666666666666,
+        "x1": 224.5463663736979,
+        "y1": 740.5555572509766
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 37.70161437988281,
+        "y0": 719.4444478352865,
+        "x1": 722.98388671875,
+        "y1": 647.7777811686198
+      },
+      "confidence": null
+    },
+    {
+      "label": "section_header",
+      "bbox": {
+        "x0": 57.66129048665365,
+        "y0": 580.5555623372396,
+        "x1": 217.89314778645834,
+        "y1": 554.4444580078125
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 58.215728759765625,
+        "y0": 536.6666666666667,
+        "x1": 363.1552327473958,
+        "y1": 496.6666666666667
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 57.66129048665365,
+        "y0": 449.4444580078125,
+        "x1": 477.9233805338542,
+        "y1": 367.2222493489583
+      },
+      "confidence": null
+    },
+    {
+      "label": "section_header",
+      "bbox": {
+        "x0": 57.10685729980469,
+        "y0": 320.5555826822917,
+        "x1": 210.68548583984375,
+        "y1": 295.0
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 58.215728759765625,
+        "y0": 277.77779134114587,
+        "x1": 405.2923583984375,
+        "y1": 236.66666666666663
+      },
+      "confidence": null
+    }
+  ],
+  "tables": [],
+  "kv_pairs": [],
+  "latency_ms": 4153.825000001234,
+  "raw_response_path": null,
+  "error": null
+}

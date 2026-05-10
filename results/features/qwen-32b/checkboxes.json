@@ -1,0 +1,13 @@
+{
+  "page_id": "checkboxes_w9",
+  "stack_id": "qwen3-vl-32b",
+  "model_revision": "qwen/qwen3-vl-32b-instruct",
+  "raw_text": "Individual/sole proprietor :: UNCHECKED\nC corporation :: UNCHECKED\nS corporation :: UNCHECKED\nPartnership :: UNCHECKED\nTrust/estate :: UNCHECKED\nLLC :: UNCHECKED\nOther (see instructions) :: UNCHECKED\nIf on line 3a you checked \"Partnership\" or \"Trust/estate,\" or checked \"LLC\" and entered \"P\" as its tax classification, and you are providing this form to a partnership, trust, or estate in which you have an ownership interest, check this box if you have any foreign partners, owners, or beneficiaries. See instructions :: UNCHECKED",
+  "text_blocks": [],
+  "layout": [],
+  "tables": [],
+  "kv_pairs": [],
+  "latency_ms": 9978.22819999783,
+  "raw_response_path": null,
+  "error": null
+}

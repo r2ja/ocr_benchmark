@@ -1,0 +1,13 @@
+{
+  "page_id": "codes_synthetic",
+  "stack_id": "qwen3-vl-235b-a22b",
+  "model_revision": "qwen/qwen3-vl-235b-a22b-instruct",
+  "raw_text": "qr :: UNDECODABLE\nean13 :: 5901234123457",
+  "text_blocks": [],
+  "layout": [],
+  "tables": [],
+  "kv_pairs": [],
+  "latency_ms": 2550.7213000018965,
+  "raw_response_path": null,
+  "error": null
+}

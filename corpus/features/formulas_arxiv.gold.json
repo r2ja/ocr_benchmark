@@ -1,0 +1,20 @@
+{
+  "axis": "formulas",
+  "source": "synthetic \u2014 three canonical math identities",
+  "license": "synthesized for benchmark",
+  "expected_formulas": [
+    {
+      "latex": "a^2 + b^2 = c^2",
+      "description": "Pythagorean theorem"
+    },
+    {
+      "latex": "e^{i\\pi} + 1 = 0",
+      "description": "Euler's identity"
+    },
+    {
+      "latex": "\\int_{-\\infty}^{\\infty} e^{-x^2} dx = \\sqrt{\\pi}",
+      "description": "Gaussian integral"
+    }
+  ],
+  "notes": "Three canonical identities rendered as Unicode math glyphs. Stacks are scored on whether they extract LaTeX equivalents."
+}

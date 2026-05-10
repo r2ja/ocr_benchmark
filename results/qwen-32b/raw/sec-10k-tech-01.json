@@ -5,7 +5,1152 @@
   "raw_text": "# Consolidated Financial Data\n\nThe following table sets forth, for the periods indicated, certain items in our Consolidated Statements of Income expressed as a percentage of revenue.\n\n## Consolidated Statements of Income (as a percentage of revenue)\n\n| | Year Ended | | |\n|---|---|---|---|\n| | **Jan 25, 2026** | | **Jan 26, 2025** |\n| Revenue | 100.0 % | | 100.0 % |\n| Cost of revenue | 28.9 | | 25.0 |\n| Gross profit | 71.1 | | 75.0 |\n| Operating expenses | | | |\n| &nbsp;&nbsp;&nbsp;&nbsp;Research and development | 8.6 | | 9.9 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Sales, general and administrative | 2.1 | | 2.7 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Total operating expenses | 10.7 | | 12.6 |\n| Operating income | 60.4 | | 62.4 |\n| Interest income | 1.1 | | 1.4 |\n| Interest expense | (0.1) | | (0.2) |\n| Other income, net | 4.2 | | 0.8 |\n| Total other income, net | 5.2 | | 2.0 |\n| Income before income tax | 65.5 | | 64.4 |\n| Income tax expense | 9.9 | | 8.6 |\n| Net income | **55.6 %** | | **55.8 %** |\n\n---\n\n## Reportable Segments\n\n### Revenue by Reportable Segments\n\n| | Year Ended | | | | |\n|---|---|---|---|---|---|\n| | **Jan 25, 2026** | **Jan 26, 2025** | **$ Change** | **% Change** | |\n| | ($ in millions) | | | | |\n| Compute & Networking | $ 193,479 | $ 116,193 | $ 77,286 | 67 % | |\n| Graphics | 22,459 | 14,304 | 8,155 | 57 % | |\n| **Total** | **$ 215,938** | **$ 130,497** | **$ 85,441** | **65 %** | |\n\n### Operating Income by Reportable Segments\n\n| | Year Ended | | | | |\n|---|---|---|---|---|---|\n| | **Jan 25, 2026** | **Jan 26, 2025** | **$ Change** | **% Change** | |\n| | ($ in millions) | | | | |\n| Compute & Networking | $ 130,141 | $ 82,875 | $ 47,266 | 57 % | |\n| Graphics | 9,156 | 5,085 | 4,071 | 80 % | |\n| **Total** | **$ 139,297** | **$ 87,960** | **$ 51,337** | **58 %** | |\n\n---\n\n### Compute & Networking revenue\nThe year over year increase was driven by the major platform shifts \u2013 accelerated computing and AI. Revenue from Data Center computing grew 59% driven by demand for our Blackwell computing platform. Revenue from Data Center networking grew 142% driven by the introduction and continued ramp of NVLink compute fabric for GB200 and GB300 systems and the growth of Ethernet and InfiniBand platforms.\n\n---\n\n## Key-Value Pairs:\n\nRevenue (Jan 25, 2026) :: 100.0 %\nRevenue (Jan 26, 2025) :: 100.0 %\nCost of revenue (Jan 25, 2026) :: 28.9\nCost of revenue (Jan 26, 2025) :: 25.0\nGross profit (Jan 25, 2026) :: 71.1\nGross profit (Jan 26, 2025) :: 75.0\nResearch and development (Jan 25, 2026) :: 8.6\nResearch and development (Jan 26, 2025) :: 9.9\nSales, general and administrative (Jan 25, 2026) :: 2.1\nSales, general and administrative (Jan 26, 2025) :: 2.7\nTotal operating expenses (Jan 25, 2026) :: 10.7\nTotal operating expenses (Jan 26, 2025) :: 12.6\nOperating income (Jan 25, 2026) :: 60.4\nOperating income (Jan 26, 2025) :: 62.4\nInterest income (Jan 25, 2026) :: 1.1\nInterest income (Jan 26, 2025) :: 1.4\nInterest expense (Jan 25, 2026) :: (0.1)\nInterest expense (Jan 26, 2025) :: (0.2)\nOther income, net (Jan 25, 2026) :: 4.2\nOther income, net (Jan 26, 2025) :: 0.8\nTotal other income, net (Jan 25, 2026) :: 5.2\nTotal other income, net (Jan 26, 2025) :: 2.0\nIncome before income tax (Jan 25, 2026) :: 65.5\nIncome before income tax (Jan 26, 2025) :: 64.4\nIncome tax expense (Jan 25, 2026) :: 9.9\nIncome tax expense (Jan 26, 2025) :: 8.6\nNet income (Jan 25, 2026) :: 55.6 %\nNet income (Jan 26, 2025) :: 55.8 %\nCompute & Networking Revenue (Jan 25, 2026) :: $ 193,479\nCompute & Networking Revenue (Jan 26, 2025) :: $ 116,193\nGraphics Revenue (Jan 25, 2026) :: $ 22,459\nGraphics Revenue (Jan 26, 2025) :: $ 14,304\nTotal Revenue (Jan 25, 2026) :: $ 215,938\nTotal Revenue (Jan 26, 2025) :: $ 130,497\nCompute & Networking Operating Income (Jan 25, 2026) :: $ 130,141\nCompute & Networking Operating Income (Jan 26, 2025) :: $ 82,875\nGraphics Operating Income (Jan 25, 2026) :: $ 9,156\nGraphics Operating Income (Jan 26, 2025) :: $ 5,085\nTotal Operating Income (Jan 25, 2026) :: $ 139,297\nTotal Operating Income (Jan 26, 2025) :: $ 87,960",
   "text_blocks": [],
   "layout": [],
-  "tables": [],
+  "tables": [
+    {
+      "cells": [
+        {
+          "row": 0,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Year Ended",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": true
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**Jan 25, 2026**",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**Jan 26, 2025**",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Revenue",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "100.0 %",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "100.0 %",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Cost of revenue",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "28.9",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "25.0",
+          "is_header": false
+        },
+        {
+          "row": 4,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Gross profit",
+          "is_header": false
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "71.1",
+          "is_header": false
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "75.0",
+          "is_header": false
+        },
+        {
+          "row": 5,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Operating expenses",
+          "is_header": false
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 6,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "&nbsp;&nbsp;&nbsp;&nbsp;Research and development",
+          "is_header": false
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "8.6",
+          "is_header": false
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "9.9",
+          "is_header": false
+        },
+        {
+          "row": 7,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "&nbsp;&nbsp;&nbsp;&nbsp;Sales, general and administrative",
+          "is_header": false
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "2.1",
+          "is_header": false
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "2.7",
+          "is_header": false
+        },
+        {
+          "row": 8,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "&nbsp;&nbsp;&nbsp;&nbsp;Total operating expenses",
+          "is_header": false
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "10.7",
+          "is_header": false
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "12.6",
+          "is_header": false
+        },
+        {
+          "row": 9,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Operating income",
+          "is_header": false
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "60.4",
+          "is_header": false
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "62.4",
+          "is_header": false
+        },
+        {
+          "row": 10,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Interest income",
+          "is_header": false
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "1.1",
+          "is_header": false
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "1.4",
+          "is_header": false
+        },
+        {
+          "row": 11,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Interest expense",
+          "is_header": false
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "(0.1)",
+          "is_header": false
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "(0.2)",
+          "is_header": false
+        },
+        {
+          "row": 12,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Other income, net",
+          "is_header": false
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "4.2",
+          "is_header": false
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "0.8",
+          "is_header": false
+        },
+        {
+          "row": 13,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Total other income, net",
+          "is_header": false
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "5.2",
+          "is_header": false
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "2.0",
+          "is_header": false
+        },
+        {
+          "row": 14,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Income before income tax",
+          "is_header": false
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "65.5",
+          "is_header": false
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "64.4",
+          "is_header": false
+        },
+        {
+          "row": 15,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Income tax expense",
+          "is_header": false
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "9.9",
+          "is_header": false
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "8.6",
+          "is_header": false
+        },
+        {
+          "row": 16,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Net income",
+          "is_header": false
+        },
+        {
+          "row": 16,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**55.6 %**",
+          "is_header": false
+        },
+        {
+          "row": 16,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 16,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**55.8 %**",
+          "is_header": false
+        }
+      ],
+      "bbox": null,
+      "html": null,
+      "n_rows": 17,
+      "n_cols": 4
+    },
+    {
+      "cells": [
+        {
+          "row": 0,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Year Ended",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 5,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": true
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**Jan 25, 2026**",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**Jan 26, 2025**",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**$ Change**",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**% Change**",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "($ in millions)",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Compute & Networking",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "$ 193,479",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "$ 116,193",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "$ 77,286",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "67 %",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 4,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Graphics",
+          "is_header": false
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "22,459",
+          "is_header": false
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "14,304",
+          "is_header": false
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "8,155",
+          "is_header": false
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "57 %",
+          "is_header": false
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 5,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**Total**",
+          "is_header": false
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**$ 215,938**",
+          "is_header": false
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**$ 130,497**",
+          "is_header": false
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**$ 85,441**",
+          "is_header": false
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**65 %**",
+          "is_header": false
+        },
+        {
+          "row": 5,
+          "col": 5,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        }
+      ],
+      "bbox": null,
+      "html": null,
+      "n_rows": 6,
+      "n_cols": 6
+    },
+    {
+      "cells": [
+        {
+          "row": 0,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Year Ended",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 5,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": true
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**Jan 25, 2026**",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**Jan 26, 2025**",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**$ Change**",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**% Change**",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "($ in millions)",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Compute & Networking",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "$ 130,141",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "$ 82,875",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "$ 47,266",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "57 %",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 4,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Graphics",
+          "is_header": false
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "9,156",
+          "is_header": false
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "5,085",
+          "is_header": false
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "4,071",
+          "is_header": false
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "80 %",
+          "is_header": false
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 5,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**Total**",
+          "is_header": false
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**$ 139,297**",
+          "is_header": false
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**$ 87,960**",
+          "is_header": false
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**$ 51,337**",
+          "is_header": false
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**58 %**",
+          "is_header": false
+        },
+        {
+          "row": 5,
+          "col": 5,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        }
+      ],
+      "bbox": null,
+      "html": null,
+      "n_rows": 6,
+      "n_cols": 6
+    }
+  ],
   "kv_pairs": [
     {
       "key": "Revenue (Jan 25, 2026)",

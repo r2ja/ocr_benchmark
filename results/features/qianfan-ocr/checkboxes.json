@@ -1,0 +1,13 @@
+{
+  "page_id": "checkboxes_w9",
+  "stack_id": "qianfan-ocr-fast:free",
+  "model_revision": "baidu/qianfan-ocr-fast:free",
+  "raw_text": "  Individual/sole proprietor :: UNCHECKED\n  C corporation :: UNCHECKED\n  S corporation :: UNCHECKED\n  Partnership :: UNCHECKED\n  Trust/estate :: UNCHECKED\n  Exempt from Foreign Account Tax Compliance Act (FATCA) reporting code (if any) :: UNCHECKED\n  (Applies to accounts maintained outside the United States.) :: UNCHECKED\n  NO_CHECKBOXES_FOUND",
+  "text_blocks": [],
+  "layout": [],
+  "tables": [],
+  "kv_pairs": [],
+  "latency_ms": 6700.233600000502,
+  "raw_response_path": null,
+  "error": null
+}

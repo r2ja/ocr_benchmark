@@ -1,0 +1,13 @@
+{
+  "page_id": "formulas_arxiv",
+  "stack_id": "qwen3-vl-8b",
+  "model_revision": "qwen/qwen3-vl-8b-instruct",
+  "raw_text": "a^2 + b^2 = c^2\ne^{(i\\pi)} + 1 = 0\n\\int_{-\\infty}^{\\infty} e^{-x^2} dx = \\sqrt{\\pi}",
+  "text_blocks": [],
+  "layout": [],
+  "tables": [],
+  "kv_pairs": [],
+  "latency_ms": 1943.7538999991375,
+  "raw_response_path": null,
+  "error": null
+}

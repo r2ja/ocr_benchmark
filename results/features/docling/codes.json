@@ -1,0 +1,78 @@
+{
+  "page_id": "codes_synthetic",
+  "stack_id": "docling",
+  "model_revision": "docling@local-pip",
+  "raw_text": "Sample Shipping Label\n\nQR code links to the order tracking page. EAN-13 barcode encodes the SKU (590123412345).",
+  "text_blocks": [
+    {
+      "text": "Sample Shipping Label",
+      "bbox": {
+        "x0": 37.147178649902344,
+        "y0": 869.1176452636719,
+        "x1": 337.09678141276044,
+        "y1": 833.2720591227213
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "QR code links to the order tracking page. EAN-13 barcode encodes the SKU (590123412345).",
+      "bbox": {
+        "x0": 37.147178649902344,
+        "y0": 818.9338226318359,
+        "x1": 461.8447672526042,
+        "y1": 771.5073547363281
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "5901234123457",
+      "bbox": {
+        "x0": 650.9072672526041,
+        "y0": 459.375,
+        "x1": 971.3710123697916,
+        "y1": 424.6323649088542
+      },
+      "confidence": null,
+      "reading_order": null
+    }
+  ],
+  "layout": [
+    {
+      "label": "section_header",
+      "bbox": {
+        "x0": 37.147178649902344,
+        "y0": 869.1176452636719,
+        "x1": 337.09678141276044,
+        "y1": 833.2720591227213
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 37.147178649902344,
+        "y0": 818.9338226318359,
+        "x1": 461.8447672526042,
+        "y1": 771.5073547363281
+      },
+      "confidence": null
+    },
+    {
+      "label": "caption",
+      "bbox": {
+        "x0": 650.9072672526041,
+        "y0": 459.375,
+        "x1": 971.3710123697916,
+        "y1": 424.6323649088542
+      },
+      "confidence": null
+    }
+  ],
+  "tables": [],
+  "kv_pairs": [],
+  "latency_ms": 2774.3343000001914,
+  "raw_response_path": null,
+  "error": null
+}

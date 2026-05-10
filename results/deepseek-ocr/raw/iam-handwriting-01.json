@@ -1,0 +1,36 @@
+{
+  "page_id": "iam-handwriting-01",
+  "stack_id": "deepseek-ocr-2",
+  "model_revision": "deepseek/deepseek-ocr-2",
+  "raw_text": "text[[0, 0, 999, 991]]\nassuredness \"Bella Bella Haire\" (Carlophone), a lively song that changes tempo midway.",
+  "text_blocks": [
+    {
+      "text": "assuredness \"Bella Bella Haire\" (Carlophone), a lively song that changes tempo midway.",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 999,
+        "y1": 991
+      },
+      "confidence": null,
+      "reading_order": null
+    }
+  ],
+  "layout": [
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 999,
+        "y1": 991
+      },
+      "confidence": null
+    }
+  ],
+  "tables": [],
+  "kv_pairs": [],
+  "latency_ms": 1877.9961999998704,
+  "raw_response_path": null,
+  "error": null
+}

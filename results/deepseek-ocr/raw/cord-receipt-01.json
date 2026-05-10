@@ -1,0 +1,309 @@
+{
+  "page_id": "cord-receipt-01",
+  "stack_id": "deepseek-ocr-2",
+  "model_revision": "deepseek/deepseek-ocr-2",
+  "raw_text": "text[[90, 599, 220, 633]]\n901016\n\ntext[[339, 592, 515, 629]]\n-TICKET CP\n\ntext[[196, 636, 230, 666]]\n2\n\ntext[[399, 630, 513, 664]]\n60.000\n\ntext[[699, 628, 815, 662]]\n60.000\n\ntext[[333, 702, 550, 740]]\nTOTAL DISC $\n\ntext[[480, 742, 550, 775]]\nTAX\n\ntext[[702, 740, 820, 775]]\n5.455\n\ntext[[401, 779, 550, 815]]\nSubtotal\n\ntext[[702, 780, 820, 815]]\n60.000\n\ntext[[100, 816, 852, 860]]\nTOTAL (Qty 2.00 60.000\n\ntext[[104, 894, 576, 935]]\n- EDC CIMB NIAGA No: xx7730\n\ntext[[720, 898, 844, 932]]\n60.000\n\ntext[[104, 976, 339, 999]]\nCUSTOMER INFO",
+  "text_blocks": [
+    {
+      "text": "901016",
+      "bbox": {
+        "x0": 90,
+        "y0": 599,
+        "x1": 220,
+        "y1": 633
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "-TICKET CP",
+      "bbox": {
+        "x0": 339,
+        "y0": 592,
+        "x1": 515,
+        "y1": 629
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "2",
+      "bbox": {
+        "x0": 196,
+        "y0": 636,
+        "x1": 230,
+        "y1": 666
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "60.000",
+      "bbox": {
+        "x0": 399,
+        "y0": 630,
+        "x1": 513,
+        "y1": 664
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "60.000",
+      "bbox": {
+        "x0": 699,
+        "y0": 628,
+        "x1": 815,
+        "y1": 662
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "TOTAL DISC $",
+      "bbox": {
+        "x0": 333,
+        "y0": 702,
+        "x1": 550,
+        "y1": 740
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "TAX",
+      "bbox": {
+        "x0": 480,
+        "y0": 742,
+        "x1": 550,
+        "y1": 775
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "5.455",
+      "bbox": {
+        "x0": 702,
+        "y0": 740,
+        "x1": 820,
+        "y1": 775
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Subtotal",
+      "bbox": {
+        "x0": 401,
+        "y0": 779,
+        "x1": 550,
+        "y1": 815
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "60.000",
+      "bbox": {
+        "x0": 702,
+        "y0": 780,
+        "x1": 820,
+        "y1": 815
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "TOTAL (Qty 2.00 60.000",
+      "bbox": {
+        "x0": 100,
+        "y0": 816,
+        "x1": 852,
+        "y1": 860
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "- EDC CIMB NIAGA No: xx7730",
+      "bbox": {
+        "x0": 104,
+        "y0": 894,
+        "x1": 576,
+        "y1": 935
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "60.000",
+      "bbox": {
+        "x0": 720,
+        "y0": 898,
+        "x1": 844,
+        "y1": 932
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "CUSTOMER INFO",
+      "bbox": {
+        "x0": 104,
+        "y0": 976,
+        "x1": 339,
+        "y1": 999
+      },
+      "confidence": null,
+      "reading_order": null
+    }
+  ],
+  "layout": [
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 90,
+        "y0": 599,
+        "x1": 220,
+        "y1": 633
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 339,
+        "y0": 592,
+        "x1": 515,
+        "y1": 629
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 196,
+        "y0": 636,
+        "x1": 230,
+        "y1": 666
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 399,
+        "y0": 630,
+        "x1": 513,
+        "y1": 664
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 699,
+        "y0": 628,
+        "x1": 815,
+        "y1": 662
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 333,
+        "y0": 702,
+        "x1": 550,
+        "y1": 740
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 480,
+        "y0": 742,
+        "x1": 550,
+        "y1": 775
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 702,
+        "y0": 740,
+        "x1": 820,
+        "y1": 775
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 401,
+        "y0": 779,
+        "x1": 550,
+        "y1": 815
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 702,
+        "y0": 780,
+        "x1": 820,
+        "y1": 815
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 100,
+        "y0": 816,
+        "x1": 852,
+        "y1": 860
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 104,
+        "y0": 894,
+        "x1": 576,
+        "y1": 935
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 720,
+        "y0": 898,
+        "x1": 844,
+        "y1": 932
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 104,
+        "y0": 976,
+        "x1": 339,
+        "y1": 999
+      },
+      "confidence": null
+    }
+  ],
+  "tables": [],
+  "kv_pairs": [],
+  "latency_ms": 2513.546499999393,
+  "raw_response_path": null,
+  "error": null
+}

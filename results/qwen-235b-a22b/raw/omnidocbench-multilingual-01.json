@@ -5,7 +5,264 @@
   "raw_text": "```markdown\n# PDF Types\n\n- Exam Paper\n- Slides\n- Academic Papers\n- Book\n- Textbook\n- Magazine\n- Notes\n- Newspaper\n- Financial Reports\n\n---\n\n## Page Attributes\n\n- PDF Type: Text Book\n- Layout Type: Single Column\n- Language: English\n- Fuzzy Scan: False\n- Watermark: False\n\n---\n\n## Recognition Annotations\n\n- Text span\n- Ignore Formula\n- Inline Equation\n- Footnote Marker\n- Isolated Equation\n- Table\n- Text\n- Latex\n- HTML\n- With Reading Order\n- With Text Attributes\n- With Relation Link\n- With Table Attributes\n\n---\n\n## Layout Annotations\n\n- Title\n- Text Block\n- Isolated Equation\n- Figure\n- Figure Caption\n- Figure Footnote\n- Table\n- Table Caption\n- Table Footnote\n- Reference\n- Code Block\n- Code Caption\n- Header\n- Footer\n- Page Footnote\n\n---\n\n## Annotation Attributes\n\n### Text Attributes\n\n| Language       | Background       | Rotate         |\n|----------------|------------------|----------------|\n| English        | White            | Normal         |\n| Chinese        | Single-Colored   | Horizontal     |\n| EN-CH-Mixed    | Multi-Colored    | Rotate 90\u00b0     |\n|                |                  | Rotate 270\u00b0    |\n\n### Table Attributes\n\n| Language       | Frame Type       | Special Issues       |\n|----------------|------------------|----------------------|\n| English        | Full Frame       | With Merge Cell      |\n| Chinese        | Omission Line    | With Formula         |\n| EN-CH-Mixed    | Three Line       | Vertical Rotate      |\n|                | No Frame         | Colorful Background  |\n\nKey-Value Pairs:\nPDF Type :: Text Book\nLayout Type :: Single Column\nLanguage :: English\nFuzzy Scan :: False\nWatermark :: False\n```",
   "text_blocks": [],
   "layout": [],
-  "tables": [],
+  "tables": [
+    {
+      "cells": [
+        {
+          "row": 0,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Language",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Background",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Rotate",
+          "is_header": true
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "English",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "White",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Normal",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Chinese",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Single-Colored",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Horizontal",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "EN-CH-Mixed",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Multi-Colored",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Rotate 90\u00b0",
+          "is_header": false
+        },
+        {
+          "row": 4,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Rotate 270\u00b0",
+          "is_header": false
+        }
+      ],
+      "bbox": null,
+      "html": null,
+      "n_rows": 5,
+      "n_cols": 3
+    },
+    {
+      "cells": [
+        {
+          "row": 0,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Language",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Frame Type",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Special Issues",
+          "is_header": true
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "English",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Full Frame",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "With Merge Cell",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Chinese",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Omission Line",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "With Formula",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "EN-CH-Mixed",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Three Line",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Vertical Rotate",
+          "is_header": false
+        },
+        {
+          "row": 4,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "No Frame",
+          "is_header": false
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Colorful Background",
+          "is_header": false
+        }
+      ],
+      "bbox": null,
+      "html": null,
+      "n_rows": 5,
+      "n_cols": 3
+    }
+  ],
   "kv_pairs": [
     {
       "key": "PDF Type",

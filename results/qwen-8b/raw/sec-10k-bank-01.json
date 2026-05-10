@@ -5,7 +5,1104 @@
   "raw_text": "```markdown\n# JPMorgan Chase & Co.\n## Consolidated statements of income\n\nYear ended December 31, (in millions, except per share data)\n\n|  | 2025 | 2024 | 2023 |\n|---|---|---|---|\n| **Revenue** |  |  |  |\n| Investment banking fees | $ 9,615 | $ 8,910 | $ 6,519 |\n| Principal transactions | 27,212 | 24,787 | 24,460 |\n| Lending- and deposit-related fees | 9,093 | 7,606 | 7,413 |\n| Asset management fees | 20,327 | 17,801 | 15,220 |\n| Commissions and other fees | 8,539 | 7,530 | 6,836 |\n| Investment securities losses | (57) | (1,021) | (3,180) |\n| Mortgage fees and related income | 1,381 | 1,401 | 1,176 |\n| Card income | 4,720 | 5,497 | 4,784 |\n| Other income | 6,174 | 12,462 | 5,609 |\n| **Noninterest revenue** | 87,004 | 84,973 | 68,837 |\n| Interest income | 193,341 | 193,933 | 170,588 |\n| Interest expense | 97,898 | 101,350 | 81,321 |\n| **Net interest income** | 95,443 | 92,583 | 89,267 |\n| **Total net revenue** | 182,447 | 177,556 | 158,104 |\n| Provision for credit losses | 14,212 | 10,678 | 9,320 |\n| **Noninterest expense** |  |  |  |\n| Compensation expense | 54,487 | 51,357 | 46,465 |\n| Occupancy expense | 5,461 | 5,026 | 4,590 |\n| Technology, communications and equipment expense | 11,029 | 9,831 | 9,246 |\n| Professional and outside services | 12,356 | 11,057 | 10,235 |\n| Marketing | 5,531 | 4,974 | 4,591 |\n| Other expense | 6,776 | 9,552 | 12,045 |\n| **Total noninterest expense** | 95,640 | 91,797 | 87,172 |\n| Income before income tax expense | 72,595 | 75,081 | 61,612 |\n| Income tax expense | 15,547 | 16,610 | 12,060 |\n| **Net income** | $ 57,048 | $ 58,471 | $ 49,552 |\n| **Net income applicable to common stockholders** | $ 55,681 | $ 56,868 | $ 47,760 |\n| **Net income per common share data** |  |  |  |\n| Basic earnings per share | $ 20.05 | $ 19.79 | $ 16.25 |\n| Diluted earnings per share | 20.02 | 19.75 | 16.23 |\n| **Weighted-average basic shares** | 2,776.5 | 2,873.9 | 2,938.6 |\n| **Weighted-average diluted shares** | 2,781.5 | 2,879.0 | 2,943.1 |\n\nThe Notes to Consolidated Financial Statements are an integral part of these statements.\n\nJPMorgan Chase & Co./2025 Form 10-K 165\n```",
   "text_blocks": [],
   "layout": [],
-  "tables": [],
+  "tables": [
+    {
+      "cells": [
+        {
+          "row": 0,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "2025",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "2024",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "2023",
+          "is_header": true
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**Revenue**",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Investment banking fees",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "$ 9,615",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "$ 8,910",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "$ 6,519",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Principal transactions",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "27,212",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "24,787",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "24,460",
+          "is_header": false
+        },
+        {
+          "row": 4,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Lending- and deposit-related fees",
+          "is_header": false
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "9,093",
+          "is_header": false
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "7,606",
+          "is_header": false
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "7,413",
+          "is_header": false
+        },
+        {
+          "row": 5,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Asset management fees",
+          "is_header": false
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "20,327",
+          "is_header": false
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "17,801",
+          "is_header": false
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "15,220",
+          "is_header": false
+        },
+        {
+          "row": 6,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Commissions and other fees",
+          "is_header": false
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "8,539",
+          "is_header": false
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "7,530",
+          "is_header": false
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "6,836",
+          "is_header": false
+        },
+        {
+          "row": 7,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Investment securities losses",
+          "is_header": false
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "(57)",
+          "is_header": false
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "(1,021)",
+          "is_header": false
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "(3,180)",
+          "is_header": false
+        },
+        {
+          "row": 8,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Mortgage fees and related income",
+          "is_header": false
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "1,381",
+          "is_header": false
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "1,401",
+          "is_header": false
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "1,176",
+          "is_header": false
+        },
+        {
+          "row": 9,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Card income",
+          "is_header": false
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "4,720",
+          "is_header": false
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "5,497",
+          "is_header": false
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "4,784",
+          "is_header": false
+        },
+        {
+          "row": 10,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Other income",
+          "is_header": false
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "6,174",
+          "is_header": false
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "12,462",
+          "is_header": false
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "5,609",
+          "is_header": false
+        },
+        {
+          "row": 11,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**Noninterest revenue**",
+          "is_header": false
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "87,004",
+          "is_header": false
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "84,973",
+          "is_header": false
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "68,837",
+          "is_header": false
+        },
+        {
+          "row": 12,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Interest income",
+          "is_header": false
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "193,341",
+          "is_header": false
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "193,933",
+          "is_header": false
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "170,588",
+          "is_header": false
+        },
+        {
+          "row": 13,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Interest expense",
+          "is_header": false
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "97,898",
+          "is_header": false
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "101,350",
+          "is_header": false
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "81,321",
+          "is_header": false
+        },
+        {
+          "row": 14,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**Net interest income**",
+          "is_header": false
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "95,443",
+          "is_header": false
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "92,583",
+          "is_header": false
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "89,267",
+          "is_header": false
+        },
+        {
+          "row": 15,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**Total net revenue**",
+          "is_header": false
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "182,447",
+          "is_header": false
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "177,556",
+          "is_header": false
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "158,104",
+          "is_header": false
+        },
+        {
+          "row": 16,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Provision for credit losses",
+          "is_header": false
+        },
+        {
+          "row": 16,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "14,212",
+          "is_header": false
+        },
+        {
+          "row": 16,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "10,678",
+          "is_header": false
+        },
+        {
+          "row": 16,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "9,320",
+          "is_header": false
+        },
+        {
+          "row": 17,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**Noninterest expense**",
+          "is_header": false
+        },
+        {
+          "row": 17,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 17,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 17,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 18,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Compensation expense",
+          "is_header": false
+        },
+        {
+          "row": 18,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "54,487",
+          "is_header": false
+        },
+        {
+          "row": 18,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "51,357",
+          "is_header": false
+        },
+        {
+          "row": 18,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "46,465",
+          "is_header": false
+        },
+        {
+          "row": 19,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Occupancy expense",
+          "is_header": false
+        },
+        {
+          "row": 19,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "5,461",
+          "is_header": false
+        },
+        {
+          "row": 19,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "5,026",
+          "is_header": false
+        },
+        {
+          "row": 19,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "4,590",
+          "is_header": false
+        },
+        {
+          "row": 20,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Technology, communications and equipment expense",
+          "is_header": false
+        },
+        {
+          "row": 20,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "11,029",
+          "is_header": false
+        },
+        {
+          "row": 20,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "9,831",
+          "is_header": false
+        },
+        {
+          "row": 20,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "9,246",
+          "is_header": false
+        },
+        {
+          "row": 21,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Professional and outside services",
+          "is_header": false
+        },
+        {
+          "row": 21,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "12,356",
+          "is_header": false
+        },
+        {
+          "row": 21,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "11,057",
+          "is_header": false
+        },
+        {
+          "row": 21,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "10,235",
+          "is_header": false
+        },
+        {
+          "row": 22,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Marketing",
+          "is_header": false
+        },
+        {
+          "row": 22,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "5,531",
+          "is_header": false
+        },
+        {
+          "row": 22,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "4,974",
+          "is_header": false
+        },
+        {
+          "row": 22,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "4,591",
+          "is_header": false
+        },
+        {
+          "row": 23,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Other expense",
+          "is_header": false
+        },
+        {
+          "row": 23,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "6,776",
+          "is_header": false
+        },
+        {
+          "row": 23,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "9,552",
+          "is_header": false
+        },
+        {
+          "row": 23,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "12,045",
+          "is_header": false
+        },
+        {
+          "row": 24,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**Total noninterest expense**",
+          "is_header": false
+        },
+        {
+          "row": 24,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "95,640",
+          "is_header": false
+        },
+        {
+          "row": 24,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "91,797",
+          "is_header": false
+        },
+        {
+          "row": 24,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "87,172",
+          "is_header": false
+        },
+        {
+          "row": 25,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Income before income tax expense",
+          "is_header": false
+        },
+        {
+          "row": 25,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "72,595",
+          "is_header": false
+        },
+        {
+          "row": 25,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "75,081",
+          "is_header": false
+        },
+        {
+          "row": 25,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "61,612",
+          "is_header": false
+        },
+        {
+          "row": 26,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Income tax expense",
+          "is_header": false
+        },
+        {
+          "row": 26,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "15,547",
+          "is_header": false
+        },
+        {
+          "row": 26,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "16,610",
+          "is_header": false
+        },
+        {
+          "row": 26,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "12,060",
+          "is_header": false
+        },
+        {
+          "row": 27,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**Net income**",
+          "is_header": false
+        },
+        {
+          "row": 27,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "$ 57,048",
+          "is_header": false
+        },
+        {
+          "row": 27,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "$ 58,471",
+          "is_header": false
+        },
+        {
+          "row": 27,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "$ 49,552",
+          "is_header": false
+        },
+        {
+          "row": 28,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**Net income applicable to common stockholders**",
+          "is_header": false
+        },
+        {
+          "row": 28,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "$ 55,681",
+          "is_header": false
+        },
+        {
+          "row": 28,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "$ 56,868",
+          "is_header": false
+        },
+        {
+          "row": 28,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "$ 47,760",
+          "is_header": false
+        },
+        {
+          "row": 29,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**Net income per common share data**",
+          "is_header": false
+        },
+        {
+          "row": 29,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 29,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 29,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 30,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Basic earnings per share",
+          "is_header": false
+        },
+        {
+          "row": 30,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "$ 20.05",
+          "is_header": false
+        },
+        {
+          "row": 30,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "$ 19.79",
+          "is_header": false
+        },
+        {
+          "row": 30,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "$ 16.25",
+          "is_header": false
+        },
+        {
+          "row": 31,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Diluted earnings per share",
+          "is_header": false
+        },
+        {
+          "row": 31,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "20.02",
+          "is_header": false
+        },
+        {
+          "row": 31,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "19.75",
+          "is_header": false
+        },
+        {
+          "row": 31,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "16.23",
+          "is_header": false
+        },
+        {
+          "row": 32,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**Weighted-average basic shares**",
+          "is_header": false
+        },
+        {
+          "row": 32,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "2,776.5",
+          "is_header": false
+        },
+        {
+          "row": 32,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "2,873.9",
+          "is_header": false
+        },
+        {
+          "row": 32,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "2,938.6",
+          "is_header": false
+        },
+        {
+          "row": 33,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**Weighted-average diluted shares**",
+          "is_header": false
+        },
+        {
+          "row": 33,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "2,781.5",
+          "is_header": false
+        },
+        {
+          "row": 33,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "2,879.0",
+          "is_header": false
+        },
+        {
+          "row": 33,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "2,943.1",
+          "is_header": false
+        }
+      ],
+      "bbox": null,
+      "html": null,
+      "n_rows": 34,
+      "n_cols": 4
+    }
+  ],
   "kv_pairs": [],
   "latency_ms": 21751.193700009026,
   "raw_response_path": null,

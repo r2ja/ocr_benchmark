@@ -1,0 +1,13 @@
+{
+  "page_id": "signatures_jpm",
+  "stack_id": "qianfan-ocr-fast:free",
+  "model_revision": "baidu/qianfan-ocr-fast:free",
+  "raw_text": "Jamie Dimon :: Chairman and Chief Executive Officer\nJeremy Barnum :: Executive Vice President and Chief Financial Officer\nElena Korab\u043b\u0438\u043d\u0430 :: Managing Director and Firmwide Controller",
+  "text_blocks": [],
+  "layout": [],
+  "tables": [],
+  "kv_pairs": [],
+  "latency_ms": 2824.4212999998126,
+  "raw_response_path": null,
+  "error": null
+}

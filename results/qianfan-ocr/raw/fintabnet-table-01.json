@@ -1,0 +1,182 @@
+{
+  "page_id": "fintabnet-table-01",
+  "stack_id": "qianfan-ocr-fast:free",
+  "model_revision": "baidu/qianfan-ocr-fast:free",
+  "raw_text": "<table><tr><td>Kinetic parameter</td><td>ND</td><td>D</td><td>D+dn-RhoA</td><td>D+dn-Rac1</td></tr><tr><td>Vmax</td><td>19.6\u00b10.75</td><td>26.2\u00b10.86*</td><td>31.3\u00b10.88*</td><td>21.6\u00b10.9</td></tr><tr><td>K&#x27; for H+</td><td>0.150\u00b10.02</td><td>0.113\u00b10.05*</td><td>0.106\u00b10.07*</td><td>0.137\u00b10.023</td></tr><tr><td>napp</td><td>2.19</td><td>2.16</td><td>2.03</td><td>2.23</td></tr></table>",
+  "text_blocks": [],
+  "layout": [],
+  "tables": [
+    {
+      "cells": [
+        {
+          "row": 0,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Kinetic parameter",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "ND",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "D",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "D+dn-RhoA",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "D+dn-Rac1",
+          "is_header": true
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Vmax",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "19.6\u00b10.75",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "26.2\u00b10.86*",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "31.3\u00b10.88*",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "21.6\u00b10.9",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "K&#x27; for H+",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "0.150\u00b10.02",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "0.113\u00b10.05*",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "0.106\u00b10.07*",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "0.137\u00b10.023",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "napp",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "2.19",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "2.16",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "2.03",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "2.23",
+          "is_header": false
+        }
+      ],
+      "bbox": null,
+      "html": null,
+      "n_rows": 4,
+      "n_cols": 5
+    }
+  ],
+  "kv_pairs": [],
+  "latency_ms": 3898.304299999836,
+  "raw_response_path": null,
+  "error": null
+}

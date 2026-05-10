@@ -1,0 +1,13 @@
+{
+  "page_id": "checkboxes_w9",
+  "stack_id": "qwen3-vl-235b-a22b",
+  "model_revision": "qwen/qwen3-vl-235b-a22b-instruct",
+  "raw_text": "Individual/sole proprietor :: UNCHECKED\nC corporation :: UNCHECKED\nS corporation :: UNCHECKED\nPartnership :: UNCHECKED\nTrust/estate :: UNCHECKED\nLLC. Enter the tax classification (C = C corporation, S = S corporation, P = Partnership) :: UNCHECKED\nOther (see instructions) :: UNCHECKED\n3b checkbox (if you have any foreign partners, owners, or beneficiaries) :: UNCHECKED",
+  "text_blocks": [],
+  "layout": [],
+  "tables": [],
+  "kv_pairs": [],
+  "latency_ms": 5910.272900000564,
+  "raw_response_path": null,
+  "error": null
+}

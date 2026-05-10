@@ -1,0 +1,13 @@
+{
+  "page_id": "signatures_jpm",
+  "stack_id": "qwen3-vl-235b-a22b",
+  "model_revision": "qwen/qwen3-vl-235b-a22b-instruct",
+  "raw_text": "Jamie Dimon :: Chairman and Chief Executive Officer\nJ. Barnum :: Executive Vice President and Chief Financial Officer\nE. Korablina :: Managing Director and Firmwide Controller",
+  "text_blocks": [],
+  "layout": [],
+  "tables": [],
+  "kv_pairs": [],
+  "latency_ms": 1636.9912999980443,
+  "raw_response_path": null,
+  "error": null
+}

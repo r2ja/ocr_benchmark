@@ -1,0 +1,16 @@
+{
+  "axis": "codes",
+  "source": "synthetic \u2014 QR + EAN-13 generated locally",
+  "license": "synthesized for benchmark",
+  "expected_codes": [
+    {
+      "type": "qr",
+      "payload": "https://logarithmtech.example/order/LT-2026-05-09"
+    },
+    {
+      "type": "ean13",
+      "payload": "5901234123457"
+    }
+  ],
+  "notes": "Stacks are scored on exact-match decoding of payload. Synthetic so gold is exact by construction."
+}

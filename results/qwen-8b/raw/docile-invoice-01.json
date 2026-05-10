@@ -5,7 +5,248 @@
   "raw_text": "```markdown\n# Invoice no: 40378170\n\n**Date of issue:** 10/15/2012\n\n## Seller:\n\nPatel, Thompson and Montgomery  \n356 Kyle Vista  \nNew James, MA 46228  \n\nTax Id: 958-74-3511  \nIBAN: GB77WRBQ31965128414006  \n\n## Client:\n\nJackson, Odonnell and Jackson  \n267 John Track Suite 841  \nJenniferville, PA 98601  \n\nTax Id: 998-87-7723  \n\n## ITEMS\n\n| No. | Description                             | Qty | UM  | Net price | Net worth | VAT [%] | Gross worth |\n|-----|-----------------------------------------|-----|-----|-----------|-----------|---------|-------------|\n| 1.  | Leed's Wine Companion Bottle Corkscrew Opener Gift Box Set with Foil Cutter | 1,00 | each | 7,50      | 7,50      | 10%     | 8,25        |\n\n## SUMMARY\n\n| VAT [%] | Net worth | VAT    | Gross worth |\n|----------|-----------|--------|-------------|\n| 10%      | 7,50      | 0,75   | 8,25        |\n| **Total** | **$ 7,50** | **$ 0,75** | **$ 8,25** |\n\nKey-Value Pairs:\nINVOICE_NO :: 40378170\nDATE_OF_ISSUE :: 10/15/2012\nSELLER_NAME :: Patel, Thompson and Montgomery\nSELLER_ADDRESS :: 356 Kyle Vista, New James, MA 46228\nSELLER_TAX_ID :: 958-74-3511\nSELLER_IBAN :: GB77WRBQ31965128414006\nCLIENT_NAME :: Jackson, Odonnell and Jackson\nCLIENT_ADDRESS :: 267 John Track Suite 841, Jenniferville, PA 98601\nCLIENT_TAX_ID :: 998-87-7723\nITEM_DESCRIPTION :: Leed's Wine Companion Bottle Corkscrew Opener Gift Box Set with Foil Cutter\nITEM_QUANTITY :: 1,00\nITEM_UNIT_MEASURE :: each\nITEM_NET_PRICE :: 7,50\nITEM_NET_WORTH :: 7,50\nITEM_VAT_PERCENTAGE :: 10%\nITEM_GROSS_WORTH :: 8,25\nSUMMARY_VAT_PERCENTAGE :: 10%\nSUMMARY_NET_WORTH :: 7,50\nSUMMARY_VAT_AMOUNT :: 0,75\nSUMMARY_GROSS_WORTH :: 8,25\nSUMMARY_TOTAL_NET_WORTH :: $ 7,50\nSUMMARY_TOTAL_VAT_AMOUNT :: $ 0,75\nSUMMARY_TOTAL_GROSS_WORTH :: $ 8,25\n```",
   "text_blocks": [],
   "layout": [],
-  "tables": [],
+  "tables": [
+    {
+      "cells": [
+        {
+          "row": 0,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "No.",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Description",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Qty",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "UM",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Net price",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 5,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Net worth",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 6,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "VAT [%]",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 7,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Gross worth",
+          "is_header": true
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "1.",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Leed's Wine Companion Bottle Corkscrew Opener Gift Box Set with Foil Cutter",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "1,00",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "each",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "7,50",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "7,50",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 6,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "10%",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 7,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "8,25",
+          "is_header": false
+        }
+      ],
+      "bbox": null,
+      "html": null,
+      "n_rows": 2,
+      "n_cols": 8
+    },
+    {
+      "cells": [
+        {
+          "row": 0,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "VAT [%]",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Net worth",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "VAT",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Gross worth",
+          "is_header": true
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "10%",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "7,50",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "0,75",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "8,25",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**Total**",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**$ 7,50**",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**$ 0,75**",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "**$ 8,25**",
+          "is_header": false
+        }
+      ],
+      "bbox": null,
+      "html": null,
+      "n_rows": 3,
+      "n_cols": 4
+    }
+  ],
   "kv_pairs": [
     {
       "key": "INVOICE_NO",

@@ -1,0 +1,1086 @@
+{
+  "page_id": "checkboxes_w9",
+  "stack_id": "docling",
+  "model_revision": "docling@local-pip",
+  "raw_text": "W-9 Form\n\n(Rev. March 2024)\n\nDepartment of the Treasury Internal RevenueService Give form to the requester. Do not send to the IRS.\n\nRequest for Taxpayer Identification Number and Certification\n\nGotowww.irs.gov/FormW9forinstructionsandthelatestinformation.\n\nBeforeyou begin.For guidancerelated to thepurpose of FormW-9,seePurpose of Form,below.\n\n- 1Name of entity/individual. An entry is required.(For a sole proprietor or disregarded entity,enter the owner's name on line 1, and enter the business/disregarded entity's name on line 2.)\n\n- 2 2Businessname/disregardedentityname,if different fromabove.\n\nSpecific Instructions on page 3 3 See\n\n- 3a Check the appropriate boxfor federal tax classification of the entity/individual whose name is entered on line 1.Check only one of the following seven boxes.\n\n- 4 Exemptions (codes apply only to certain entities,not individuals; see instructions on page 3):\n\n- [ ] Individual/sole proprietor  C corporation  [\n\n- [ ] S corporation[\n\n- [ ] Partnership  Trust/estate\n\n- [ ] LLC. Enter the tax classification (C = C corporation, S = S corporation, P = Partnership)  \u00b7 :  \u00b7\n\nExempt payee code(if any)\n\nExemptionfromForeignAccountTax Compliance Act (FATCA) reporting code (if any)\n\nboxforthetaxclassificationof its owner.\n\n- [ ] Other (see instructions)\n\n- [ ] 3b If on line 3a you checked \u201cPartnership\" or \u201cTrust/estate,\u201dor checked \u201cLLC\" and entered \u201cP\" as its tax classification, andyouareprovidingthisformtoapartnership,trust,orestateinwhichyouhaveanownershipinterest,check\n\n(Applies to accounts maintained outside theUnitedStates.)\n\n- 5Address (number, street, and apt. or suite no.). See instructions.\n\nRequester's name and address (optional)\n\n- 6 City, state, and ZIP code\n\n- List account number(s)here(optional)\n\nPart I TaxpayerIdentificationNumber(TIN)\n\nEnter yourTIN in the appropriate box.The TIN provided must match the name given on line 1 to avoid backup withholding.For individuals, this is generally your social security number(SSN).However,for a resident alien,soleproprietor,ordisregarded entity,see theinstructionsforPartI,later.Forother entities,it isyouremployeridentificationnumber(EiN).If youdonothavea number,seeHowtogeta TIN, later.\n\nSocialsecurity number\n\nor\n\nEmployeridentificationnumber\n\nNote:If the account is in more than one name,see the instructionsfor line 1.See alsoWhat Name and NumberTo Give theRequesterforguidelineson whose number toenter.\n\nPart IlCertification\n\nUnder penalties of perjury, I certify that:\n\n- 1.The number shown on thisform ismy correct taxpayeridentification number(orI am waiting fora number tobeissued tome); and\n- 2.Iam not subject to backup withholding because (a) Iam exempt from backup withholding,or(b) Ihave not been notified by the Internal Revenue Service(IRS)thatIamsubjecttobackupwithholdingasaresultof afailuretoreportall interestordividends,or(c)theIRShasnotified methatIam nolongersubjecttobackupwithholding;and\n- 3.Iam a U.S. citizen or other U.S. person (defined below); and\n4. The FATCA code(s) entered on this form (if any) indicating that I am exempt from FATCA reporting is correct.\n\nbecauseyouhavefailed toreport allinterest and dividendsonyourtaxreturn.Forrealestatetransactions,item2doesnot apply.Formortgage interestpaid, acquisitionor abandonment of secured property,cancellation of debt,contributions to an individual retirement arrangement (IRA),and,generally,payments otherthan interest and dividends,you arenot required to sign the certification,but you must provideyourcorrectTIN.See the instructionsforPart ll,later.\n\nSign Here Signature of U.S. person\n\nGeneral Instructions\n\nSectionreferences areto theInternal RevenueCodeunlessotherwise noted.\n\nFuturedevelopments.Forthelatestinformationaboutdevelopments after they were published, go to www.irs.gov/FormW9.\n\nWhat's New\n\nLine 3a hasbeenmodified toclarify how a disregarded entitycompletes thisline.AnLLCthatisadisregardedentityshouldcheckthe appropriateboxfor thetaxclassification of its owner.Otherwise,it should check the \"LLC\" box and enter its appropriate tax classification.\n\nDate\n\nNew line 3bhas been added to this form.A flow-through entity is required to complete this line to indicate that it has direct orindirect foreignpartners,owners,orbeneficiaries when it provides theFormW-9 to anotherflow-throughentityinwhich it hasan ownershipinterest.This changeisintendedtoprovideaflow-throughentitywithinformation regarding the status of its indirect foreign partners,owners,or partners may be required to completeSchedulesK-2 and K-3.See the Partnership Instructions for Schedules K-2 and K-3 (Form 1065).\n\nPurpose of Form\n\nAn individual or entity (Form W-9 requester) who isrequired to file an information return with the IRS is giving you this form because they",
+  "text_blocks": [
+    {
+      "text": "W-9 Form",
+      "bbox": {
+        "x0": 98.50260416666667,
+        "y0": 2110.1814473470054,
+        "x1": 274.4791666666667,
+        "y1": 2040.3225809733074
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "(Rev. March 2024)",
+      "bbox": {
+        "x0": 97.39583333333333,
+        "y0": 2043.649190266927,
+        "x1": 262.3046875,
+        "y1": 2017.0362955729167
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Department of the Treasury Internal RevenueService Give form to the requester. Do not send to the IRS.",
+      "bbox": {
+        "x0": 96.2890625,
+        "y0": 2017.0362955729167,
+        "x1": 334.2447916666667,
+        "y1": 1968.2459716796875
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Request for Taxpayer Identification Number and Certification",
+      "bbox": {
+        "x0": 508.0078125,
+        "y0": 2096.875,
+        "x1": 1190.8854166666667,
+        "y1": 2015.9274088541667
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Gotowww.irs.gov/FormW9forinstructionsandthelatestinformation.",
+      "bbox": {
+        "x0": 477.0182291666667,
+        "y0": 2001.5120849609375,
+        "x1": 1224.0885416666667,
+        "y1": 1976.008056640625
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Beforeyou begin.For guidancerelated to thepurpose of FormW-9,seePurpose of Form,below.",
+      "bbox": {
+        "x0": 97.39583333333333,
+        "y0": 1961.5927327473958,
+        "x1": 1081.3151041666667,
+        "y1": 1932.7620849609375
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "1Name of entity/individual. An entry is required.(For a sole proprietor or disregarded entity,enter the owner's name on line 1, and enter the business/disregarded entity's name on line 2.)",
+      "bbox": {
+        "x0": 164.90885416666666,
+        "y0": 1929.4354858398438,
+        "x1": 1594.8567708333333,
+        "y1": 1880.6451619466145
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "2 2Businessname/disregardedentityname,if different fromabove.",
+      "bbox": {
+        "x0": 170.44270833333334,
+        "y0": 1828.5282389322917,
+        "x1": 761.4583333333334,
+        "y1": 1803.024169921875
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Specific Instructions on page 3 3 See",
+      "bbox": {
+        "x0": 121.74479166666667,
+        "y0": 1770.866943359375,
+        "x1": 156.0546875,
+        "y1": 1388.3064778645835
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "3a Check the appropriate boxfor federal tax classification of the entity/individual whose name is entered on line 1.Check only one of the following seven boxes.",
+      "bbox": {
+        "x0": 164.90885416666666,
+        "y0": 1764.2137044270833,
+        "x1": 1234.0494791666667,
+        "y1": 1709.8790283203125
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "4 Exemptions (codes apply only to certain entities,not individuals; see instructions on page 3):",
+      "bbox": {
+        "x0": 1267.2526041666667,
+        "y0": 1759.7782389322917,
+        "x1": 1578.2552083333333,
+        "y1": 1685.483846028646
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Individual/sole proprietor  C corporation  [",
+      "bbox": {
+        "x0": 197.00520833333334,
+        "y0": 1704.3346761067708,
+        "x1": 705.0130208333334,
+        "y1": 1669.959676106771
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "S corporation[",
+      "bbox": {
+        "x0": 689.5182291666666,
+        "y0": 1702.116943359375,
+        "x1": 903.125,
+        "y1": 1672.1774088541665
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Partnership  Trust/estate",
+      "bbox": {
+        "x0": 887.6302083333334,
+        "y0": 1703.2257893880208,
+        "x1": 1228.515625,
+        "y1": 1669.959676106771
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Print or type.",
+      "bbox": {
+        "x0": 98.50260416666667,
+        "y0": 1657.7620849609375,
+        "x1": 126.171875,
+        "y1": 1506.9556477864585
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "LLC. Enter the tax classification (C = C corporation, S = S corporation, P = Partnership)  \u00b7 :  \u00b7",
+      "bbox": {
+        "x0": 195.8984375,
+        "y0": 1667.741943359375,
+        "x1": 1133.3333333333333,
+        "y1": 1627.8225911458335
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Exempt payee code(if any)",
+      "bbox": {
+        "x0": 1268.359375,
+        "y0": 1665.524169921875,
+        "x1": 1504.1015625,
+        "y1": 1634.475789388021
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "ExemptionfromForeignAccountTax Compliance Act (FATCA) reporting code (if any)",
+      "bbox": {
+        "x0": 1267.2526041666667,
+        "y0": 1612.298380533854,
+        "x1": 1599.2838541666667,
+        "y1": 1536.8951416015625
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "boxforthetaxclassificationof its owner.",
+      "bbox": {
+        "x0": 236.84895833333334,
+        "y0": 1590.1209716796875,
+        "x1": 596.5494791666666,
+        "y1": 1565.725789388021
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Other (see instructions)",
+      "bbox": {
+        "x0": 198.11197916666666,
+        "y0": 1564.616943359375,
+        "x1": 444.921875,
+        "y1": 1529.133056640625
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "3b If on line 3a you checked \u201cPartnership\" or \u201cTrust/estate,\u201dor checked \u201cLLC\" and entered \u201cP\" as its tax classification, andyouareprovidingthisformtoapartnership,trust,orestateinwhichyouhaveanownershipinterest,check",
+      "bbox": {
+        "x0": 166.015625,
+        "y0": 1516.9354654947915,
+        "x1": 1209.7005208333333,
+        "y1": 1464.8185221354165
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "(Applies to accounts maintained outside theUnitedStates.)",
+      "bbox": {
+        "x0": 1289.3880208333333,
+        "y0": 1500.3024088541665,
+        "x1": 1572.7213541666667,
+        "y1": 1453.7298177083335
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "5Address (number, street, and apt. or suite no.). See instructions.",
+      "bbox": {
+        "x0": 163.80208333333334,
+        "y0": 1431.5524088541665,
+        "x1": 762.5651041666666,
+        "y1": 1399.3951822916665
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Requester's name and address (optional)",
+      "bbox": {
+        "x0": 1086.8489583333333,
+        "y0": 1429.3346354166665,
+        "x1": 1452.0833333333333,
+        "y1": 1400.5039876302085
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "6 City, state, and ZIP code",
+      "bbox": {
+        "x0": 164.90885416666666,
+        "y0": 1362.8024088541665,
+        "x1": 422.7864583333333,
+        "y1": 1335.0806477864585
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "List account number(s)here(optional)",
+      "bbox": {
+        "x0": 193.68489583333334,
+        "y0": 1295.1612955729165,
+        "x1": 533.4635416666666,
+        "y1": 1268.54833984375
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Part I TaxpayerIdentificationNumber(TIN)",
+      "bbox": {
+        "x0": 110.67708333333333,
+        "y0": 1231.9556477864585,
+        "x1": 729.3619791666666,
+        "y1": 1198.6895345052085
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Enter yourTIN in the appropriate box.The TIN provided must match the name given on line 1 to avoid backup withholding.For individuals, this is generally your social security number(SSN).However,for a resident alien,soleproprietor,ordisregarded entity,see theinstructionsforPartI,later.Forother entities,it isyouremployeridentificationnumber(EiN).If youdonothavea number,seeHowtogeta TIN, later.",
+      "bbox": {
+        "x0": 95.18229166666667,
+        "y0": 1189.8185221354165,
+        "x1": 1121.1588541666667,
+        "y1": 1053.4274088541667
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Socialsecurity number",
+      "bbox": {
+        "x0": 1167.6432291666667,
+        "y0": 1197.5806477864585,
+        "x1": 1386.7838541666667,
+        "y1": 1172.0765787760417
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "or",
+      "bbox": {
+        "x0": 1158.7890625,
+        "y0": 1093.3467610677083,
+        "x1": 1189.7786458333333,
+        "y1": 1070.0604654947917
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Employeridentificationnumber",
+      "bbox": {
+        "x0": 1167.6432291666667,
+        "y0": 1064.51611328125,
+        "x1": 1465.3645833333333,
+        "y1": 1039.0120442708333
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Note:If the account is in more than one name,see the instructionsfor line 1.See alsoWhat Name and NumberTo Give theRequesterforguidelineson whose number toenter.",
+      "bbox": {
+        "x0": 95.18229166666667,
+        "y0": 1037.9032389322917,
+        "x1": 1122.265625,
+        "y1": 980.241943359375
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Part IlCertification",
+      "bbox": {
+        "x0": 101.82291666666667,
+        "y0": 966.9354654947917,
+        "x1": 408.3984375,
+        "y1": 931.4515787760417
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Under penalties of perjury, I certify that:",
+      "bbox": {
+        "x0": 97.39583333333333,
+        "y0": 927.01611328125,
+        "x1": 494.7265625,
+        "y1": 895.9676920572917
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "1.The number shown on thisform ismy correct taxpayeridentification number(orI am waiting fora number tobeissued tome); and",
+      "bbox": {
+        "x0": 97.39583333333333,
+        "y0": 893.75,
+        "x1": 1423.3072916666667,
+        "y1": 864.9193522135417
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "2.Iam not subject to backup withholding because (a) Iam exempt from backup withholding,or(b) Ihave not been notified by the Internal Revenue Service(IRS)thatIamsubjecttobackupwithholdingasaresultof afailuretoreportall interestordividends,or(c)theIRShasnotified methatIam nolongersubjecttobackupwithholding;and",
+      "bbox": {
+        "x0": 95.18229166666667,
+        "y0": 863.8104654947917,
+        "x1": 1593.75,
+        "y1": 781.7540690104167
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "3.Iam a U.S. citizen or other U.S. person (defined below); and",
+      "bbox": {
+        "x0": 95.18229166666667,
+        "y0": 776.2096354166667,
+        "x1": 724.9348958333334,
+        "y1": 746.2701822916667
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "The FATCA code(s) entered on this form (if any) indicating that I am exempt from FATCA reporting is correct.",
+      "bbox": {
+        "x0": 94.07552083333333,
+        "y0": 744.0524088541667,
+        "x1": 1201.953125,
+        "y1": 713.0040690104167
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "becauseyouhavefailed toreport allinterest and dividendsonyourtaxreturn.Forrealestatetransactions,item2doesnot apply.Formortgage interestpaid, acquisitionor abandonment of secured property,cancellation of debt,contributions to an individual retirement arrangement (IRA),and,generally,payments otherthan interest and dividends,you arenot required to sign the certification,but you must provideyourcorrectTIN.See the instructionsforPart ll,later.",
+      "bbox": {
+        "x0": 96.2890625,
+        "y0": 678.6290690104167,
+        "x1": 1598.1770833333333,
+        "y1": 598.7903645833333
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Sign Here Signature of U.S. person",
+      "bbox": {
+        "x0": 95.18229166666667,
+        "y0": 598.7903645833333,
+        "x1": 168.22916666666666,
+        "y1": 535.5846354166667
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "General Instructions",
+      "bbox": {
+        "x0": 97.39583333333333,
+        "y0": 511.189453125,
+        "x1": 479.2317708333333,
+        "y1": 471.27018229166674
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Sectionreferences areto theInternal RevenueCodeunlessotherwise noted.",
+      "bbox": {
+        "x0": 95.18229166666667,
+        "y0": 461.29036458333326,
+        "x1": 795.7682291666666,
+        "y1": 408.064453125
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Futuredevelopments.Forthelatestinformationaboutdevelopments after they were published, go to www.irs.gov/FormW9.",
+      "bbox": {
+        "x0": 95.18229166666667,
+        "y0": 401.41129557291674,
+        "x1": 797.9817708333334,
+        "y1": 321.57259114583326
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "What's New",
+      "bbox": {
+        "x0": 95.18229166666667,
+        "y0": 311.5927734375,
+        "x1": 294.4010416666667,
+        "y1": 273.89111328125
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Line 3a hasbeenmodified toclarify how a disregarded entitycompletes thisline.AnLLCthatisadisregardedentityshouldcheckthe appropriateboxfor thetaxclassification of its owner.Otherwise,it should check the \"LLC\" box and enter its appropriate tax classification.",
+      "bbox": {
+        "x0": 95.18229166666667,
+        "y0": 266.12906901041674,
+        "x1": 816.796875,
+        "y1": 159.67740885416674
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Date",
+      "bbox": {
+        "x0": 1068.0338541666667,
+        "y0": 559.9798177083333,
+        "x1": 1118.9453125,
+        "y1": 536.6935221354167
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "New line 3bhas been added to this form.A flow-through entity is required to complete this line to indicate that it has direct orindirect foreignpartners,owners,orbeneficiaries when it provides theFormW-9 to anotherflow-throughentityinwhich it hasan ownershipinterest.This changeisintendedtoprovideaflow-throughentitywithinformation regarding the status of its indirect foreign partners,owners,or partners may be required to completeSchedulesK-2 and K-3.See the Partnership Instructions for Schedules K-2 and K-3 (Form 1065).",
+      "bbox": {
+        "x0": 874.3489583333334,
+        "y0": 511.189453125,
+        "x1": 1602.6041666666667,
+        "y1": 257.25797526041674
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Purpose of Form",
+      "bbox": {
+        "x0": 878.7760416666666,
+        "y0": 240.625,
+        "x1": 1149.9348958333333,
+        "y1": 207.35888671875
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "An individual or entity (Form W-9 requester) who isrequired to file an information return with the IRS is giving you this form because they",
+      "bbox": {
+        "x0": 875.4557291666666,
+        "y0": 198.48795572916674,
+        "x1": 1564.9739583333333,
+        "y1": 140.82666015625
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Cat.No.10231X",
+      "bbox": {
+        "x0": 656.3151041666666,
+        "y0": 121.97574869791652,
+        "x1": 806.8359375,
+        "y1": 96.4716796875
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Form W-9 (Rev. 3-2024)",
+      "bbox": {
+        "x0": 1367.96875,
+        "y0": 129.73795572916652,
+        "x1": 1604.8177083333333,
+        "y1": 94.25406901041652
+      },
+      "confidence": null,
+      "reading_order": null
+    }
+  ],
+  "layout": [
+    {
+      "label": "section_header",
+      "bbox": {
+        "x0": 98.50260416666667,
+        "y0": 2110.1814473470054,
+        "x1": 274.4791666666667,
+        "y1": 2040.3225809733074
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 97.39583333333333,
+        "y0": 2043.649190266927,
+        "x1": 262.3046875,
+        "y1": 2017.0362955729167
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 96.2890625,
+        "y0": 2017.0362955729167,
+        "x1": 334.2447916666667,
+        "y1": 1968.2459716796875
+      },
+      "confidence": null
+    },
+    {
+      "label": "section_header",
+      "bbox": {
+        "x0": 508.0078125,
+        "y0": 2096.875,
+        "x1": 1190.8854166666667,
+        "y1": 2015.9274088541667
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 477.0182291666667,
+        "y0": 2001.5120849609375,
+        "x1": 1224.0885416666667,
+        "y1": 1976.008056640625
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 97.39583333333333,
+        "y0": 1961.5927327473958,
+        "x1": 1081.3151041666667,
+        "y1": 1932.7620849609375
+      },
+      "confidence": null
+    },
+    {
+      "label": "list_item",
+      "bbox": {
+        "x0": 164.90885416666666,
+        "y0": 1929.4354858398438,
+        "x1": 1594.8567708333333,
+        "y1": 1880.6451619466145
+      },
+      "confidence": null
+    },
+    {
+      "label": "list_item",
+      "bbox": {
+        "x0": 170.44270833333334,
+        "y0": 1828.5282389322917,
+        "x1": 761.4583333333334,
+        "y1": 1803.024169921875
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 121.74479166666667,
+        "y0": 1770.866943359375,
+        "x1": 156.0546875,
+        "y1": 1388.3064778645835
+      },
+      "confidence": null
+    },
+    {
+      "label": "list_item",
+      "bbox": {
+        "x0": 164.90885416666666,
+        "y0": 1764.2137044270833,
+        "x1": 1234.0494791666667,
+        "y1": 1709.8790283203125
+      },
+      "confidence": null
+    },
+    {
+      "label": "list_item",
+      "bbox": {
+        "x0": 1267.2526041666667,
+        "y0": 1759.7782389322917,
+        "x1": 1578.2552083333333,
+        "y1": 1685.483846028646
+      },
+      "confidence": null
+    },
+    {
+      "label": "checkbox_unselected",
+      "bbox": {
+        "x0": 197.00520833333334,
+        "y0": 1704.3346761067708,
+        "x1": 705.0130208333334,
+        "y1": 1669.959676106771
+      },
+      "confidence": null
+    },
+    {
+      "label": "checkbox_unselected",
+      "bbox": {
+        "x0": 689.5182291666666,
+        "y0": 1702.116943359375,
+        "x1": 903.125,
+        "y1": 1672.1774088541665
+      },
+      "confidence": null
+    },
+    {
+      "label": "checkbox_unselected",
+      "bbox": {
+        "x0": 887.6302083333334,
+        "y0": 1703.2257893880208,
+        "x1": 1228.515625,
+        "y1": 1669.959676106771
+      },
+      "confidence": null
+    },
+    {
+      "label": "page_header",
+      "bbox": {
+        "x0": 98.50260416666667,
+        "y0": 1657.7620849609375,
+        "x1": 126.171875,
+        "y1": 1506.9556477864585
+      },
+      "confidence": null
+    },
+    {
+      "label": "checkbox_unselected",
+      "bbox": {
+        "x0": 195.8984375,
+        "y0": 1667.741943359375,
+        "x1": 1133.3333333333333,
+        "y1": 1627.8225911458335
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 1268.359375,
+        "y0": 1665.524169921875,
+        "x1": 1504.1015625,
+        "y1": 1634.475789388021
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 1267.2526041666667,
+        "y0": 1612.298380533854,
+        "x1": 1599.2838541666667,
+        "y1": 1536.8951416015625
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 236.84895833333334,
+        "y0": 1590.1209716796875,
+        "x1": 596.5494791666666,
+        "y1": 1565.725789388021
+      },
+      "confidence": null
+    },
+    {
+      "label": "checkbox_unselected",
+      "bbox": {
+        "x0": 198.11197916666666,
+        "y0": 1564.616943359375,
+        "x1": 444.921875,
+        "y1": 1529.133056640625
+      },
+      "confidence": null
+    },
+    {
+      "label": "checkbox_unselected",
+      "bbox": {
+        "x0": 166.015625,
+        "y0": 1516.9354654947915,
+        "x1": 1209.7005208333333,
+        "y1": 1464.8185221354165
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 1289.3880208333333,
+        "y0": 1500.3024088541665,
+        "x1": 1572.7213541666667,
+        "y1": 1453.7298177083335
+      },
+      "confidence": null
+    },
+    {
+      "label": "list_item",
+      "bbox": {
+        "x0": 163.80208333333334,
+        "y0": 1431.5524088541665,
+        "x1": 762.5651041666666,
+        "y1": 1399.3951822916665
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 1086.8489583333333,
+        "y0": 1429.3346354166665,
+        "x1": 1452.0833333333333,
+        "y1": 1400.5039876302085
+      },
+      "confidence": null
+    },
+    {
+      "label": "list_item",
+      "bbox": {
+        "x0": 164.90885416666666,
+        "y0": 1362.8024088541665,
+        "x1": 422.7864583333333,
+        "y1": 1335.0806477864585
+      },
+      "confidence": null
+    },
+    {
+      "label": "list_item",
+      "bbox": {
+        "x0": 193.68489583333334,
+        "y0": 1295.1612955729165,
+        "x1": 533.4635416666666,
+        "y1": 1268.54833984375
+      },
+      "confidence": null
+    },
+    {
+      "label": "section_header",
+      "bbox": {
+        "x0": 110.67708333333333,
+        "y0": 1231.9556477864585,
+        "x1": 729.3619791666666,
+        "y1": 1198.6895345052085
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 95.18229166666667,
+        "y0": 1189.8185221354165,
+        "x1": 1121.1588541666667,
+        "y1": 1053.4274088541667
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 1167.6432291666667,
+        "y0": 1197.5806477864585,
+        "x1": 1386.7838541666667,
+        "y1": 1172.0765787760417
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 1158.7890625,
+        "y0": 1093.3467610677083,
+        "x1": 1189.7786458333333,
+        "y1": 1070.0604654947917
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 1167.6432291666667,
+        "y0": 1064.51611328125,
+        "x1": 1465.3645833333333,
+        "y1": 1039.0120442708333
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 95.18229166666667,
+        "y0": 1037.9032389322917,
+        "x1": 1122.265625,
+        "y1": 980.241943359375
+      },
+      "confidence": null
+    },
+    {
+      "label": "section_header",
+      "bbox": {
+        "x0": 101.82291666666667,
+        "y0": 966.9354654947917,
+        "x1": 408.3984375,
+        "y1": 931.4515787760417
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 97.39583333333333,
+        "y0": 927.01611328125,
+        "x1": 494.7265625,
+        "y1": 895.9676920572917
+      },
+      "confidence": null
+    },
+    {
+      "label": "list_item",
+      "bbox": {
+        "x0": 97.39583333333333,
+        "y0": 893.75,
+        "x1": 1423.3072916666667,
+        "y1": 864.9193522135417
+      },
+      "confidence": null
+    },
+    {
+      "label": "list_item",
+      "bbox": {
+        "x0": 95.18229166666667,
+        "y0": 863.8104654947917,
+        "x1": 1593.75,
+        "y1": 781.7540690104167
+      },
+      "confidence": null
+    },
+    {
+      "label": "list_item",
+      "bbox": {
+        "x0": 95.18229166666667,
+        "y0": 776.2096354166667,
+        "x1": 724.9348958333334,
+        "y1": 746.2701822916667
+      },
+      "confidence": null
+    },
+    {
+      "label": "list_item",
+      "bbox": {
+        "x0": 94.07552083333333,
+        "y0": 744.0524088541667,
+        "x1": 1201.953125,
+        "y1": 713.0040690104167
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 96.2890625,
+        "y0": 678.6290690104167,
+        "x1": 1598.1770833333333,
+        "y1": 598.7903645833333
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 95.18229166666667,
+        "y0": 598.7903645833333,
+        "x1": 168.22916666666666,
+        "y1": 535.5846354166667
+      },
+      "confidence": null
+    },
+    {
+      "label": "section_header",
+      "bbox": {
+        "x0": 97.39583333333333,
+        "y0": 511.189453125,
+        "x1": 479.2317708333333,
+        "y1": 471.27018229166674
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 95.18229166666667,
+        "y0": 461.29036458333326,
+        "x1": 795.7682291666666,
+        "y1": 408.064453125
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 95.18229166666667,
+        "y0": 401.41129557291674,
+        "x1": 797.9817708333334,
+        "y1": 321.57259114583326
+      },
+      "confidence": null
+    },
+    {
+      "label": "section_header",
+      "bbox": {
+        "x0": 95.18229166666667,
+        "y0": 311.5927734375,
+        "x1": 294.4010416666667,
+        "y1": 273.89111328125
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 95.18229166666667,
+        "y0": 266.12906901041674,
+        "x1": 816.796875,
+        "y1": 159.67740885416674
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 1068.0338541666667,
+        "y0": 559.9798177083333,
+        "x1": 1118.9453125,
+        "y1": 536.6935221354167
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 874.3489583333334,
+        "y0": 511.189453125,
+        "x1": 1602.6041666666667,
+        "y1": 257.25797526041674
+      },
+      "confidence": null
+    },
+    {
+      "label": "section_header",
+      "bbox": {
+        "x0": 878.7760416666666,
+        "y0": 240.625,
+        "x1": 1149.9348958333333,
+        "y1": 207.35888671875
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 875.4557291666666,
+        "y0": 198.48795572916674,
+        "x1": 1564.9739583333333,
+        "y1": 140.82666015625
+      },
+      "confidence": null
+    },
+    {
+      "label": "page_footer",
+      "bbox": {
+        "x0": 656.3151041666666,
+        "y0": 121.97574869791652,
+        "x1": 806.8359375,
+        "y1": 96.4716796875
+      },
+      "confidence": null
+    },
+    {
+      "label": "page_footer",
+      "bbox": {
+        "x0": 1367.96875,
+        "y0": 129.73795572916652,
+        "x1": 1604.8177083333333,
+        "y1": 94.25406901041652
+      },
+      "confidence": null
+    }
+  ],
+  "tables": [],
+  "kv_pairs": [],
+  "latency_ms": 10181.438900002831,
+  "raw_response_path": null,
+  "error": null
+}

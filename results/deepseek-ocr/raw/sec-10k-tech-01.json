@@ -1,0 +1,326 @@
+{
+  "page_id": "sec-10k-tech-01",
+  "stack_id": "deepseek-ocr-2",
+  "model_revision": "deepseek/deepseek-ocr-2",
+  "raw_text": "text[[64, 51, 933, 80]]\nThe following table sets forth, for the periods indicated, certain items in our Consolidated Statements of Income expressed as a percentage of revenue.\n\ntable[[66, 90, 930, 376]]\n<table>Year Ended<td colspan=\"2\">Jan 25, 2026Jan 26, 2025Revenue100.0 %100.0 %Cost of revenue28.925.0Gross profit71.175.0Operating expensesResearch and development8.69.9Sales, general and administrative2.12.7Total operating expenses10.712.6Operating income60.462.4Interest income1.11.4Interest expense(0.1)(0.2)Other income, net4.20.8Total other income, net5.22.0Income before income tax65.564.4Income tax expense9.98.6Net income55.6 %55.8 %</table>\n\nsub_title[[65, 398, 222, 413]]\n## Reportable Segments\n\nsub_title[[65, 418, 309, 434]]\n## Revenue by Reportable Segments\n\ntable[[66, 439, 931, 563]]\n<table><td colspan=\"5\">Year Ended<td colspan=\"2\">Jan 25, 2026<td colspan=\"2\">Jan 26, 2025<td colspan=\"2\">\\( Change% Change<td colspan=\"7\">(\\) in millions)Compute &amp; Networking\\(193,479\\)116,193\\(77,28667Graphics<td colspan=\"2\">22,459<td colspan=\"2\">14,304<td colspan=\"2\">8,15557Total\\)215,938\\(130,497\\)85,44165</table>\n\nsub_title[[65, 580, 372, 596]]\n## Operating Income by Reportable Segments\n\ntable[[66, 602, 931, 725]]\n<table><td colspan=\"5\">Year Ended<td colspan=\"2\">Jan 25, 2026<td colspan=\"2\">Jan 26, 2025<td colspan=\"2\">\\( Change<td colspan=\"7\">(\\) in millions)Compute &amp; Networking\\(130,141\\)82,875\\(47,266Graphics<td colspan=\"2\">9,156<td colspan=\"2\">5,085<td colspan=\"2\">4,071Total\\)139,297\\(87,960\\)51,337</table>\n\ntext[[64, 739, 933, 796]]\nCompute & Networking revenue \u2013 The year over year increase was driven by the major platform shifts \u2013 accelerated computing and AI. Revenue from Data Center computing grew 59% driven by demand for our Blackwell computing platform. Revenue from Data Center networking grew 142% driven by the introduction and continued ramp of NVLink compute fabric for GB200 and GB300 systems and the growth of Ethernet and InfiniBand platforms.",
+  "text_blocks": [
+    {
+      "text": "The following table sets forth, for the periods indicated, certain items in our Consolidated Statements of Income expressed as a percentage of revenue.",
+      "bbox": {
+        "x0": 64,
+        "y0": 51,
+        "x1": 933,
+        "y1": 80
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "## Reportable Segments",
+      "bbox": {
+        "x0": 65,
+        "y0": 398,
+        "x1": 222,
+        "y1": 413
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "## Revenue by Reportable Segments",
+      "bbox": {
+        "x0": 65,
+        "y0": 418,
+        "x1": 309,
+        "y1": 434
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "## Operating Income by Reportable Segments",
+      "bbox": {
+        "x0": 65,
+        "y0": 580,
+        "x1": 372,
+        "y1": 596
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Compute & Networking revenue \u2013 The year over year increase was driven by the major platform shifts \u2013 accelerated computing and AI. Revenue from Data Center computing grew 59% driven by demand for our Blackwell computing platform. Revenue from Data Center networking grew 142% driven by the introduction and continued ramp of NVLink compute fabric for GB200 and GB300 systems and the growth of Ethernet and InfiniBand platforms.",
+      "bbox": {
+        "x0": 64,
+        "y0": 739,
+        "x1": 933,
+        "y1": 796
+      },
+      "confidence": null,
+      "reading_order": null
+    }
+  ],
+  "layout": [
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 64,
+        "y0": 51,
+        "x1": 933,
+        "y1": 80
+      },
+      "confidence": null
+    },
+    {
+      "label": "table",
+      "bbox": {
+        "x0": 66,
+        "y0": 90,
+        "x1": 930,
+        "y1": 376
+      },
+      "confidence": null
+    },
+    {
+      "label": "sub_title",
+      "bbox": {
+        "x0": 65,
+        "y0": 398,
+        "x1": 222,
+        "y1": 413
+      },
+      "confidence": null
+    },
+    {
+      "label": "sub_title",
+      "bbox": {
+        "x0": 65,
+        "y0": 418,
+        "x1": 309,
+        "y1": 434
+      },
+      "confidence": null
+    },
+    {
+      "label": "table",
+      "bbox": {
+        "x0": 66,
+        "y0": 439,
+        "x1": 931,
+        "y1": 563
+      },
+      "confidence": null
+    },
+    {
+      "label": "sub_title",
+      "bbox": {
+        "x0": 65,
+        "y0": 580,
+        "x1": 372,
+        "y1": 596
+      },
+      "confidence": null
+    },
+    {
+      "label": "table",
+      "bbox": {
+        "x0": 66,
+        "y0": 602,
+        "x1": 931,
+        "y1": 725
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 64,
+        "y0": 739,
+        "x1": 933,
+        "y1": 796
+      },
+      "confidence": null
+    }
+  ],
+  "tables": [
+    {
+      "cells": [
+        {
+          "row": 0,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Jan 25, 2026Jan 26, 2025Revenue100.0 %100.0 %Cost of revenue28.925.0Gross profit71.175.0Operating expensesResearch and development8.69.9Sales, general and administrative2.12.7Total operating expenses10.712.6Operating income60.462.4Interest income1.11.4Interest expense(0.1)(0.2)Other income, net4.20.8Total other income, net5.22.0Income before income tax65.564.4Income tax expense9.98.6Net income55.6 %55.8 %",
+          "is_header": false
+        }
+      ],
+      "bbox": {
+        "x0": 66,
+        "y0": 90,
+        "x1": 930,
+        "y1": 376
+      },
+      "html": null,
+      "n_rows": 1,
+      "n_cols": 1
+    },
+    {
+      "cells": [
+        {
+          "row": 0,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Year Ended",
+          "is_header": false
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Jan 25, 2026",
+          "is_header": false
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Jan 26, 2025",
+          "is_header": false
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "\\( Change% Change",
+          "is_header": false
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "(\\) in millions)Compute &amp; Networking\\(193,479\\)116,193\\(77,28667Graphics",
+          "is_header": false
+        },
+        {
+          "row": 0,
+          "col": 5,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "22,459",
+          "is_header": false
+        },
+        {
+          "row": 0,
+          "col": 6,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "14,304",
+          "is_header": false
+        },
+        {
+          "row": 0,
+          "col": 7,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "8,15557Total\\)215,938\\(130,497\\)85,44165",
+          "is_header": false
+        }
+      ],
+      "bbox": {
+        "x0": 66,
+        "y0": 439,
+        "x1": 931,
+        "y1": 563
+      },
+      "html": null,
+      "n_rows": 1,
+      "n_cols": 8
+    },
+    {
+      "cells": [
+        {
+          "row": 0,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Year Ended",
+          "is_header": false
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Jan 25, 2026",
+          "is_header": false
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Jan 26, 2025",
+          "is_header": false
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "\\( Change",
+          "is_header": false
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "(\\) in millions)Compute &amp; Networking\\(130,141\\)82,875\\(47,266Graphics",
+          "is_header": false
+        },
+        {
+          "row": 0,
+          "col": 5,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "9,156",
+          "is_header": false
+        },
+        {
+          "row": 0,
+          "col": 6,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "5,085",
+          "is_header": false
+        },
+        {
+          "row": 0,
+          "col": 7,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "4,071Total\\)139,297\\(87,960\\)51,337",
+          "is_header": false
+        }
+      ],
+      "bbox": {
+        "x0": 66,
+        "y0": 602,
+        "x1": 931,
+        "y1": 725
+      },
+      "html": null,
+      "n_rows": 1,
+      "n_cols": 8
+    }
+  ],
+  "kv_pairs": [],
+  "latency_ms": 5375.021199999537,
+  "raw_response_path": null,
+  "error": null
+}

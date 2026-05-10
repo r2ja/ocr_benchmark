@@ -1,0 +1,13 @@
+{
+  "page_id": "formulas_arxiv",
+  "stack_id": "deepseek-ocr-2",
+  "model_revision": "deepseek/deepseek-ocr-2",
+  "raw_text": "\n\nSelected Identities\nThree canonical mathematical identities are presented below.\n\n(1) The Pythagorean theorem:\n\n$$a^2 + b^2 = c^2$$\n\n(2) Euler's identity:\n\n$$e^1 = 1 + 1 = 0$$\n\n(3) The Gaussian integral:\n\n$$\\int_{-\\infty}^{\\infty} \\int_{-\\infty}^{\\infty} e^{-(x^2 + y^2)} dx = \\sqrt{\\pi}$$",
+  "text_blocks": [],
+  "layout": [],
+  "tables": [],
+  "kv_pairs": [],
+  "latency_ms": 1457.5227000023006,
+  "raw_response_path": null,
+  "error": null
+}

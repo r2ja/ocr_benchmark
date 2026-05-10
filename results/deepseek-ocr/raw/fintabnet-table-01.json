@@ -1,0 +1,46 @@
+{
+  "page_id": "fintabnet-table-01",
+  "stack_id": "deepseek-ocr-2",
+  "model_revision": "deepseek/deepseek-ocr-2",
+  "raw_text": "table[[0, 0, 997, 978]]\n<table>Kinetic parameterNDDD + dn-RhoAD + dn-Rac1Vmax19.6 \u00b1 0.7526.2 \u00b1 0.86*31.3 \u00b1 0.88\u202021.6 \u00b1 0.9K&#x27; for H+0.150 \u00b1 0.020.113 \u00b1 0.05\u20200.106 \u00b1 0.07\u20200.137 \u00b1 0.023n_{pp}2.192.162.032.23</table>",
+  "text_blocks": [],
+  "layout": [
+    {
+      "label": "table",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 997,
+        "y1": 978
+      },
+      "confidence": null
+    }
+  ],
+  "tables": [
+    {
+      "cells": [
+        {
+          "row": 0,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Kinetic parameterNDDD + dn-RhoAD + dn-Rac1Vmax19.6 \u00b1 0.7526.2 \u00b1 0.86*31.3 \u00b1 0.88\u202021.6 \u00b1 0.9K&#x27; for H+0.150 \u00b1 0.020.113 \u00b1 0.05\u20200.106 \u00b1 0.07\u20200.137 \u00b1 0.023n_{pp}2.192.162.032.23",
+          "is_header": false
+        }
+      ],
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 997,
+        "y1": 978
+      },
+      "html": null,
+      "n_rows": 1,
+      "n_cols": 1
+    }
+  ],
+  "kv_pairs": [],
+  "latency_ms": 1281.6085000004023,
+  "raw_response_path": null,
+  "error": null
+}

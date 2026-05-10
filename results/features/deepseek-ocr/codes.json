@@ -1,0 +1,13 @@
+{
+  "page_id": "codes_synthetic",
+  "stack_id": "deepseek-ocr-2",
+  "model_revision": "deepseek/deepseek-ocr-2",
+  "raw_text": "",
+  "text_blocks": [],
+  "layout": [],
+  "tables": [],
+  "kv_pairs": [],
+  "latency_ms": 1259.1825999988941,
+  "raw_response_path": null,
+  "error": null
+}

@@ -1,0 +1,183 @@
+{
+  "page_id": "formulas_arxiv",
+  "stack_id": "docling",
+  "model_revision": "docling@local-pip",
+  "raw_text": "Selected Identities\n\nThree canonical mathematical identities are presented below.\n\n- (1) The Pythagorean theorem:\n\n<!-- formula-not-decoded -->\n\n- (2) Euler's identity:\n\n<!-- formula-not-decoded -->\n\n- (3) The Gaussian integral:\n\n<!-- formula-not-decoded -->",
+  "text_blocks": [
+    {
+      "text": "Selected Identities",
+      "bbox": {
+        "x0": 39.36491902669271,
+        "y0": 867.4632339477539,
+        "x1": 275.0,
+        "y1": 839.8897043863932
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Three canonical mathematical identities are presented below.",
+      "bbox": {
+        "x0": 37.70161437988281,
+        "y0": 829.9632364908854,
+        "x1": 531.1492106119791,
+        "y1": 807.3529357910156
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "The Pythagorean theorem:",
+      "bbox": {
+        "x0": 38.81048329671224,
+        "y0": 769.3014729817709,
+        "x1": 284.4254150390625,
+        "y1": 747.2426452636719
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "",
+      "bbox": {
+        "x0": 78.17540486653645,
+        "y0": 720.7720540364584,
+        "x1": 226.76411946614584,
+        "y1": 689.3382364908854
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Euler's identity:",
+      "bbox": {
+        "x0": 38.81048329671224,
+        "y0": 639.1543986002605,
+        "x1": 191.2802530924479,
+        "y1": 615.441162109375
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "",
+      "bbox": {
+        "x0": 79.83870951334636,
+        "y0": 590.625,
+        "x1": 255.59476725260416,
+        "y1": 559.191162109375
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "The Gaussian integral:",
+      "bbox": {
+        "x0": 38.81048329671224,
+        "y0": 508.4558919270833,
+        "x1": 250.6048380533854,
+        "y1": 487.5
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "",
+      "bbox": {
+        "x0": 78.17540486653645,
+        "y0": 465.9926350911458,
+        "x1": 446.320556640625,
+        "y1": 425.7352701822917
+      },
+      "confidence": null,
+      "reading_order": null
+    }
+  ],
+  "layout": [
+    {
+      "label": "section_header",
+      "bbox": {
+        "x0": 39.36491902669271,
+        "y0": 867.4632339477539,
+        "x1": 275.0,
+        "y1": 839.8897043863932
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 37.70161437988281,
+        "y0": 829.9632364908854,
+        "x1": 531.1492106119791,
+        "y1": 807.3529357910156
+      },
+      "confidence": null
+    },
+    {
+      "label": "list_item",
+      "bbox": {
+        "x0": 38.81048329671224,
+        "y0": 769.3014729817709,
+        "x1": 284.4254150390625,
+        "y1": 747.2426452636719
+      },
+      "confidence": null
+    },
+    {
+      "label": "formula",
+      "bbox": {
+        "x0": 78.17540486653645,
+        "y0": 720.7720540364584,
+        "x1": 226.76411946614584,
+        "y1": 689.3382364908854
+      },
+      "confidence": null
+    },
+    {
+      "label": "list_item",
+      "bbox": {
+        "x0": 38.81048329671224,
+        "y0": 639.1543986002605,
+        "x1": 191.2802530924479,
+        "y1": 615.441162109375
+      },
+      "confidence": null
+    },
+    {
+      "label": "formula",
+      "bbox": {
+        "x0": 79.83870951334636,
+        "y0": 590.625,
+        "x1": 255.59476725260416,
+        "y1": 559.191162109375
+      },
+      "confidence": null
+    },
+    {
+      "label": "list_item",
+      "bbox": {
+        "x0": 38.81048329671224,
+        "y0": 508.4558919270833,
+        "x1": 250.6048380533854,
+        "y1": 487.5
+      },
+      "confidence": null
+    },
+    {
+      "label": "formula",
+      "bbox": {
+        "x0": 78.17540486653645,
+        "y0": 465.9926350911458,
+        "x1": 446.320556640625,
+        "y1": 425.7352701822917
+      },
+      "confidence": null
+    }
+  ],
+  "tables": [],
+  "kv_pairs": [],
+  "latency_ms": 3194.3652000009024,
+  "raw_response_path": null,
+  "error": null
+}

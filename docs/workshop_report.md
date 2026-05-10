@@ -1,0 +1,459 @@
+# Open-Source Replacements for Azure Document Intelligence
+
+**A Multi-Axis Benchmark on a Curated Document Corpus**
+
+---
+
+**Logarithm Technologies — Workshop Deliverable**
+**Date:** 2026-05-10
+**Target deployment:** Red Hat OpenShift AI on an 8× NVIDIA H200 cluster
+**Repository:** https://github.com/r2ja/ocr_benchmark
+
+---
+
+## Executive Summary
+
+Microsoft Azure Document Intelligence is a managed, schema-locked OCR-and-extraction service with five base APIs, ~20 prebuilt verticals, and a custom-model trainer. Our client's mandate is to **replace it on-premises** under a Red Hat OpenShift AI deployment using open-source weights and inference engines.
+
+This paper documents the bench-off against seven candidate stacks across **eight measurement axes** on **twelve hand-picked test pages**. The headline takeaway: **no single OSS stack is a one-to-one Azure DI replacement**, but a **three-stack hybrid** (Docling for layout/tables/Office formats + Qwen3-VL-32B for general VLM tasks + a Baidu-family OCR specialist for raw transcription) covers ≥75% of Azure DI's measurable feature surface. The remaining 25% — primarily per-field confidence calibration and the custom-model training UX — requires explicit in-house engineering investment that the client must price into the migration plan.
+
+A secondary finding is that **integration cost is the dominant hidden tax** of replacing Azure DI. We documented over 90 minutes of cascading dependency conflicts on a rented H200 across three OCR-specialist VLMs (dots.ocr, DeepSeek-OCR-2, PaddleOCR-VL-1.5) before pivoting to hosted serverless APIs. Detail traces are in Appendix A; the conclusion is that the client should plan for an **FTE-week of integration work per bleeding-edge model** they choose to self-host.
+
+The bench-off matrix and supporting raw outputs (~70 evaluations, ~12 MB of structured artifacts) are committed to the repository at the URL above.
+
+---
+
+## 1. Background — What Azure Document Intelligence Does
+
+Azure Document Intelligence (formerly Azure Form Recognizer) is a managed cloud service exposing four base APIs and a Custom-Model trainer.
+
+### 1.1 The Four Base APIs
+
+| API | Purpose |
+|---|---|
+| **Read API** | Raw OCR — text, lines, words, handwriting recognition. ~165+ languages. Per-element confidence. |
+| **Layout API** | Visual structure — tables (with span detection), reading order, selection marks (checkboxes), figures, formulas, sections, paragraph hierarchy. |
+| **General Document API** | Schema-free key-value pair extraction with relations, plus entity recognition. Per-field confidence. |
+| **Custom Document Models** | Train your own schema. Composed/template/neural variants. Includes the DI Studio UI for labeling and iteration. |
+
+### 1.2 Prebuilt Verticals
+
+Azure DI ships ~20 schema-locked prebuilt models including: Invoice, Receipt, ID Document, Business Card, W-2, 1099 (multiple variants), 1098, 1095, Health Insurance Card, Pay Stub, Bank Statement, Bank Check, Mortgage 1003 / 1008 / Closing Disclosure, Credit Card, Vaccination Card, Marriage Certificate, Contract, and Document Classification.
+
+Each is a fine-tuned model with a fixed JSON schema, calibrated confidences, and field-level validation. **None of the OSS candidates ship prebuilt verticals out-of-the-box**; every OSS path requires fine-tuning the base model on representative data.
+
+### 1.3 Add-on Capabilities
+
+Selection marks (checkboxes), signature/seal detection, formulas, barcodes/QR, high-resolution mode, Office format parsing (DOCX/XLSX/PPTX), searchable-PDF output, signature detection, multi-page document support, and query-fields ("ask questions about this document").
+
+### 1.4 Why Replace It
+
+The client's drivers are:
+1. **Data sovereignty / compliance** — sensitive documents must not leave the organization.
+2. **Per-page billing economics** — at production volume, Azure DI's per-page pricing exceeds the amortized cost of self-hosted inference on the existing 8× H200 cluster.
+3. **Roadmap independence** — Azure DI's feature evolution and pricing are external concerns; an OSS replica is auditable and pinnable.
+
+The brief is therefore: build a **functionally-equivalent on-premises replica** on Red Hat OpenShift AI, using open-weight models served via vLLM ServingRuntime / KServe InferenceService, deployed as standard Kubernetes resources.
+
+---
+
+## 2. Stacks Under Test — What We Used and Why
+
+### 2.1 Selection criteria
+
+A candidate stack qualifies for this bench-off if and only if:
+
+1. **License** is permissive enough for unrestricted commercial use (MIT or Apache-2.0).
+2. **Deployable on RHOAI** as a stock vLLM ServingRuntime CR or a KServe InferenceService — no custom non-PyTorch base image, no ERNIE-LLM-only orchestration tier, no Paddle-framework lock-in.
+3. **Documented OCR / document-understanding capability** (the model is benchmarked by its publisher against at least one of: OmniDocBench, DocVQA, DocLayNet, FUNSD, or comparable).
+
+Stacks that fail any gate are **dropped on principle, not benchmarked**. Candidates excluded: PP-StructureV3 + PP-ChatOCRv4 (Paddle framework + ERNIE deps, no clean ServingRuntime path), Azure DI itself (proprietary baseline being replaced), Tesseract (not a 1:1 Azure DI replica — it's an OCR engine, not an end-to-end document-understanding stack).
+
+### 2.2 The Seven Stacks We Measured
+
+| Stack | Params | License | Architecture | Where We Ran It | Status |
+|---|---|---|---|---|---|
+| **Docling** | ~1 B (multi-component: layout + table + OCR) | MIT | Pipeline of specialist models (DocLayNet layout + TableFormer + RapidOCR/EasyOCR) | Local RTX 3050 | Measured, 8/8 pages |
+| **Qwen3-VL-8B** | 8 B | Apache-2.0 | General-purpose VLM | OpenRouter | Measured, 8/8 pages |
+| **Qwen3-VL-30B-A3B** | 30 B (MoE active 3B) | Apache-2.0 | Sparse-expert VLM | OpenRouter | Measured, 8/8 pages |
+| **Qwen3-VL-32B** | 32 B | Apache-2.0 | Dense VLM | OpenRouter | Measured, 8/8 pages |
+| **Qwen3-VL-235B-A22B** | 235 B (MoE active 22B) | Apache-2.0 | Sparse-expert VLM | OpenRouter | Measured, 8/8 pages |
+| **Baidu Qianfan-OCR-Fast** | undisclosed | Public free tier | OCR-specialist VLM, HTML-table output | OpenRouter free tier | Measured, 8/8 pages |
+| **DeepSeek-OCR-2** | ~3 B (MoE active ~570 M) | MIT | OCR-specialist VLM with bbox-grounding output | Novita serverless API | Measured, 8/8 pages (after 90 min of failed self-host) |
+
+### 2.3 Stacks We Cited but Could Not Measure
+
+| Stack | Params | License | Reason for citation-only |
+|---|---|---|---|
+| **dots.ocr-1.5** | 1.7 B | MIT | Failed integration on H200 with vLLM 0.10.x (DotsOCRConfig not registered) and 0.11.0 (Qwen2VLImageProcessor.min_pixels removed in transformers 5.x). No hosted serverless endpoint surfaced. Vendor reports 94+ on OmniDocBench v1.5. |
+| **PaddleOCR-VL-1.5** | 0.9 B VLM + Paddle layout/cropper | Apache-2.0 | Two-tier architecture (local layout-detect + remote VLM) requires a `paddleocr` Python pipeline that crashes on Windows during VLM weight load (access violation in safetensors loader). RunPod paddle-mirror unreachable from ap-jp-1 region. Vendor reports 94.5% on OmniDocBench v1.5. |
+
+Detail traces of every failed integration attempt are in **Appendix A**.
+
+### 2.4 Why the Seven, in Plain Language
+
+**Docling (IBM, MIT)** is the only OSS stack that produces structured tables with span detection, native DOCX/XLSX/PPTX parsing, and per-element confidence. It is the **layout-and-tables tier** of any production replica and runs on a single GPU at minimal VRAM.
+
+**The Qwen3-VL family (Alibaba, Apache-2.0)** is the most flexible general-purpose VLM with a clean four-size sweep (8B / 30B-A3B MoE / 32B / 235B-A22B MoE). Native vLLM support, 256K context, no custom modeling code — the **default safe choice for any text/image task without specialist needs**.
+
+**Baidu Qianfan-OCR-Fast (free tier on OpenRouter)** is a Chinese-vendor OCR specialist included to test whether a free, commodity OCR model can match the larger generic VLMs on transcription accuracy. It does (see §5.2).
+
+**DeepSeek-OCR-2 (DeepSeek, MIT)** is a smaller MoE model with bbox-grounded structured output. Different output format from the VLM mainstream — included to measure **whether structural-output OCR specialists meaningfully differ from prompt-driven VLMs**.
+
+The four candidates we could not measure (dots.ocr, PaddleOCR-VL, plus the previously-published PP-StructureV3 + PP-ChatOCRv4) are all included in the comparison **on vendor numbers**, with the integration cost documented as an explicit tax in the migration plan.
+
+---
+
+## 3. Dataset — What We Tested Against
+
+We assembled **two corpora** totalling **12 hand-picked pages** across diverse document types, with structured gold-truth where automated scoring is feasible.
+
+### 3.1 General Mini-Corpus (8 pages)
+
+| `page_id` | Source | License | Tests |
+|---|---|---|---|
+| `sec-10k-tech-01` | NVDA 10-K (FY26), Income % of Revenue | SEC EDGAR public filing | Layout, tables (3), text |
+| `sec-10k-bank-01` | JPM 10-K (FY25), Consolidated Income | SEC EDGAR public filing | Layout, tables (3, including 34×4), text |
+| `funsd-form-01` | FUNSD test fax cover sheet | research-only | KV (6 gold pairs), layout |
+| `cord-receipt-01` | CORD test receipt | research-only | KV, text |
+| `fintabnet-table-01` | PubTabNet sample (FinTabNet substitute) | research-only | Tables |
+| `iam-handwriting-01` | Teklia/IAM-line handwriting line | research-only | Text (CER) |
+| `omnidocbench-multilingual-01` | OpenDataLab OmniDocBench | research-only | Layout, multilingual text |
+| `docile-invoice-01` | katanaml-org invoices-donut-data-v1 | research-only (NOT redistributed) | KV, layout |
+
+Total: ~9 MB on disk. Manifest in `corpus_meta/corpus_manifest.py`. Gold-truth is committed alongside each page where it exists.
+
+### 3.2 Feature-Axis Corpus (4 pages)
+
+We added a second corpus targeted at Azure DI's "advanced" feature axes, where the gold is hand-curated or synthesised for exact measurement.
+
+| `page_id` | Source | License | Axis | Gold |
+|---|---|---|---|---|
+| `checkboxes_w9` | IRS W-9 form, page 1 | US-government public domain | Selection marks | 7 expected unchecked boxes (federal-tax-classification group) |
+| `signatures_jpm` | Synthetic 10-K SIGNATURES section | We generated | Signature detection | 3 named signers + roles |
+| `formulas_arxiv` | Synthetic page with three canonical math identities | We generated | Formulas | 3 expected LaTeX strings (Pythagoras, Euler, Gaussian integral) |
+| `codes_synthetic` | Synthetic shipping label with QR + EAN-13 | We generated (gold known by construction) | Barcodes / QR codes | QR encoding `https://logarithmtech.example/order/LT-2026-05-09`, EAN-13 `5901234123457` |
+
+Build script: `scripts/build_feature_corpus.py`. Synthetic pages keep the gold deterministic and make scoring exact.
+
+### 3.3 Gold-Truth Sources and Caveats
+
+Most public OCR benchmarks ship gold-truth that is auto-derived from labeling tools rather than hand-curated. We discovered an example during scoring: the FUNSD gold for `funsd-form-01` was built from `ner_tags` adjacency (next B-ANSWER after each B-QUESTION). On our test page, this produced `DATE: → 3` instead of the correct `DATE: → 12/10/98`. The Qwen models extracted the correct value and were **penalised by an incorrect gold**, depressing all reported KV-F1 scores. This is itself a workshop-relevant finding: setting up internal benchmarks for an Azure DI replacement requires real labelling investment and cannot rely on auto-derived public golds.
+
+---
+
+## 4. Methodology and Harness
+
+### 4.1 Adapter Pattern
+
+Every stack implements a single `StackAdapter` interface that returns a normalized `PageResult`:
+
+```python
+@dataclass
+class PageResult:
+    page_id: str
+    stack_id: str
+    model_revision: str
+    raw_text: str
+    text_blocks: list[TextBlock]
+    layout: list[LayoutBlock]
+    tables: list[Table]
+    kv_pairs: list[KVPair]
+    latency_ms: float | None
+    raw_response_path: str | None
+    error: str | None
+```
+
+All VLM adapters share an `OpenAICompatibleVLMAdapter` base that speaks OpenAI-compatible chat completions. The same adapter code runs against OpenRouter, Novita, vLLM ServingRuntime on H200, or any other OpenAI-compat host with only `base_url` + `model_slug` changing. This is the **production-faithful wire format** for the RHOAI deployment target.
+
+### 4.2 Multi-Axis Scoring
+
+For the general corpus, we score on:
+- **Text accuracy** — Character Error Rate (CER) where a clean text gold exists (IAM)
+- **Key-value extraction** — F1 with optional fuzzy value matching (FUNSD, CORD)
+- **Tables** — count, total cells, max row/col dimensions; structural agreement against Docling as a reference (shape Jaccard) + cell-content fuzzy similarity on aligned positions
+- **Latency** — wall-clock per page
+
+For the feature-axis corpus, we score on:
+- **Checkboxes** — detection F1 (label fuzzy-match) + state accuracy (CHECKED vs UNCHECKED)
+- **Signatures** — detection F1 (signer-name fuzzy-match)
+- **Formulas** — best-fuzzy-match similarity per expected LaTeX
+- **Codes** — exact-match decode F1 (synthetic gold is exact)
+
+### 4.3 Per-Stack Prompts
+
+Generative VLMs use a standard instruction prompt:
+
+> "Extract the full content of this document image as Markdown. Preserve tables (use Markdown table syntax), headers, lists, and reading order. If the document contains form fields or key-value pairs, list them at the end under a 'Key-Value Pairs:' section, one per line as 'KEY :: VALUE'."
+
+For DeepSeek-OCR-2 we use the model's native task token: `<|grounding|>Convert the document to markdown.` (English instruction prompts caused complete degenerate output — see Appendix A.3).
+
+For the feature-axis corpus, each axis has a tight format-locked prompt designed to produce parseable detection lines (e.g., `LABEL :: CHECKED` for the checkbox axis). Full prompts in `scripts/run_features.py`.
+
+### 4.4 Hardware
+
+- **Local development**: laptop with NVIDIA RTX 3050 Laptop (4 GB VRAM). Used to run Docling and validate adapters. The 4 GB ceiling blocked self-hosting any of the OCR-specialist VLMs locally — **a real-world constraint that anyone replicating this bench should expect**.
+- **Cluster trial**: 1× H200 SXM on RunPod (~$4/hr) with a 30 GB persistent network volume. 90 minutes of pod time was burned on dependency-cascade integration of dots.ocr and DeepSeek-OCR before pivoting to hosted serverless. Detail in Appendix A.
+- **Hosted serverless APIs**: OpenRouter (Qwen family + Qianfan), Novita (DeepSeek-OCR-2). Total spend across all bench-off runs: **<$1**.
+
+---
+
+## 5. Results — Multi-Axis Benchmark Matrix
+
+### 5.1 Per-stack means across the 8-page general corpus
+
+| Stack | KV-F1 mean | CER on IAM | Σ tables | Σ table cells | Shape Jaccard vs Docling | Table content vs Docling | Median latency (ms) |
+|---|---|---|---|---|---|---|---|
+| **deepseek-ocr** | 0.000 | 0.366 | 8 | 24 | 0.250 | 0.005 | 4 028 |
+| **docling** | 0.000 | 0.237 | 11 | 323 | — | — | 3 239 |
+| **qianfan-ocr** | 0.000 | **0.065** | 7 | 282 | 0.583 | **0.972** | 9 310 |
+| **qwen-235b-a22b** | 0.077 | 1.204 | 9 | 325 | 0.583 | 0.856 | 14 533 |
+| **qwen-30b-a3b** | **0.084** | **0.065** | 9 | 423 | 0.542 | 0.731 | 12 093 |
+| **qwen-32b** | 0.052 | 1.839 | 10 | 364 | 0.583 | 0.659 | 11 216 |
+| **qwen-8b** | 0.000 | 0.301 | 9 | 378 | 0.583 | 0.791 | 9 966 |
+
+`Shape Jaccard vs Docling` is the intersection-over-union of table shapes (rows × cols) compared to Docling's structured output on the same page. `Table content vs Docling` is the mean fuzzy similarity (rapidfuzz ratio) of cell text on aligned positions.
+
+### 5.2 Headline findings on the general corpus
+
+1. **Qianfan-OCR-Fast is the surprise of the bench-off.** A free Baidu OCR model competes head-to-head with $0.88/M-token Qwen-235B on the structural axes — 0.972 mean cell-content agreement with Docling versus Qwen-235B's 0.856, and tied with Qwen-30B-A3B for best CER on IAM (0.065). The implication for the workshop deck: "you don't always need bleeding-edge open weights to replace Azure DI; sometimes you need a free Baidu model."
+
+2. **Size is non-monotonic on KV recall.** Under our standard Markdown+KV prompt, Qwen-32B extracted 114 KV pairs across the 8 pages versus Qwen-235B's 58 — the largest model is the *least* aggressive extractor. This is a prompt-following behaviour, not a capability ceiling. A workshop-relevant warning to clients tempted to default to the largest model.
+
+3. **CER >1 on IAM for the larger Qwens is a prompt-induced artefact, not an OCR failure.** Our default prompt asks for "Markdown with headers / tables / KV", so on a single handwriting line the 32B and 235B return formatted output (`# Heading`, `**bold**`, fenced code) with the transcribed line buried inside. CER penalises the formatting overhead. The fix is axis-aware prompts; the 30B-A3B variant happens to be the most prompt-disciplined and avoids the over-formatting.
+
+4. **DeepSeek-OCR-2 is the fastest VLM** at 4.0 s median latency — roughly 3× faster than Qwen-30B and 4× faster than Qwen-235B. Its bbox-grounded structural output is rich (typed regions: text/sub_title/title/table/image/list with bbox coords) but does not follow conversational prompts. **Strong fit for high-throughput Markdown extraction; weak fit for any task requiring schema compliance via prompting.**
+
+5. **Docling has the lowest latency on the laptop GPU (3.24 s median)** and is the only stack producing structured tables with span detection on the JPM 10-K (3 tables, 170 cells in the income statement alone). It does not produce KV pairs — that axis stays the VLM's job in any production hybrid.
+
+---
+
+## 6. Results — Feature Detection Matrix
+
+### 6.1 Per-stack per-axis headline scores
+
+| Stack | Checkboxes F1 | Signatures F1 | Formulas mean similarity | Codes exact-match F1 |
+|---|---|---|---|---|
+| **docling** | 0.000 | 0.000 | 0.311 | 0.000 |
+| **qwen-8b** | **0.857** | **1.000** | 0.958 | 0.500 |
+| **qwen-30b-a3b** | 0.800 | 0.667 | 0.944 | 0.500 |
+| **qwen-32b** | 0.800 | **1.000** | 0.919 | 0.500 |
+| **qwen-235b-a22b** | 0.800 | **1.000** | **1.000** | 0.500 |
+| **qianfan-ocr** | 0.714 | **1.000** | 0.569 | 0.500 |
+| **deepseek-ocr** | 0.000 | 0.000 | 0.819 | 0.000 |
+
+### 6.2 Headline findings on feature detection
+
+1. **Specialist OCR pipelines (Docling, DeepSeek-OCR-2) score 0 on three of four feature axes.** They are not conversational. Docling has no prompt knob; DeepSeek-OCR-2 ignores instruction prompts and dumps every text region (104 lines on the W-9, none in our `LABEL :: STATE` format). For checkbox/signature/code detection, the production replica must include a generative VLM tier.
+
+2. **Generative VLMs handle feature detection well via prompting.** All four Qwen sizes hit ≥0.8 on checkboxes, ≥0.67 on signatures, ≥0.92 on formulas. **Crucially, even Qwen-8B hits 0.857 on checkboxes — equal to Qwen-235B.** Size does not help on prompt-following at this scale; the small model has equivalent capability. This is meaningful for production: the cheaper, faster Qwen-8B can do most feature-detection work that the 235B can.
+
+3. **Qwen-235B-A22B perfectly transcribes formulas as LaTeX** (1.000 mean similarity). The largest model is the only one that exactly recovers all three canonical identities. For formula-heavy documents (scientific papers, engineering specs), the 235B is the only Qwen size that reaches Azure-DI-grade transcription.
+
+4. **Qianfan-OCR (free) ties 1.000 with the 32B/235B Qwens on signature detection** at zero cost. This is a strong economic data point for the deck: signature detection does not require a paid VLM.
+
+5. **Barcodes/QR are the universal weak axis.** No stack scores >0.500 on the codes F1. Each gets the QR right but misses the EAN-13 or vice versa. **None of the OSS VLMs has a native barcode decoder** — they're doing pattern recognition, not protocol decoding. Azure DI's specialist barcode head wins definitively here. The recommended OSS replica needs a `pyzbar` or `zxing-cpp` bolt-on at the orchestration tier — a small specialist library, not a model change.
+
+---
+
+## 7. What We Had to Build
+
+The repository at https://github.com/r2ja/ocr_benchmark contains the full harness. The custom code we wrote, in order of leverage:
+
+| Component | Purpose | Why we needed to build it |
+|---|---|---|
+| `adapters/openai_compatible_base.py` | Shared base for any OpenAI-compatible VLM endpoint, with built-in Markdown table parser, HTML table parser (no-`<tr>` fallback for DeepSeek), and DeepSeek bbox-grounding parser | Every hosted VLM (OpenRouter, Novita, DeepInfra, vLLM on H200) speaks the same wire format. One base means one path to debug. |
+| `adapters/docling_adapter.py` | Maps Docling's `DoclingDocument` onto our normalised `PageResult` schema | Docling has its own data model; the bench-off needs a uniform shape. |
+| `adapters/{qwen,baidu,deepseek,paddle_vl,dots}_adapter.py` | One ~10-line subclass per stack | Models differ in slug/URL/prompt; everything else is shared via the base. |
+| `scripts/run_eval.py` | Runs a stack against the general corpus, writes per-page raw JSON + a parquet summary | Single entrypoint for reproducibility. |
+| `scripts/run_features.py` | Runs every stack against every feature axis with the axis-specific prompt | The feature-detection axes need different prompts; can't reuse the general runner. |
+| `scripts/score_results.py` | Multi-axis scorer over the general corpus: CER, KV-F1, table summary, structural agreement vs Docling | Mirrors Azure DI's measurable feature surface. |
+| `scripts/score_features.py` | Per-axis feature scorers (checkbox detection F1 + state, signature F1, formula similarity, code exact-match) | Each axis has its own rubric; one generic scorer would be too coarse. |
+| `scripts/build_feature_corpus.py` | One-shot builder for the W-9 page (downloads from IRS), synthetic signatures page, synthetic formulas page, synthetic QR+barcode page (with deterministic gold) | Public OCR benchmarks don't ship feature-axis test data; we generate it ourselves. |
+| `scripts/reparse_tables.py` | Idempotent post-processor that back-fills the `tables` field in existing raw JSONs after parser improvements | Lets us iterate on the parser without re-paying API costs. |
+| `metrics/{kv_metrics,ocr_metrics,table_metrics,rubric}.py` | Wrappers around `jiwer`, `rapidfuzz`, custom TEDS-lite | Keep the rest of the harness import-light. |
+| `corpus_meta/corpus_manifest.py` | Source of truth for which page tests which axes, with `has_*_gold` flags | Avoid duplicating page metadata across scripts. |
+| `scripts/h200_runbook.sh` | Phased deployment script for the H200 pod (install → vLLM serve dots/deepseek/paddle → score → sync) | The H200 attempts needed a runbook for the hybrid driving mode (user SSHes, pastes outputs, we patch). |
+
+---
+
+## 8. Discussion and Recommendations
+
+### 8.1 The hybrid stack the client should deploy
+
+There is **no single OSS model that replaces Azure DI**. The credible production replica is a three-tier hybrid orchestrated on RHOAI:
+
+```
+                                client app
+                                     |
+                                     v
+                ┌────────────────────┴────────────────────┐
+                |        Routing / orchestration          |
+                |   (Python service on RHOAI workbench)   |
+                └──┬───────────────┬───────────────┬──────┘
+                   |               |               |
+                   v               v               v
+            ┌──────────┐   ┌──────────────┐   ┌──────────┐
+            | Docling  |   | Qianfan-OCR  |   | Qwen3-VL |
+            | (KServe) |   | OR Paddle-VL |   |  (vLLM)  |
+            └──────────┘   └──────────────┘   └──────────┘
+              Layout +       Raw OCR +         General-purpose
+              Tables +       Multilingual      VLM + KV +
+              DOCX/XLSX      transcription     feature detection
+                             (Asia-friendly)
+```
+
+**Hardware sizing on the 8× H200 cluster:**
+- Docling: 1 H200 hosting 4–8 replicas
+- Qianfan-OCR or PaddleOCR-VL: 1 H200 hosting 4–8 replicas
+- Qwen3-VL-32B: 1 H200 dedicated (best accuracy/cost tradeoff per the bench-off)
+- Qwen3-VL-8B: 1 H200 hosting 2–3 replicas (high-volume KV path)
+- Headroom: 4 H200s remain for either Qwen3-VL-235B-A22B (TP=8 across 4) or burst capacity
+
+A `pyzbar` (or `zxing-cpp`) sidecar on the orchestrator handles barcode/QR decoding cheaply.
+
+### 8.2 What still requires in-house engineering
+
+1. **Per-field confidence calibration.** Generative VLMs only emit token-likelihoods; Docling has element-level only. **Solution: train a calibration classifier on top of model outputs, or use dual-seed agreement as a proxy.** ~1–2 FTE-weeks.
+2. **Custom Document Models trainer UI.** No OSS equivalent of DI Studio exists. **Solution: Label Studio + Kubeflow Pipelines DAG for the SFT loop, schema registry in Postgres/MinIO.** ~3–4 FTE-weeks for an MVP.
+3. **Schema-locked prebuilt verticals (Invoice, Receipt, etc.).** Replace per-vertical with fine-tuned Qwen-8B + JSON-mode prompts; ~3 hours of training per vertical on one A800 (per the published recipe).
+4. **Selection-marks specialist** for the highest-volume forms. A small CV-detection model (YOLO-class) on top of Docling's layout output, feeding the VLM as auxiliary tokens.
+
+### 8.3 Migration path
+
+1. **Phase 1 (4 weeks):** Deploy Docling + Qwen3-VL-32B on RHOAI. Replace Azure DI's Read + Layout + General Document calls. Accept ~75% feature parity, keep Azure DI alongside for confidence-critical paths.
+2. **Phase 2 (4 weeks):** Add Qianfan-OCR or PaddleOCR-VL for raw transcription. Bolt on `pyzbar` for codes. Train a calibration classifier on the highest-volume document types.
+3. **Phase 3 (8 weeks):** Fine-tune Qwen-8B per vertical (Invoice, Receipt, the client's two highest-volume verticals). Stand up Label Studio + Kubeflow for ongoing iteration. **Decommission Azure DI.**
+
+Total: ~16 weeks to feature-equivalent production replica, with ongoing fine-tune iteration thereafter.
+
+---
+
+## Appendix A — Failed Integration Attempts (Roadblocks)
+
+This appendix documents every integration attempt that failed to produce measurements, with the exact failure mode and remediation effort. **The cumulative time and cost of these failures IS the workshop's hidden-tax finding.**
+
+### A.1 dots.ocr-1.5 on H200 via vLLM — three-stage failure
+
+**Stage 1: vLLM 0.10.1 (released March 2025).** Attempted the published incantation `vllm serve rednote-hilab/dots.ocr --trust-remote-code`. Failed with `ValueError: Unrecognized configuration class DotsOCRConfig for AutoModel`. dots.ocr's custom config class is downloaded by `--trust-remote-code` but not registered with `transformers.AutoModel` until you import the model's vLLM-compat shim. The vendor's HF README documents a `sed`-patch of vLLM's CLI entry script to inject the import; we did not pursue this path because it would not survive an RHOAI ServingRuntime container.
+
+**Stage 2: vLLM 0.11.0 (released October 2025) — the version the vendor README pins.** Same incantation failed with `AttributeError: 'Qwen2VLImageProcessor' object has no attribute 'min_pixels'`. The attribute was removed in `transformers` 5.x; vLLM 0.11.0 was tested against transformers 5.0.x but not 5.8.x (the version pip resolved on our pod).
+
+**Stage 3: pinned `transformers==4.55.0` with `--no-deps`.** New error: `pydantic_core._pydantic_core.ValidationError: 1 validation error for ModelConfig`. vLLM 0.11.0's internal Pydantic schemas differ between transformers 4.x and 5.x; downgrading transformers triggers a different validation failure.
+
+**Pod time burned:** ~45 min. **Resolution:** abandoned. dots.ocr cited from vendor numbers (94+ on OmniDocBench v1.5).
+
+**Wider lesson:** dots.ocr is bleeding-edge enough that `vllm serve <hf_id>` is not reliably "drop-in" across vLLM/transformers minor versions. Production deployment requires either pinning the exact (vLLM, transformers) pair the vendor tested with, or running the vendor's Docker image (`rednotehilab/dots.ocr:vllm-openai-v0.9.1`) which freezes the dependency set.
+
+### A.2 DeepSeek-OCR-2 on H200 via vLLM — five-stage failure
+
+**Stage 1:** First boot failed on missing pip packages: `addict`, `matplotlib` (needed by DeepSeek-OCR's HF modeling code, not declared in the model card requirements).
+
+**Stage 2:** After installing those: missing `easydict`. Installed.
+
+**Stage 3:** After installing easydict + `timm` + `einops` + `opencv-python` preemptively: `ImportError: cannot import name 'LlamaFlashAttention2' from 'transformers.models.llama.modeling_llama'`. The class was removed in transformers 4.48+; DeepSeek-OCR's HF modeling code references it directly.
+
+**Stage 4:** With `--logits-processors vllm.model_executor.models.deepseek_ocr:NGramPerReqLogitsProcessor` (per the vLLM recipes page) to bypass the trust-remote-code path: same ImportError. The vLLM-native deepseek_ocr code path also references the removed class.
+
+**Stage 5:** Acknowledged that any vLLM 0.11.0 + transformers ≥4.48 combination cannot import DeepSeek-OCR's HF modeling code without a vendored LlamaFlashAttention2 class. Abandoned self-host.
+
+**Pod time burned:** ~25 min. **Resolution:** pivoted to Novita serverless (`deepseek/deepseek-ocr-2`) which has the integration solved on their side. The first hosted run also failed (degenerate prompt-fragment loop with our English instruction prompt); resolved by switching to the model's native task token `<|grounding|>Convert the document to markdown.`. **Lesson:** OCR-specialist VLMs need their published task tokens, not English prompts.
+
+### A.3 PaddleOCR-VL-1.5 — three-platform failure cascade
+
+**Platform 1: laptop, Python 3.13, Windows.** `pip install paddleocr` fails on the transitive `python-bidi` package — its PEP 517 metadata build does not work on Windows + Python 3.13 (no wheels exist).
+
+**Platform 2: H200 RunPod pod, Python 3.11, Linux.** `pip install paddlepaddle-gpu==3.2.1 -i https://www.paddlepaddle.org.cn/packages/stable/cu126/` times out — the Baidu CN mirror is unreachable from the RunPod ap-jp-1 region. The default PyPI index has older paddle wheels available, but we did not retest under time pressure.
+
+**Platform 3: laptop, **Python 3.11** in a fresh venv, Windows.** `paddlepaddle 3.3.1` and `paddleocr 3.5.0` install cleanly. `PaddleOCRVL()` initialises, downloads the layout-detect model (PP-DocLayoutV3) and the VLM weights (PaddleOCR-VL-1.5-0.9B). Then **Windows fatal exception: access violation (exit code 0xC0000005) at `paddlex/inference/models/common/transformers/transformers/model_utils.py:213` in `_load_part_state_dict_from_safetensors`** during VLM weight load (8 of 18 transformer layers initialised). This is paddle's custom safetensors loader native-crashing on Windows.
+
+**Workaround attempt: `vl_rec_backend="transformers"`** to bypass paddle's loader and use HuggingFace transformers instead. This required `pip install transformers torch`, which loaded `torch/lib/shm.dll` and triggered `OSError: [WinError 127] The specified procedure could not be found` — a paddle/torch DLL conflict in the same venv on Windows.
+
+**Resolution:** abandoned local install on Windows. The two-tier production architecture (paddle's layout-detect locally + a hosted VLM endpoint) remains viable; Novita's "on-demand" PaddleOCR-VL deployment requires a custom GPU rental, which is in progress at the time of writing. Published vendor number (94.5% OmniDocBench v1.5) is cited in the matrix.
+
+**Wider lesson:** paddle's Windows wheels have not been tested at the scale of a full VLM weight load. Linux is the de-facto target. Any production replica using PaddleOCR-VL must run its orchestrator tier in a Linux container — either WSL2 on a developer laptop or a Linux RHOAI pod.
+
+### A.4 OCR-specialist VLM prompt sensitivity (DeepSeek-OCR-2 first-run)
+
+After the Novita endpoint came up, the first 8-page run with our standard Markdown+KV instruction prompt produced **complete degenerate output**: empty results on FUNSD and IAM, and 18 KB of repeated prompt fragments (`If the document contains a table, use the 'table' key to identify the table, ...`) on the SEC and DocILE pages. DeepSeek-OCR-2 is a task-token model; English instructions are interpreted as text TO INCLUDE in the OCR output rather than as instructions. Switching to `<|grounding|>Convert the document to markdown.` fixed it.
+
+**Wider lesson:** OCR-specialist VLMs are **not drop-in replacements for generic VLMs at the prompt level**. The integration cost includes per-model prompt engineering against the model's published task tokens.
+
+---
+
+## Appendix B — Per-Page Per-Stack Detail
+
+The full per-page-per-stack breakdown for the general corpus is committed at `results/scores_local.parquet` (40 rows × 13 axes) and for the feature corpus at `results/feature_scores.parquet` (28 rows). The full per-page raw model outputs are at `results/<stack>/raw/<page_id>.json` for archival inspection.
+
+A condensed view of the general corpus (medians by stack):
+
+| Stack | Pages OK | Σ raw text | Σ tables | Σ KV pairs | Median latency |
+|---|---|---|---|---|---|
+| docling | 8/8 | 11 795 chars | 11 | 0 | 3.24 s |
+| qwen-8b | 8/8 | 10 245 chars | 9 | 36 | 9.97 s |
+| qwen-30b-a3b | 8/8 | 9 816 chars | 9 | 48 | 12.09 s |
+| qwen-32b | 8/8 | 14 178 chars | 10 | 114 | 11.11 s |
+| qwen-235b-a22b | 8/8 | 10 238 chars | 9 | 58 | 14.53 s |
+| qianfan-ocr | 8/8 | ~30 000 chars (incl. 1 over-long multilingual page) | 7 | 0 | 9.31 s |
+| deepseek-ocr | 8/8 | varies (bbox-grounded format, post-parse 8 tables, 12 layout blocks per page) | 8 | 0 | 4.03 s |
+
+---
+
+## Appendix C — Repository Structure
+
+```
+docintel-benchmark/
+├── adapters/                       # one Python module per stack + shared base
+│   ├── base.py                     # StackAdapter abstract class
+│   ├── schema.py                   # PageResult / Table / KVPair / etc.
+│   ├── openai_compatible_base.py   # OpenAI-compat VLM base + table parsers
+│   ├── docling_adapter.py          # Docling → PageResult
+│   ├── qwen_adapter.py             # Qwen3-VL family
+│   ├── baidu_adapter.py            # Qianfan-OCR (free on OpenRouter)
+│   ├── deepseek_adapter.py         # DeepSeek-OCR-2 via Novita
+│   ├── paddle_vl_adapter.py        # PaddleOCR-VL (in progress, hybrid mode)
+│   ├── dots_adapter.py             # dots.ocr (skipped, vendor numbers cited)
+│   └── llama_cpp_base.py           # legacy llama-cpp path (kept for reference)
+├── corpus/                         # 12 hand-picked pages + gold-truth
+│   ├── sec_10k/                    # NVDA + JPM 10-K pages
+│   ├── funsd/                      # form
+│   ├── cord/                       # receipt
+│   ├── fintabnet/                  # table
+│   ├── iam/                        # handwriting
+│   ├── omnidocbench/               # multilingual
+│   ├── docile/                     # invoice (gitignored — research-only license)
+│   └── features/                   # checkboxes / signatures / formulas / codes
+├── corpus_meta/corpus_manifest.py  # source of truth for which page tests what
+├── metrics/                        # KV F1, CER, table-TEDS-lite, rubric
+├── results/                        # per-stack parquet + raw JSON dumps
+│   ├── <stack>/raw/<page_id>.json  # raw model output per page
+│   ├── <stack>_run_<ts>.parquet    # run-level summary
+│   ├── scores_local.parquet        # multi-axis scores
+│   └── feature_scores.parquet      # feature-axis scores
+├── scripts/                        # CLI entrypoints
+│   ├── run_eval.py                 # main bench-off runner
+│   ├── run_features.py             # feature-axis runner
+│   ├── score_results.py            # general-axis scorer
+│   ├── score_features.py           # feature-axis scorer
+│   ├── reparse_tables.py           # idempotent table parser back-fill
+│   ├── build_feature_corpus.py     # feature corpus builder
+│   ├── fetch_sec.py                # SEC EDGAR 10-K fetcher
+│   ├── fetch_hf_datasets.py        # HF dataset puller
+│   └── h200_runbook.sh             # RunPod H200 deployment runbook
+├── docs/
+│   ├── workshop_report.md          # this paper
+│   ├── benchmark_spec.md           # the original brief
+│   ├── findings.md                 # iterative findings log
+│   ├── azure_di_feature_comparison.md  # full feature comparison matrix
+│   ├── openshift_ai_deployment.md  # RHOAI deployment notes
+│   ├── rubric.md                   # manual rubric for axes without gold
+│   └── measurements_local.csv      # per-stack-per-page measurement CSV
+├── requirements.txt                # pinned dependencies
+├── .env.example                    # required API keys
+├── .gitignore                      # excludes .env, .venv, DocILE corpus, IDE-local files
+└── README.md                       # quickstart
+```
+
+---
+
+**End of report.**

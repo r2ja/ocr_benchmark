@@ -5,7 +5,96 @@
   "raw_text": "```markdown\n# Receipt\n\n---\n\n## Itemized Breakdown\n\n| Item Code | Description     | Quantity | Unit Price | Total Price |\n|-----------|-----------------|----------|------------|-------------|\n| 901016    | -TICKET CP      | 2        | 60,000     | 60,000      |\n\n---\n\n## Summary\n\n- **TOTAL DISC $**: -60,000\n- **TAX**: 5,455\n- **Subtotal**: 60,000\n- **TOTAL (Qty 2.00 60,000)**: 60,000\n\n---\n\n## Payment Details\n\n- **EDC CIMB NIAGA No**: xx7730\n- **Amount**: 60,000\n\n---\n\n## Customer Info\n\n*(Partially visible or redacted)*\n\n---\n\n## Key-Value Pairs:\n\nITEM_CODE :: 901016\nDESCRIPTION :: -TICKET CP\nQUANTITY :: 2\nUNIT_PRICE :: 60,000\nTOTAL_PRICE :: 60,000\nTOTAL_DISC :: -60,000\nTAX :: 5,455\nSUBTOTAL :: 60,000\nTOTAL_AMOUNT :: 60,000\nPAYMENT_METHOD :: EDC CIMB NIAGA\nCARD_LAST_4 :: xx7730\n```",
   "text_blocks": [],
   "layout": [],
-  "tables": [],
+  "tables": [
+    {
+      "cells": [
+        {
+          "row": 0,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Item Code",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Description",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Quantity",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Unit Price",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Total Price",
+          "is_header": true
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "901016",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "-TICKET CP",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "2",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "60,000",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "60,000",
+          "is_header": false
+        }
+      ],
+      "bbox": null,
+      "html": null,
+      "n_rows": 2,
+      "n_cols": 5
+    }
+  ],
   "kv_pairs": [
     {
       "key": "ITEM_CODE",

@@ -1,0 +1,20 @@
+{
+  "axis": "signatures",
+  "source": "synthetic \u2014 modeled on 10-K SIGNATURES section format",
+  "license": "synthesized for benchmark",
+  "expected_signatures": [
+    {
+      "signer": "Jamie Dimon",
+      "role": "Chairman and Chief Executive Officer"
+    },
+    {
+      "signer": "Jeremy Barnum",
+      "role": "Executive Vice President and Chief Financial Officer"
+    },
+    {
+      "signer": "Elena Korablina",
+      "role": "Managing Director and Firmwide Controller"
+    }
+  ],
+  "notes": "Synthetic page modeling the standard 10-K SIGNATURES block. Each entry has a /s/ signature marker, a printed name, and a role."
+}

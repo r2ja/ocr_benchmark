@@ -1,0 +1,330 @@
+{
+  "page_id": "docile-invoice-01",
+  "stack_id": "deepseek-ocr-2",
+  "model_revision": "deepseek/deepseek-ocr-2",
+  "raw_text": "sub_title[[75, 28, 328, 46]]\n## Invoice no: 40378170\n\ntext[[75, 58, 210, 75]]\nDate of issue:\n\ntext[[481, 58, 593, 75]]\n10/15/2012\n\nsub_title[[75, 187, 155, 205]]\n## Seller:\n\ntext[[80, 214, 376, 231]]\nPatel, Thompson and Montgomery\n\ntext[[81, 230, 210, 246], [81, 245, 279, 261]]\n356 Kyle Vista\nNew James, MA 46228\n\ntext[[80, 275, 259, 290]]\nTax Id: 958-74-3511\n\ntext[[80, 290, 389, 306]]\nIBAN: GB77WRBQ31965128414006\n\nsub_title[[496, 186, 576, 205]]\n## Client:\n\ntext[[500, 214, 761, 231]]\nJackson, Odonnell and Jackson\n\ntext[[501, 230, 718, 246], [501, 245, 697, 261]]\n267 John Track Suite 841\nJenniferville, PA 98601\n\ntext[[501, 275, 677, 292]]\nTax Id: 998-87-7723\n\nsub_title[[75, 322, 152, 339]]\n## ITEMS\n\ntable[[80, 353, 916, 437]]\n<table>No.DescriptionQtyUMNet priceNet worthVAT [%]Gross worth1.Leed&#x27;s Wine Companion Bottle Corkscrew Opener Gift Box Set with Foil Cutter1,00each7,507,5010%8,25</table>\n\nsub_title[[76, 458, 200, 476]]\n## SUMMARY\n\ntable[[80, 489, 916, 563]]\n<table>VAT [%]Net worthVATGross worth10%7,500,758,25Total\\( 7,50\\) 0,75$ 8,25</table>",
+  "text_blocks": [
+    {
+      "text": "## Invoice no: 40378170",
+      "bbox": {
+        "x0": 75,
+        "y0": 28,
+        "x1": 328,
+        "y1": 46
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Date of issue:",
+      "bbox": {
+        "x0": 75,
+        "y0": 58,
+        "x1": 210,
+        "y1": 75
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "10/15/2012",
+      "bbox": {
+        "x0": 481,
+        "y0": 58,
+        "x1": 593,
+        "y1": 75
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "## Seller:",
+      "bbox": {
+        "x0": 75,
+        "y0": 187,
+        "x1": 155,
+        "y1": 205
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Patel, Thompson and Montgomery",
+      "bbox": {
+        "x0": 80,
+        "y0": 214,
+        "x1": 376,
+        "y1": 231
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Tax Id: 958-74-3511",
+      "bbox": {
+        "x0": 80,
+        "y0": 275,
+        "x1": 259,
+        "y1": 290
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "IBAN: GB77WRBQ31965128414006",
+      "bbox": {
+        "x0": 80,
+        "y0": 290,
+        "x1": 389,
+        "y1": 306
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "## Client:",
+      "bbox": {
+        "x0": 496,
+        "y0": 186,
+        "x1": 576,
+        "y1": 205
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Jackson, Odonnell and Jackson",
+      "bbox": {
+        "x0": 500,
+        "y0": 214,
+        "x1": 761,
+        "y1": 231
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Tax Id: 998-87-7723",
+      "bbox": {
+        "x0": 501,
+        "y0": 275,
+        "x1": 677,
+        "y1": 292
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "## ITEMS",
+      "bbox": {
+        "x0": 75,
+        "y0": 322,
+        "x1": 152,
+        "y1": 339
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "## SUMMARY",
+      "bbox": {
+        "x0": 76,
+        "y0": 458,
+        "x1": 200,
+        "y1": 476
+      },
+      "confidence": null,
+      "reading_order": null
+    }
+  ],
+  "layout": [
+    {
+      "label": "sub_title",
+      "bbox": {
+        "x0": 75,
+        "y0": 28,
+        "x1": 328,
+        "y1": 46
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 75,
+        "y0": 58,
+        "x1": 210,
+        "y1": 75
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 481,
+        "y0": 58,
+        "x1": 593,
+        "y1": 75
+      },
+      "confidence": null
+    },
+    {
+      "label": "sub_title",
+      "bbox": {
+        "x0": 75,
+        "y0": 187,
+        "x1": 155,
+        "y1": 205
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 80,
+        "y0": 214,
+        "x1": 376,
+        "y1": 231
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 80,
+        "y0": 275,
+        "x1": 259,
+        "y1": 290
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 80,
+        "y0": 290,
+        "x1": 389,
+        "y1": 306
+      },
+      "confidence": null
+    },
+    {
+      "label": "sub_title",
+      "bbox": {
+        "x0": 496,
+        "y0": 186,
+        "x1": 576,
+        "y1": 205
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 500,
+        "y0": 214,
+        "x1": 761,
+        "y1": 231
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 501,
+        "y0": 275,
+        "x1": 677,
+        "y1": 292
+      },
+      "confidence": null
+    },
+    {
+      "label": "sub_title",
+      "bbox": {
+        "x0": 75,
+        "y0": 322,
+        "x1": 152,
+        "y1": 339
+      },
+      "confidence": null
+    },
+    {
+      "label": "table",
+      "bbox": {
+        "x0": 80,
+        "y0": 353,
+        "x1": 916,
+        "y1": 437
+      },
+      "confidence": null
+    },
+    {
+      "label": "sub_title",
+      "bbox": {
+        "x0": 76,
+        "y0": 458,
+        "x1": 200,
+        "y1": 476
+      },
+      "confidence": null
+    },
+    {
+      "label": "table",
+      "bbox": {
+        "x0": 80,
+        "y0": 489,
+        "x1": 916,
+        "y1": 563
+      },
+      "confidence": null
+    }
+  ],
+  "tables": [
+    {
+      "cells": [
+        {
+          "row": 0,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "No.DescriptionQtyUMNet priceNet worthVAT [%]Gross worth1.Leed&#x27;s Wine Companion Bottle Corkscrew Opener Gift Box Set with Foil Cutter1,00each7,507,5010%8,25",
+          "is_header": false
+        }
+      ],
+      "bbox": {
+        "x0": 80,
+        "y0": 353,
+        "x1": 916,
+        "y1": 437
+      },
+      "html": null,
+      "n_rows": 1,
+      "n_cols": 1
+    },
+    {
+      "cells": [
+        {
+          "row": 0,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "VAT [%]Net worthVATGross worth10%7,500,758,25Total\\( 7,50\\) 0,75$ 8,25",
+          "is_header": false
+        }
+      ],
+      "bbox": {
+        "x0": 80,
+        "y0": 489,
+        "x1": 916,
+        "y1": 563
+      },
+      "html": null,
+      "n_rows": 1,
+      "n_cols": 1
+    }
+  ],
+  "kv_pairs": [],
+  "latency_ms": 4542.407599999933,
+  "raw_response_path": null,
+  "error": null
+}

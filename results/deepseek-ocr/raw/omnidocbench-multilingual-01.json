@@ -1,0 +1,1674 @@
+{
+  "page_id": "omnidocbench-multilingual-01",
+  "stack_id": "deepseek-ocr-2",
+  "model_revision": "deepseek/deepseek-ocr-2",
+  "raw_text": "sub_title[[90, 22, 193, 63]]\n## PDF Types\n\nimage[[20, 100, 100, 255]]\n\n\ntext[[48, 265, 115, 288]]\nExam Paper\n\nimage[[120, 100, 200, 255]]\n\n\ntext[[190, 264, 226, 288]]\nSides\n\nimage[[203, 0, 300, 255]]\n\n\ntext[[270, 265, 366, 288]]\nAcademic Papers\n\nimage[[374, 0, 460, 255]]\n\n\ntext[[410, 264, 444, 287]]\nBook\n\nimage[[464, 0, 551, 255]]\n\n\ntext[[483, 264, 540, 287]]\nTextbook\n\nimage[[565, 0, 650, 255]]\n\n\ntext[[595, 264, 650, 287]]\nMagazine\n\nimage[[666, 0, 752, 255]]\n\n\ntext[[696, 264, 731, 287]]\nNotes\n\nimage[[767, 0, 852, 255]]\n\n\ntext[[786, 264, 851, 287]]\nNewspaper\n\nimage[[868, 0, 984, 255]]\n\n\ntext[[876, 264, 984, 288]]\nFinancial Reports\n\nsub_title[[145, 315, 295, 355]]\n## Page Attributes\n\ntext[[145, 357, 300, 380]]\n\u2022 PDF Type: Text Book\n\ntext[[145, 380, 303, 402]]\n\u2022 Layout Type: Single Column\n\ntext[[145, 402, 250, 423]]\n\u2022 Language: English\n\ntext[[145, 423, 250, 444]]\n\u2022 Fuzzy Scan: False\n\ntext[[145, 444, 250, 466]]\n\u2022 Watermark: False\n\nsub_title[[33, 550, 160, 572]]\n## Recognition Annotations\n\nimage[[33, 580, 293, 700]]\n\n\nsub_title[[33, 710, 293, 732]]\n## Layout Annotations\n\nimage[[33, 740, 293, 860]]\n\n\nsub_title[[333, 315, 554, 355]]\n## Recognition Annotations\n\ntext[[333, 357, 390, 380]]\nText span\n\ntext[[333, 425, 410, 450]]\nInline Equation\n\ntext[[333, 476, 435, 501]]\nIsolated Equation\n\ntext[[333, 525, 368, 550]]\nText\n\ntext[[333, 565, 440, 590]]\nWith Reading Order\n\ntext[[333, 601, 435, 626]]\nWith Relation Link\n\ntext[[450, 357, 545, 380]]\nIgnore Formula\n\ntext[[450, 425, 560, 450]]\nFootnote Marker\n\ntext[[450, 475, 526, 500]]\n& Table\n\ntext[[450, 525, 496, 550]]\nHTML\n\ntext[[450, 565, 560, 590]]\nWith Text Attributes\n\ntext[[450, 600, 570, 625]]\nWith Table Attributes\n\nsub_title[[536, 315, 556, 340]]\n## Textbook\n\nsub_title[[680, 315, 864, 355]]\n## Layout Annotations\n\ntext[[600, 357, 660, 380]]\nTitle\n\ntext[[600, 425, 660, 450]]\nFootnote Marker\n\ntext[[600, 475, 664, 500]]\nTable\n\ntext[[600, 525, 686, 550]]\nReference\n\ntext[[600, 565, 688, 590]]\nHeader\n\ntext[[600, 601, 681, 626]]\nFooter\n\ntext[[700, 357, 792, 383]]\nText Block\n\ntext[[700, 425, 805, 450]]\nFigure Caption\n\ntext[[700, 475, 810, 500]]\nTable Caption\n\ntext[[700, 565, 789, 590]]\nCode Block\n\ntext[[700, 601, 770, 626]]\nCode Caption\n\ntext[[820, 357, 943, 383]]\nIsolated Equation\n\ntext[[820, 425, 943, 450]]\nFigure Footnote\n\ntext[[820, 475, 925, 500]]\nTable Footnote\n\ntext[[820, 565, 930, 590]]\nPage Footnote\n\nsub_title[[533, 655, 744, 690]]\n## Annotation Attributes\n\nsub_title[[410, 718, 525, 744]]\n## Text Attributes\n\ntext[[356, 760, 421, 789]]\nLanguage\n\ntext[[455, 760, 530, 789]]\nBackground\n\ntext[[555, 760, 600, 789]]\nRotate\n\ntext[[666, 758, 730, 789]]\nLanguage\n\ntext[[763, 718, 876, 744]]\nTable Attributes\n\ntext[[666, 760, 730, 789]]\nFrame Type\n\ntext[[760, 760, 835, 789]]\nFull Frame\n\ntext[[860, 758, 952, 789]]\nSpecial Issues\n\ntext[[361, 808, 409, 836]]\nEnglish\n\ntext[[461, 808, 501, 835]]\nWhite\n\ntext[[555, 808, 600, 835]]\nNormal\n\ntext[[666, 808, 714, 835]]\nEnglish\n\ntext[[760, 808, 830, 835]]\nFull Frame\n\ntext[[860, 808, 952, 835]]\nWith Merge Cell\n\ntext[[356, 852, 410, 879]]\nChinese\n\ntext[[435, 852, 525, 879]]\nSingle-Colored\n\ntext[[555, 852, 612, 879]]\nHorizontal\n\ntext[[666, 852, 714, 879]]\nChinese\n\ntext[[760, 852, 840, 879]]\nOmission Line\n\ntext[[860, 852, 944, 879]]\nWith Formula\n\ntext[[340, 896, 428, 923]]\nEN-CH-Mixed\n\ntext[[435, 896, 523, 923]]\nMulti-Colored\n\ntext[[555, 896, 611, 923]]\nRotate 90\u00b0\n\ntext[[660, 896, 740, 923]]\nEN-CH-Mixed\n\ntext[[760, 896, 830, 923]]\nThree Line\n\ntext[[860, 896, 950, 923]]\nVertical Rotate\n\ntext[[555, 939, 612, 966]]\nRotate 270\u00b0\n\ntext[[760, 940, 827, 966]]\nNo Frame\n\ntext[[860, 940, 963, 966]]\nColorful Background",
+  "text_blocks": [
+    {
+      "text": "## PDF Types",
+      "bbox": {
+        "x0": 90,
+        "y0": 22,
+        "x1": 193,
+        "y1": 63
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Exam Paper",
+      "bbox": {
+        "x0": 48,
+        "y0": 265,
+        "x1": 115,
+        "y1": 288
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Sides",
+      "bbox": {
+        "x0": 190,
+        "y0": 264,
+        "x1": 226,
+        "y1": 288
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Academic Papers",
+      "bbox": {
+        "x0": 270,
+        "y0": 265,
+        "x1": 366,
+        "y1": 288
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Book",
+      "bbox": {
+        "x0": 410,
+        "y0": 264,
+        "x1": 444,
+        "y1": 287
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Textbook",
+      "bbox": {
+        "x0": 483,
+        "y0": 264,
+        "x1": 540,
+        "y1": 287
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Magazine",
+      "bbox": {
+        "x0": 595,
+        "y0": 264,
+        "x1": 650,
+        "y1": 287
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Notes",
+      "bbox": {
+        "x0": 696,
+        "y0": 264,
+        "x1": 731,
+        "y1": 287
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Newspaper",
+      "bbox": {
+        "x0": 786,
+        "y0": 264,
+        "x1": 851,
+        "y1": 287
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Financial Reports",
+      "bbox": {
+        "x0": 876,
+        "y0": 264,
+        "x1": 984,
+        "y1": 288
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "## Page Attributes",
+      "bbox": {
+        "x0": 145,
+        "y0": 315,
+        "x1": 295,
+        "y1": 355
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "\u2022 PDF Type: Text Book",
+      "bbox": {
+        "x0": 145,
+        "y0": 357,
+        "x1": 300,
+        "y1": 380
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "\u2022 Layout Type: Single Column",
+      "bbox": {
+        "x0": 145,
+        "y0": 380,
+        "x1": 303,
+        "y1": 402
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "\u2022 Language: English",
+      "bbox": {
+        "x0": 145,
+        "y0": 402,
+        "x1": 250,
+        "y1": 423
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "\u2022 Fuzzy Scan: False",
+      "bbox": {
+        "x0": 145,
+        "y0": 423,
+        "x1": 250,
+        "y1": 444
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "\u2022 Watermark: False",
+      "bbox": {
+        "x0": 145,
+        "y0": 444,
+        "x1": 250,
+        "y1": 466
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "## Recognition Annotations",
+      "bbox": {
+        "x0": 33,
+        "y0": 550,
+        "x1": 160,
+        "y1": 572
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "## Layout Annotations",
+      "bbox": {
+        "x0": 33,
+        "y0": 710,
+        "x1": 293,
+        "y1": 732
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "## Recognition Annotations",
+      "bbox": {
+        "x0": 333,
+        "y0": 315,
+        "x1": 554,
+        "y1": 355
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Text span",
+      "bbox": {
+        "x0": 333,
+        "y0": 357,
+        "x1": 390,
+        "y1": 380
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Inline Equation",
+      "bbox": {
+        "x0": 333,
+        "y0": 425,
+        "x1": 410,
+        "y1": 450
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Isolated Equation",
+      "bbox": {
+        "x0": 333,
+        "y0": 476,
+        "x1": 435,
+        "y1": 501
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Text",
+      "bbox": {
+        "x0": 333,
+        "y0": 525,
+        "x1": 368,
+        "y1": 550
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "With Reading Order",
+      "bbox": {
+        "x0": 333,
+        "y0": 565,
+        "x1": 440,
+        "y1": 590
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "With Relation Link",
+      "bbox": {
+        "x0": 333,
+        "y0": 601,
+        "x1": 435,
+        "y1": 626
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Ignore Formula",
+      "bbox": {
+        "x0": 450,
+        "y0": 357,
+        "x1": 545,
+        "y1": 380
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Footnote Marker",
+      "bbox": {
+        "x0": 450,
+        "y0": 425,
+        "x1": 560,
+        "y1": 450
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "& Table",
+      "bbox": {
+        "x0": 450,
+        "y0": 475,
+        "x1": 526,
+        "y1": 500
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "HTML",
+      "bbox": {
+        "x0": 450,
+        "y0": 525,
+        "x1": 496,
+        "y1": 550
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "With Text Attributes",
+      "bbox": {
+        "x0": 450,
+        "y0": 565,
+        "x1": 560,
+        "y1": 590
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "With Table Attributes",
+      "bbox": {
+        "x0": 450,
+        "y0": 600,
+        "x1": 570,
+        "y1": 625
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "## Textbook",
+      "bbox": {
+        "x0": 536,
+        "y0": 315,
+        "x1": 556,
+        "y1": 340
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "## Layout Annotations",
+      "bbox": {
+        "x0": 680,
+        "y0": 315,
+        "x1": 864,
+        "y1": 355
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Title",
+      "bbox": {
+        "x0": 600,
+        "y0": 357,
+        "x1": 660,
+        "y1": 380
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Footnote Marker",
+      "bbox": {
+        "x0": 600,
+        "y0": 425,
+        "x1": 660,
+        "y1": 450
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Table",
+      "bbox": {
+        "x0": 600,
+        "y0": 475,
+        "x1": 664,
+        "y1": 500
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Reference",
+      "bbox": {
+        "x0": 600,
+        "y0": 525,
+        "x1": 686,
+        "y1": 550
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Header",
+      "bbox": {
+        "x0": 600,
+        "y0": 565,
+        "x1": 688,
+        "y1": 590
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Footer",
+      "bbox": {
+        "x0": 600,
+        "y0": 601,
+        "x1": 681,
+        "y1": 626
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Text Block",
+      "bbox": {
+        "x0": 700,
+        "y0": 357,
+        "x1": 792,
+        "y1": 383
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Figure Caption",
+      "bbox": {
+        "x0": 700,
+        "y0": 425,
+        "x1": 805,
+        "y1": 450
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Table Caption",
+      "bbox": {
+        "x0": 700,
+        "y0": 475,
+        "x1": 810,
+        "y1": 500
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Code Block",
+      "bbox": {
+        "x0": 700,
+        "y0": 565,
+        "x1": 789,
+        "y1": 590
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Code Caption",
+      "bbox": {
+        "x0": 700,
+        "y0": 601,
+        "x1": 770,
+        "y1": 626
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Isolated Equation",
+      "bbox": {
+        "x0": 820,
+        "y0": 357,
+        "x1": 943,
+        "y1": 383
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Figure Footnote",
+      "bbox": {
+        "x0": 820,
+        "y0": 425,
+        "x1": 943,
+        "y1": 450
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Table Footnote",
+      "bbox": {
+        "x0": 820,
+        "y0": 475,
+        "x1": 925,
+        "y1": 500
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Page Footnote",
+      "bbox": {
+        "x0": 820,
+        "y0": 565,
+        "x1": 930,
+        "y1": 590
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "## Annotation Attributes",
+      "bbox": {
+        "x0": 533,
+        "y0": 655,
+        "x1": 744,
+        "y1": 690
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "## Text Attributes",
+      "bbox": {
+        "x0": 410,
+        "y0": 718,
+        "x1": 525,
+        "y1": 744
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Language",
+      "bbox": {
+        "x0": 356,
+        "y0": 760,
+        "x1": 421,
+        "y1": 789
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Background",
+      "bbox": {
+        "x0": 455,
+        "y0": 760,
+        "x1": 530,
+        "y1": 789
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Rotate",
+      "bbox": {
+        "x0": 555,
+        "y0": 760,
+        "x1": 600,
+        "y1": 789
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Language",
+      "bbox": {
+        "x0": 666,
+        "y0": 758,
+        "x1": 730,
+        "y1": 789
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Table Attributes",
+      "bbox": {
+        "x0": 763,
+        "y0": 718,
+        "x1": 876,
+        "y1": 744
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Frame Type",
+      "bbox": {
+        "x0": 666,
+        "y0": 760,
+        "x1": 730,
+        "y1": 789
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Full Frame",
+      "bbox": {
+        "x0": 760,
+        "y0": 760,
+        "x1": 835,
+        "y1": 789
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Special Issues",
+      "bbox": {
+        "x0": 860,
+        "y0": 758,
+        "x1": 952,
+        "y1": 789
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "English",
+      "bbox": {
+        "x0": 361,
+        "y0": 808,
+        "x1": 409,
+        "y1": 836
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "White",
+      "bbox": {
+        "x0": 461,
+        "y0": 808,
+        "x1": 501,
+        "y1": 835
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Normal",
+      "bbox": {
+        "x0": 555,
+        "y0": 808,
+        "x1": 600,
+        "y1": 835
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "English",
+      "bbox": {
+        "x0": 666,
+        "y0": 808,
+        "x1": 714,
+        "y1": 835
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Full Frame",
+      "bbox": {
+        "x0": 760,
+        "y0": 808,
+        "x1": 830,
+        "y1": 835
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "With Merge Cell",
+      "bbox": {
+        "x0": 860,
+        "y0": 808,
+        "x1": 952,
+        "y1": 835
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Chinese",
+      "bbox": {
+        "x0": 356,
+        "y0": 852,
+        "x1": 410,
+        "y1": 879
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Single-Colored",
+      "bbox": {
+        "x0": 435,
+        "y0": 852,
+        "x1": 525,
+        "y1": 879
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Horizontal",
+      "bbox": {
+        "x0": 555,
+        "y0": 852,
+        "x1": 612,
+        "y1": 879
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Chinese",
+      "bbox": {
+        "x0": 666,
+        "y0": 852,
+        "x1": 714,
+        "y1": 879
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Omission Line",
+      "bbox": {
+        "x0": 760,
+        "y0": 852,
+        "x1": 840,
+        "y1": 879
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "With Formula",
+      "bbox": {
+        "x0": 860,
+        "y0": 852,
+        "x1": 944,
+        "y1": 879
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "EN-CH-Mixed",
+      "bbox": {
+        "x0": 340,
+        "y0": 896,
+        "x1": 428,
+        "y1": 923
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Multi-Colored",
+      "bbox": {
+        "x0": 435,
+        "y0": 896,
+        "x1": 523,
+        "y1": 923
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Rotate 90\u00b0",
+      "bbox": {
+        "x0": 555,
+        "y0": 896,
+        "x1": 611,
+        "y1": 923
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "EN-CH-Mixed",
+      "bbox": {
+        "x0": 660,
+        "y0": 896,
+        "x1": 740,
+        "y1": 923
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Three Line",
+      "bbox": {
+        "x0": 760,
+        "y0": 896,
+        "x1": 830,
+        "y1": 923
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Vertical Rotate",
+      "bbox": {
+        "x0": 860,
+        "y0": 896,
+        "x1": 950,
+        "y1": 923
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Rotate 270\u00b0",
+      "bbox": {
+        "x0": 555,
+        "y0": 939,
+        "x1": 612,
+        "y1": 966
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "No Frame",
+      "bbox": {
+        "x0": 760,
+        "y0": 940,
+        "x1": 827,
+        "y1": 966
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Colorful Background",
+      "bbox": {
+        "x0": 860,
+        "y0": 940,
+        "x1": 963,
+        "y1": 966
+      },
+      "confidence": null,
+      "reading_order": null
+    }
+  ],
+  "layout": [
+    {
+      "label": "sub_title",
+      "bbox": {
+        "x0": 90,
+        "y0": 22,
+        "x1": 193,
+        "y1": 63
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 48,
+        "y0": 265,
+        "x1": 115,
+        "y1": 288
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 190,
+        "y0": 264,
+        "x1": 226,
+        "y1": 288
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 270,
+        "y0": 265,
+        "x1": 366,
+        "y1": 288
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 410,
+        "y0": 264,
+        "x1": 444,
+        "y1": 287
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 483,
+        "y0": 264,
+        "x1": 540,
+        "y1": 287
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 595,
+        "y0": 264,
+        "x1": 650,
+        "y1": 287
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 696,
+        "y0": 264,
+        "x1": 731,
+        "y1": 287
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 786,
+        "y0": 264,
+        "x1": 851,
+        "y1": 287
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 876,
+        "y0": 264,
+        "x1": 984,
+        "y1": 288
+      },
+      "confidence": null
+    },
+    {
+      "label": "sub_title",
+      "bbox": {
+        "x0": 145,
+        "y0": 315,
+        "x1": 295,
+        "y1": 355
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 145,
+        "y0": 357,
+        "x1": 300,
+        "y1": 380
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 145,
+        "y0": 380,
+        "x1": 303,
+        "y1": 402
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 145,
+        "y0": 402,
+        "x1": 250,
+        "y1": 423
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 145,
+        "y0": 423,
+        "x1": 250,
+        "y1": 444
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 145,
+        "y0": 444,
+        "x1": 250,
+        "y1": 466
+      },
+      "confidence": null
+    },
+    {
+      "label": "sub_title",
+      "bbox": {
+        "x0": 33,
+        "y0": 550,
+        "x1": 160,
+        "y1": 572
+      },
+      "confidence": null
+    },
+    {
+      "label": "sub_title",
+      "bbox": {
+        "x0": 33,
+        "y0": 710,
+        "x1": 293,
+        "y1": 732
+      },
+      "confidence": null
+    },
+    {
+      "label": "sub_title",
+      "bbox": {
+        "x0": 333,
+        "y0": 315,
+        "x1": 554,
+        "y1": 355
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 333,
+        "y0": 357,
+        "x1": 390,
+        "y1": 380
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 333,
+        "y0": 425,
+        "x1": 410,
+        "y1": 450
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 333,
+        "y0": 476,
+        "x1": 435,
+        "y1": 501
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 333,
+        "y0": 525,
+        "x1": 368,
+        "y1": 550
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 333,
+        "y0": 565,
+        "x1": 440,
+        "y1": 590
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 333,
+        "y0": 601,
+        "x1": 435,
+        "y1": 626
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 450,
+        "y0": 357,
+        "x1": 545,
+        "y1": 380
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 450,
+        "y0": 425,
+        "x1": 560,
+        "y1": 450
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 450,
+        "y0": 475,
+        "x1": 526,
+        "y1": 500
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 450,
+        "y0": 525,
+        "x1": 496,
+        "y1": 550
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 450,
+        "y0": 565,
+        "x1": 560,
+        "y1": 590
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 450,
+        "y0": 600,
+        "x1": 570,
+        "y1": 625
+      },
+      "confidence": null
+    },
+    {
+      "label": "sub_title",
+      "bbox": {
+        "x0": 536,
+        "y0": 315,
+        "x1": 556,
+        "y1": 340
+      },
+      "confidence": null
+    },
+    {
+      "label": "sub_title",
+      "bbox": {
+        "x0": 680,
+        "y0": 315,
+        "x1": 864,
+        "y1": 355
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 600,
+        "y0": 357,
+        "x1": 660,
+        "y1": 380
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 600,
+        "y0": 425,
+        "x1": 660,
+        "y1": 450
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 600,
+        "y0": 475,
+        "x1": 664,
+        "y1": 500
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 600,
+        "y0": 525,
+        "x1": 686,
+        "y1": 550
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 600,
+        "y0": 565,
+        "x1": 688,
+        "y1": 590
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 600,
+        "y0": 601,
+        "x1": 681,
+        "y1": 626
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 700,
+        "y0": 357,
+        "x1": 792,
+        "y1": 383
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 700,
+        "y0": 425,
+        "x1": 805,
+        "y1": 450
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 700,
+        "y0": 475,
+        "x1": 810,
+        "y1": 500
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 700,
+        "y0": 565,
+        "x1": 789,
+        "y1": 590
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 700,
+        "y0": 601,
+        "x1": 770,
+        "y1": 626
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 820,
+        "y0": 357,
+        "x1": 943,
+        "y1": 383
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 820,
+        "y0": 425,
+        "x1": 943,
+        "y1": 450
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 820,
+        "y0": 475,
+        "x1": 925,
+        "y1": 500
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 820,
+        "y0": 565,
+        "x1": 930,
+        "y1": 590
+      },
+      "confidence": null
+    },
+    {
+      "label": "sub_title",
+      "bbox": {
+        "x0": 533,
+        "y0": 655,
+        "x1": 744,
+        "y1": 690
+      },
+      "confidence": null
+    },
+    {
+      "label": "sub_title",
+      "bbox": {
+        "x0": 410,
+        "y0": 718,
+        "x1": 525,
+        "y1": 744
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 356,
+        "y0": 760,
+        "x1": 421,
+        "y1": 789
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 455,
+        "y0": 760,
+        "x1": 530,
+        "y1": 789
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 555,
+        "y0": 760,
+        "x1": 600,
+        "y1": 789
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 666,
+        "y0": 758,
+        "x1": 730,
+        "y1": 789
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 763,
+        "y0": 718,
+        "x1": 876,
+        "y1": 744
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 666,
+        "y0": 760,
+        "x1": 730,
+        "y1": 789
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 760,
+        "y0": 760,
+        "x1": 835,
+        "y1": 789
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 860,
+        "y0": 758,
+        "x1": 952,
+        "y1": 789
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 361,
+        "y0": 808,
+        "x1": 409,
+        "y1": 836
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 461,
+        "y0": 808,
+        "x1": 501,
+        "y1": 835
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 555,
+        "y0": 808,
+        "x1": 600,
+        "y1": 835
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 666,
+        "y0": 808,
+        "x1": 714,
+        "y1": 835
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 760,
+        "y0": 808,
+        "x1": 830,
+        "y1": 835
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 860,
+        "y0": 808,
+        "x1": 952,
+        "y1": 835
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 356,
+        "y0": 852,
+        "x1": 410,
+        "y1": 879
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 435,
+        "y0": 852,
+        "x1": 525,
+        "y1": 879
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 555,
+        "y0": 852,
+        "x1": 612,
+        "y1": 879
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 666,
+        "y0": 852,
+        "x1": 714,
+        "y1": 879
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 760,
+        "y0": 852,
+        "x1": 840,
+        "y1": 879
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 860,
+        "y0": 852,
+        "x1": 944,
+        "y1": 879
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 340,
+        "y0": 896,
+        "x1": 428,
+        "y1": 923
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 435,
+        "y0": 896,
+        "x1": 523,
+        "y1": 923
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 555,
+        "y0": 896,
+        "x1": 611,
+        "y1": 923
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 660,
+        "y0": 896,
+        "x1": 740,
+        "y1": 923
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 760,
+        "y0": 896,
+        "x1": 830,
+        "y1": 923
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 860,
+        "y0": 896,
+        "x1": 950,
+        "y1": 923
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 555,
+        "y0": 939,
+        "x1": 612,
+        "y1": 966
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 760,
+        "y0": 940,
+        "x1": 827,
+        "y1": 966
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 860,
+        "y0": 940,
+        "x1": 963,
+        "y1": 966
+      },
+      "confidence": null
+    }
+  ],
+  "tables": [],
+  "kv_pairs": [],
+  "latency_ms": 20055.517699999655,
+  "raw_response_path": null,
+  "error": null
+}

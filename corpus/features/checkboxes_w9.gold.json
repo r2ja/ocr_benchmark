@@ -1,0 +1,36 @@
+{
+  "axis": "checkboxes",
+  "source": "https://www.irs.gov/pub/irs-pdf/fw9.pdf",
+  "license": "US-government public domain",
+  "expected_checkboxes": [
+    {
+      "label": "Individual/sole proprietor or single-member LLC",
+      "state": "unchecked"
+    },
+    {
+      "label": "C corporation",
+      "state": "unchecked"
+    },
+    {
+      "label": "S corporation",
+      "state": "unchecked"
+    },
+    {
+      "label": "Partnership",
+      "state": "unchecked"
+    },
+    {
+      "label": "Trust/estate",
+      "state": "unchecked"
+    },
+    {
+      "label": "Limited liability company",
+      "state": "unchecked"
+    },
+    {
+      "label": "Other",
+      "state": "unchecked"
+    }
+  ],
+  "notes": "Page 1 of an unfilled IRS W-9. All boxes unchecked. Stack should detect presence of checkbox set and report unchecked state."
+}
