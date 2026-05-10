@@ -4,7 +4,7 @@
 
 ---
 
-**Logarithm Technologies — Workshop Deliverable**
+**Workshop Deliverable**
 **Date:** 2026-05-10
 **Target deployment:** Red Hat OpenShift AI on an 8× NVIDIA H200 cluster
 
@@ -12,11 +12,11 @@
 
 ## Executive Summary
 
-Microsoft Azure Document Intelligence is a managed, schema-locked OCR-and-extraction service with five base APIs, ~20 prebuilt verticals, and a custom-model trainer. Our client's mandate is to **replace it on-premises** under a Red Hat OpenShift AI deployment using open-source weights and inference engines.
+Microsoft Azure Document Intelligence is a managed, schema-locked OCR-and-extraction service with five base APIs, ~20 prebuilt verticals, and a custom-model trainer. The deployment mandate documented in this paper is to **replace it on-premises** under a Red Hat OpenShift AI deployment using open-source weights and inference engines.
 
-This paper documents the bench-off against seven candidate stacks (plus one specialist bolt-on, `pyzbar`) across **ten measurement axes** on **twelve hand-picked test pages**. The headline takeaway: **no single OSS stack is a one-to-one Azure DI replacement**, but a **three-stack hybrid** (Docling for layout/tables/Office formats + Qwen3-VL-32B for general VLM tasks + a Baidu-family OCR specialist for raw transcription) covers ≥75% of Azure DI's measurable feature surface. The remaining 25% — primarily per-field confidence calibration and the custom-model training UX — requires explicit in-house engineering investment that the client must price into the migration plan.
+This paper documents the bench-off against seven candidate stacks (plus one specialist bolt-on, `pyzbar`) across **ten measurement axes** on **twelve hand-picked test pages**. The headline takeaway: **no single OSS stack is a one-to-one Azure DI replacement**, but a **three-stack hybrid** (Docling for layout/tables/Office formats + Qwen3-VL-32B for general VLM tasks + a Baidu-family OCR specialist for raw transcription) covers ≥75% of Azure DI's measurable feature surface. The remaining 25% — primarily per-field confidence calibration and the custom-model training UX — requires explicit in-house engineering investment that any deploying organization must price into the migration plan.
 
-A secondary finding is that **integration cost is the dominant hidden tax** of replacing Azure DI. We documented over 90 minutes of cascading dependency conflicts on a rented H200 across three OCR-specialist VLMs (dots.ocr, DeepSeek-OCR-2, PaddleOCR-VL-1.5) before pivoting to hosted serverless APIs. Detail traces are in Appendix A; the conclusion is that the client should plan for an **FTE-week of integration work per bleeding-edge model** they choose to self-host.
+A secondary finding is that **integration cost is the dominant hidden tax** of replacing Azure DI. We documented over 90 minutes of cascading dependency conflicts on a rented H200 across three OCR-specialist VLMs (dots.ocr, DeepSeek-OCR-2, PaddleOCR-VL-1.5) before pivoting to hosted serverless APIs. Detail traces are in Appendix A; the conclusion is that any deploying team should plan for an **FTE-week of integration work per bleeding-edge model** they choose to self-host.
 
 The bench-off matrix and supporting raw outputs (~70 evaluations, ~12 MB of structured artifacts) are archived alongside this report for reproducibility.
 
@@ -47,9 +47,9 @@ Selection marks (checkboxes), signature/seal detection, formulas, barcodes/QR, h
 
 ### 1.4 Why Replace It
 
-The client's drivers are:
+Typical drivers for replacement are:
 1. **Data sovereignty / compliance** — sensitive documents must not leave the organization.
-2. **Per-page billing economics** — at production volume, Azure DI's per-page pricing exceeds the amortized cost of self-hosted inference on the existing 8× H200 cluster.
+2. **Per-page billing economics** — at production volume, Azure DI's per-page pricing exceeds the amortized cost of self-hosted inference on a comparable 8× H200 cluster.
 3. **Roadmap independence** — Azure DI's feature evolution and pricing are external concerns; an OSS replica is auditable and pinnable.
 
 The brief is therefore: build a **functionally-equivalent on-premises replica** on Red Hat OpenShift AI, using open-weight models served via vLLM ServingRuntime / KServe InferenceService, deployed as standard Kubernetes resources.
@@ -229,7 +229,7 @@ We did NOT do per-(stack, axis) prompt overrides for the feature axes. The Qwen 
 
 1. **Qianfan-OCR-Fast is the surprise of the bench-off.** A free Baidu OCR model competes head-to-head with $0.88/M-token Qwen-235B on the structural axes — 0.972 mean cell-content agreement with Docling versus Qwen-235B's 0.856, and tied with Qwen-30B-A3B for best CER on IAM (0.065). The implication for the workshop deck: "you don't always need bleeding-edge open weights to replace Azure DI; sometimes you need a free Baidu model."
 
-2. **Size is non-monotonic on KV recall.** Under our standard Markdown+KV prompt, Qwen-32B extracted 114 KV pairs across the 8 pages versus Qwen-235B's 58 — the largest model is the *least* aggressive extractor. This is a prompt-following behaviour, not a capability ceiling. A workshop-relevant warning to clients tempted to default to the largest model.
+2. **Size is non-monotonic on KV recall.** Under our standard Markdown+KV prompt, Qwen-32B extracted 114 KV pairs across the 8 pages versus Qwen-235B's 58 — the largest model is the *least* aggressive extractor. This is a prompt-following behaviour, not a capability ceiling. A workshop-relevant warning to anyone tempted to default to the largest model.
 
 3. **CER >1 on IAM for the larger Qwens is a prompt-induced artefact, not an OCR failure.** Our default prompt asks for "Markdown with headers / tables / KV", so on a single handwriting line the 32B and 235B return formatted output (`# Heading`, `**bold**`, fenced code) with the transcribed line buried inside. CER penalises the formatting overhead. The fix is axis-aware prompts; the 30B-A3B variant happens to be the most prompt-disciplined and avoids the over-formatting.
 
@@ -361,12 +361,12 @@ The harness is built around a small set of custom Python modules. Listed in orde
 
 ## 9. Discussion and Recommendations
 
-### 9.1 The hybrid stack the client should deploy
+### 9.1 The recommended hybrid stack
 
 There is **no single OSS model that replaces Azure DI**. The credible production replica is a three-tier hybrid orchestrated on RHOAI:
 
 ```
-                                client app
+                                application
                                      |
                                      v
                 ┌────────────────────┴────────────────────┐
@@ -400,13 +400,13 @@ A `pyzbar` (or `zxing-cpp`) sidecar on the orchestrator handles barcode/QR decod
 2. **Custom Document Models trainer UI.** No OSS equivalent of DI Studio exists. **Solution: Label Studio + Kubeflow Pipelines DAG for the SFT loop, schema registry in Postgres/MinIO.** ~3–4 FTE-weeks for an MVP.
 3. **Schema-locked prebuilt verticals (Invoice, Receipt, etc.).** **Largely solved by prompt-and-JSON-mode** per our bench (Qwen-8B and free Qianfan-OCR both score ≥0.9 on receipt + invoice schemas with no fine-tuning). Recommended path: define one JSON schema per vertical, ship as a templated prompt, no model changes needed for at least the highest-volume verticals (Receipt, Invoice). Fine-tune only if a vertical requires per-field accuracy >0.95.
 4. **Barcode / QR decoding.** Bolt on `pyzbar` (or `zxing-cpp`) at the orchestration tier; OSS VLMs do not natively decode barcode protocols. ~2 hours of integration.
-5. **Selection-marks specialist** for the highest-volume forms. A small CV-detection model (YOLO-class) on top of Docling's layout output, feeding the VLM as auxiliary tokens. *Optional* — Qwen handles checkbox detection at 0.857 F1 via prompting, which may already meet the client's accuracy bar.
+5. **Selection-marks specialist** for the highest-volume forms. A small CV-detection model (YOLO-class) on top of Docling's layout output, feeding the VLM as auxiliary tokens. *Optional* — Qwen handles checkbox detection at 0.857 F1 via prompting, which may already meet the production accuracy bar.
 
 ### 9.3 Migration path
 
 1. **Phase 1 (4 weeks):** Deploy Docling + Qwen3-VL-32B on RHOAI. Replace Azure DI's Read + Layout + General Document calls. Accept ~75% feature parity, keep Azure DI alongside for confidence-critical paths.
 2. **Phase 2 (4 weeks):** Add Qianfan-OCR or PaddleOCR-VL for raw transcription. Bolt on `pyzbar` for codes. Train a calibration classifier on the highest-volume document types.
-3. **Phase 3 (8 weeks):** Fine-tune Qwen-8B per vertical (Invoice, Receipt, the client's two highest-volume verticals). Stand up Label Studio + Kubeflow for ongoing iteration. **Decommission Azure DI.**
+3. **Phase 3 (8 weeks):** Fine-tune Qwen-8B per vertical (Invoice, Receipt, plus the two highest-volume verticals in the production workload). Stand up Label Studio + Kubeflow for ongoing iteration. **Decommission Azure DI.**
 
 Total: ~16 weeks to feature-equivalent production replica, with ongoing fine-tune iteration thereafter.
 
@@ -432,7 +432,7 @@ A typical document workflow combines Layout + Prebuilt or Layout + Custom Extrac
 
 ### 10.2 OSS hybrid economics on the 8× H200 cluster
 
-The client already owns the 8× H200 cluster (CapEx amortized separately). Operating expense:
+Assuming an organization already owns the 8× H200 cluster (CapEx amortized separately). Operating expense:
 
 - **Electricity**: 8 × ~700 W TDP × 24 h × 30 d × $0.10/kWh ≈ **$403/month at 100% utilization**, ~$200/month at the typical 50% utilization seen in production OCR pipelines.
 - **Maintenance / cooling overhead**: ~$200-500/month allocated.
@@ -468,13 +468,13 @@ Measured from our bench-off runs (per-page average tokens: ~3 K input + ~2 K out
 
 1. **Below ~100 K pages/month, the cheapest path is hosted serverless** (~$120/month for Qwen-32B via OpenRouter, or essentially free via Qianfan-OCR's free tier). At this scale, *not even running the on-prem cluster* is the right answer; rent the inference and skip cluster ops entirely.
 2. **Above ~1 M pages/month, the on-prem 8× H200 cluster is decisively cheapest** at ~$400/month flat versus Azure DI's $15 000+ for the same workload — a **~37× cost ratio** that grows linearly with volume.
-3. **Azure DI is never the cheapest option at any volume.** Its only economic advantage is *zero CapEx* and *zero operational complexity* — both of which the client has already absorbed via the existing H200 cluster.
-4. **The migration ROI is dominated by the cluster being already paid for.** The "amortized H200 cost" is essentially fixed at OpEx; every page processed past the break-even point is pure savings vs Azure DI. Estimated break-even: **~30 K pages/month** (where on-prem OpEx equals Azure DI billing). For any client at production volume, this is reached within hours of the first day.
+3. **Azure DI is never the cheapest option at any volume.** Its only economic advantage is *zero CapEx* and *zero operational complexity* — both of which the deploying organization has already absorbed via the existing H200 cluster.
+4. **The migration ROI is dominated by the cluster being already paid for.** The "amortized H200 cost" is essentially fixed at OpEx; every page processed past the break-even point is pure savings vs Azure DI. Estimated break-even: **~30 K pages/month** (where on-prem OpEx equals Azure DI billing). For any organization at production volume, this is reached within hours of the first day.
 5. **Hosted serverless APIs are the right migration on-ramp**, even before the cluster is ready. Spend $1 200/month on OpenRouter routing through Qwen-32B for the first quarter while the on-prem hybrid is being deployed; switch over once the cluster is production-ready.
 
 ### 10.6 Caveats
 
-- Azure DI's per-page pricing includes managed *confidence calibration*, *Studio UI*, *prebuilt schema validation*, and *SLA-backed reliability*. The cost comparison above values these at $0; in practice the client must staff up to replace them (estimated 1-2 FTE-weeks per category — see §9.2).
+- Azure DI's per-page pricing includes managed *confidence calibration*, *Studio UI*, *prebuilt schema validation*, and *SLA-backed reliability*. The cost comparison above values these at $0; in practice the deploying team must staff up to replace them (estimated 1-2 FTE-weeks per category — see §9.2).
 - The cluster electricity estimate is a US-mainland industrial rate; Asia/Europe rates can be 1.5-3× higher.
 - "Realistic 50% utilization" is a planning figure; actual production OCR pipelines often saturate at 20-40% sustained, which lengthens the cluster's saturation horizon and lowers the marginal cost further.
 
@@ -734,7 +734,7 @@ ean13 :: 5901234123457
 
 ## Headline takeaway from the gallery
 
-Five different output formats from seven stacks on the same input page — that's the integration surface the client's orchestration layer must accept. The **recommended hybrid (Docling + Qwen-32B + Qianfan + pyzbar)** intentionally chooses stacks with three complementary output shapes (structural Markdown / Markdown VLM / HTML / decoded payload strings) — each playing the role it's best at, with normalisation happening at the orchestration tier rather than inside any single model.
+Five different output formats from seven stacks on the same input page — that's the integration surface any orchestration layer must accept. The **recommended hybrid (Docling + Qwen-32B + Qianfan + pyzbar)** intentionally chooses stacks with three complementary output shapes (structural Markdown / Markdown VLM / HTML / decoded payload strings) — each playing the role it's best at, with normalisation happening at the orchestration tier rather than inside any single model.
 
 ---
 

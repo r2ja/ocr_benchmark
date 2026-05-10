@@ -23,7 +23,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 FEATURES_DIR = REPO_ROOT / "corpus" / "features"
 FEATURES_DIR.mkdir(parents=True, exist_ok=True)
 
-UA = {"User-Agent": "Logarithm Tech Research contact.logarithmtechnologies@gmail.com"}
+UA = {"User-Agent": "DocIntel Benchmark Research contact@example.com"}
 
 
 def _http_get(url: str, timeout: int = 60) -> bytes:

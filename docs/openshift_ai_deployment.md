@@ -2,15 +2,15 @@
 
 DRAFT — to be finalized after benchmark runs select the recommended stack(s).
 
-This doc is the workshop section that answers "OK, how does the client actually
-deploy this on RHOAI?". YAMLs here are drawn from RHOAI 2.x docs and per-model
-vendor guides; **none have been run on a live cluster** by Logarithm and that
+This doc is the workshop section that answers "OK, how does the deployment
+actually look on RHOAI?". YAMLs here are drawn from RHOAI 2.x docs and per-model
+vendor guides; **none have been run on a live cluster** in this study and that
 caveat is noted explicitly in the deck.
 
 ## Target architecture (one-page diagram in the deck)
 
 ```
-client app
+application
    |
    v
 +--------------------+      +------------------------------+
@@ -72,7 +72,7 @@ client app
 
 ## To finalize before workshop
 
-- Pin exact RHOAI version the client is on.
+- Pin exact RHOAI version of the target environment.
 - Pin exact ServingRuntime CR YAMLs from that RHOAI version's docs.
 - Add storage / image-pull secrets sections.
 - Add a one-page "minimum viable production deploy" YAML for the recommended

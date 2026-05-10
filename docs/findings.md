@@ -1,7 +1,7 @@
-# Findings — Logarithm DocIntel Benchmark
+# Findings — DocIntel Benchmark
 
 Living document. **INSTALL FINDING** sections are deployment-relevant
-insights for the client's RHOAI build.
+insights for the RHOAI build.
 
 ---
 
@@ -20,13 +20,13 @@ insights for the client's RHOAI build.
 - 1 stack family measured first-hand via API: Qwen3-VL (size sweep).
 - 3 stacks cited from vendor publications + documented RHOAI deployment: PaddleOCR-VL, dots.ocr, DeepSeek-OCR.
 
-This is a **stronger workshop narrative**, not a weaker one — it makes the case for the client's H200 investment concrete: "here's what runs on a $300 laptop, here's what only runs on cluster-class hardware, here's what each costs."
+This is a **stronger workshop narrative**, not a weaker one — it makes the case for the H200 cluster investment concrete: "here's what runs on a $300 laptop, here's what only runs on cluster-class hardware, here's what each costs."
 
 ---
 
 ## Why the 4 GB ceiling matters for the workshop story
 
-The client owns 8× H200 (~1128 GB total VRAM). On any single H200:
+The target deployment is on 8× H200 (~1128 GB total VRAM). On any single H200:
 - BF16 weights for every candidate fit with **>100× headroom**.
 - Compute buffers at any reasonable resolution fit trivially.
 - Quantization is a deploy-time choice, not a necessity.

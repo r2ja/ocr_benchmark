@@ -1,7 +1,7 @@
 # docintel-benchmark
 
 Benchmark harness for the Azure Document Intelligence open-source replica workshop.
-Logarithm Technologies — client engagement on 8x H200 cluster, deployment target is Red Hat OpenShift AI.
+Target deployment: Red Hat OpenShift AI on an 8× H200 cluster.
 
 ## Stacks measured first-hand
 - Docling + docling-serve — local RTX 3050 (PyTorch)

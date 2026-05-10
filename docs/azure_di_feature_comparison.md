@@ -1,6 +1,6 @@
 # Azure Document Intelligence — Open-Source Replacement Comparison
 
-**Workshop deliverable. Logarithm Technologies, 2026-05-06.**
+**Workshop deliverable. 2026-05-06.**
 
 This document compares 5 open-source candidate stacks against Azure Document
 Intelligence's full feature surface. For each capability, we report whether
@@ -16,7 +16,7 @@ Each cell is tagged:
 - **[V]** — cited from vendor model card, technical report, or public
   benchmark.
 - **[I]** — inferred from architecture / general-purpose VLM capability
-  (lower confidence — should be confirmed in client's own bench).
+  (lower confidence — should be confirmed in a deployer's own bench).
 
 ---
 
@@ -245,7 +245,7 @@ extrapolated from vendor docs.
 | Qwen3-VL-32B | 1-3 pages/sec/H200 (large model, full attention) | [V] vLLM benchmarks |
 | Qwen3-VL-235B-A22B | 0.3-1 page/sec across the 8-card cluster | [V] estimated from vLLM TP=8 numbers |
 
-**These are not measured by us.** Real client benchmarks should re-measure
+**These are not measured by us.** Real production benchmarks should re-measure
 with their own corpus + production batch sizes.
 
 ### 4.3 Latency p50 single-page (cold) — observed by us
@@ -298,14 +298,14 @@ classifier on top.
 
 ---
 
-## 6. Recommended hybrid stack for the client
+## 6. Recommended hybrid stack
 
 The 1:1 Azure DI replica isn't a single model — Azure DI itself is a service
 composed of layout + OCR + KV + verticals. The OSS equivalent is the same
 shape:
 
 ```
-                                 client app
+                                  application
                                        |
                                        v
                   ┌────────────────────┴────────────────────┐
@@ -332,7 +332,7 @@ shape:
   burst/queue capacity
 
 This hybrid is what gets to "1:1 Azure DI replica" with the least bespoke
-training. The client's internal team should:
+training. The deployment team should:
 1. Deploy this skeleton on RHOAI.
 2. Fine-tune Qwen3-VL-8B or 32B on their highest-volume verticals first.
 3. Iterate from there.
@@ -343,7 +343,7 @@ training. The client's internal team should:
 
 - **No measured throughput numbers on H200** — all H200 throughput numbers
   here are vendor-cited. Client should re-measure.
-- **No client-corpus accuracy numbers** — our public-corpus measurements are
+- **No production-corpus accuracy numbers** — our public-corpus measurements are
   3 page-evaluations (Docling × 2 SEC PDFs, Qwen × 1 FUNSD form). The full
   Docling × 8-page run + Qwen × 8-page run is not yet executed.
 - **No Paddle / dots / DeepSeek measurements at all** — local-hardware
@@ -355,7 +355,7 @@ training. The client's internal team should:
 - **RHOAI ServingRuntime YAMLs** in `docs/openshift_ai_deployment.md` are
   drawn from RHOAI 2.x docs, not validated on a live cluster.
 
-These are the items the client should close before signing on a stack.
+These are the items to close before committing to a stack in production.
 
 ---
 

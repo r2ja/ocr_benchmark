@@ -29,7 +29,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 SEC_DIR = REPO_ROOT / "corpus" / "sec_10k"
 SEC_DIR.mkdir(parents=True, exist_ok=True)
 
-UA = {"User-Agent": "Logarithm Technologies Research contact.logarithmtechnologies@gmail.com"}
+UA = {"User-Agent": "DocIntel Benchmark Research contact@example.com"}
 
 
 @dataclass
