@@ -7,7 +7,6 @@
 **Logarithm Technologies — Workshop Deliverable**
 **Date:** 2026-05-10
 **Target deployment:** Red Hat OpenShift AI on an 8× NVIDIA H200 cluster
-**Repository:** https://github.com/r2ja/ocr_benchmark
 
 ---
 
@@ -19,7 +18,7 @@ This paper documents the bench-off against seven candidate stacks (plus one spec
 
 A secondary finding is that **integration cost is the dominant hidden tax** of replacing Azure DI. We documented over 90 minutes of cascading dependency conflicts on a rented H200 across three OCR-specialist VLMs (dots.ocr, DeepSeek-OCR-2, PaddleOCR-VL-1.5) before pivoting to hosted serverless APIs. Detail traces are in Appendix A; the conclusion is that the client should plan for an **FTE-week of integration work per bleeding-edge model** they choose to self-host.
 
-The bench-off matrix and supporting raw outputs (~70 evaluations, ~12 MB of structured artifacts) are committed to the repository at the URL above.
+The bench-off matrix and supporting raw outputs (~70 evaluations, ~12 MB of structured artifacts) are archived alongside this report for reproducibility.
 
 ---
 
@@ -341,7 +340,7 @@ table.parity colgroup col.note    { width: 22%; }
 
 ## 8. What We Had to Build
 
-The repository at https://github.com/r2ja/ocr_benchmark contains the full harness. The custom code we wrote, in order of leverage:
+The harness is built around a small set of custom Python modules. Listed in order of leverage:
 
 | Component | Purpose | Why we needed to build it |
 |---|---|---|
@@ -410,6 +409,76 @@ A `pyzbar` (or `zxing-cpp`) sidecar on the orchestrator handles barcode/QR decod
 3. **Phase 3 (8 weeks):** Fine-tune Qwen-8B per vertical (Invoice, Receipt, the client's two highest-volume verticals). Stand up Label Studio + Kubeflow for ongoing iteration. **Decommission Azure DI.**
 
 Total: ~16 weeks to feature-equivalent production replica, with ongoing fine-tune iteration thereafter.
+
+---
+
+## 10. Cost Economics at Production Scale
+
+The single strongest argument for replacing Azure Document Intelligence is **per-page billing economics at production volume**. This section makes the comparison concrete.
+
+### 10.1 Azure DI public pricing (2026)
+
+Per [azure.microsoft.com/pricing/details/document-intelligence](https://azure.microsoft.com/en-us/pricing/details/document-intelligence/):
+
+| Azure DI service | Price per 1 000 pages | Per page |
+|---|---|---|
+| Read API | $1.50 (drops to $0.60 at 1 M+ pages/month) | $0.0015 / $0.0006 |
+| Layout API / General Document | $1.50 | $0.0015 |
+| Prebuilt models (Invoice, Receipt, ID, Tax, Contract) | $10.00 | $0.0100 |
+| Custom Classification | $3.00 | $0.0030 |
+| Custom Extraction (composed/template/neural) | $30.00 | $0.0300 |
+
+A typical document workflow combines Layout + Prebuilt or Layout + Custom Extraction. Realistic blended per-page costs: **$0.005 (read+layout only) to $0.040 (read+layout+custom extraction).**
+
+### 10.2 OSS hybrid economics on the 8× H200 cluster
+
+The client already owns the 8× H200 cluster (CapEx amortized separately). Operating expense:
+
+- **Electricity**: 8 × ~700 W TDP × 24 h × 30 d × $0.10/kWh ≈ **$403/month at 100% utilization**, ~$200/month at the typical 50% utilization seen in production OCR pipelines.
+- **Maintenance / cooling overhead**: ~$200-500/month allocated.
+- **Total OpEx**: **~$400-900/month flat**, regardless of page volume up to cluster saturation.
+
+Throughput at 50% utilization on the recommended hybrid (Docling + Qwen3-VL-32B + Qianfan/PaddleOCR-VL):
+
+- ~50 pages/sec aggregate effective across the cluster (vendor-cited; per-stack throughput varies)
+- ~130 M pages/month at saturation
+- Realistic 30% utilization → ~39 M pages/month sustained capacity
+
+### 10.3 Hosted serverless API economics (for low-volume or burst capacity)
+
+Measured from our bench-off runs (per-page average tokens: ~3 K input + ~2 K output for a typical SEC page):
+
+| Provider / model | Input / output rates | Approx. per page | 1 M pages/month |
+|---|---|---|---|
+| OpenRouter — Qwen3-VL-32B | $0.104 / $0.416 per M tok | $0.0012 | ~$1 200 |
+| OpenRouter — Qwen3-VL-8B | $0.080 / $0.500 per M tok | $0.0012 | ~$1 200 |
+| Novita — DeepSeek-OCR-2 | $0.030 / $0.100 per M tok | $0.0003 | ~$300 |
+| OpenRouter — Qianfan-OCR-Fast (free tier) | $0 / $0 | $0 | $0 (rate-limited) |
+
+### 10.4 Total cost comparison at three volume scenarios
+
+| Volume tier | Azure DI (Layout+Prebuilt mix, $0.015/pg) | OSS on 8× H200 cluster (owned) | OSS hosted serverless (Qwen-32B mix) |
+|---|---|---|---|
+| 100 K pages/month | **$1 500** | ~$400 (cluster OpEx) | ~$120 |
+| 1 M pages/month | **$15 000** | ~$400 (cluster OpEx) | ~$1 200 |
+| 10 M pages/month | **$150 000** | ~$400 (cluster OpEx, near saturation) | ~$12 000 |
+| 100 M pages/month | **$1 500 000** | $400 (cluster) + ~$10K spillover to API | ~$120 000 |
+
+### 10.5 Headline implications
+
+1. **Below ~100 K pages/month, the cheapest path is hosted serverless** (~$120/month for Qwen-32B via OpenRouter, or essentially free via Qianfan-OCR's free tier). At this scale, *not even running the on-prem cluster* is the right answer; rent the inference and skip cluster ops entirely.
+2. **Above ~1 M pages/month, the on-prem 8× H200 cluster is decisively cheapest** at ~$400/month flat versus Azure DI's $15 000+ for the same workload — a **~37× cost ratio** that grows linearly with volume.
+3. **Azure DI is never the cheapest option at any volume.** Its only economic advantage is *zero CapEx* and *zero operational complexity* — both of which the client has already absorbed via the existing H200 cluster.
+4. **The migration ROI is dominated by the cluster being already paid for.** The "amortized H200 cost" is essentially fixed at OpEx; every page processed past the break-even point is pure savings vs Azure DI. Estimated break-even: **~30 K pages/month** (where on-prem OpEx equals Azure DI billing). For any client at production volume, this is reached within hours of the first day.
+5. **Hosted serverless APIs are the right migration on-ramp**, even before the cluster is ready. Spend $1 200/month on OpenRouter routing through Qwen-32B for the first quarter while the on-prem hybrid is being deployed; switch over once the cluster is production-ready.
+
+### 10.6 Caveats
+
+- Azure DI's per-page pricing includes managed *confidence calibration*, *Studio UI*, *prebuilt schema validation*, and *SLA-backed reliability*. The cost comparison above values these at $0; in practice the client must staff up to replace them (estimated 1-2 FTE-weeks per category — see §9.2).
+- The cluster electricity estimate is a US-mainland industrial rate; Asia/Europe rates can be 1.5-3× higher.
+- "Realistic 50% utilization" is a planning figure; actual production OCR pipelines often saturate at 20-40% sustained, which lengthens the cluster's saturation horizon and lowers the marginal cost further.
+
+The migration is therefore *economically straightforward* — the only meaningful costs are the in-house engineering investments listed in §9.2, not inference compute.
 
 ---
 
@@ -537,6 +606,135 @@ docintel-benchmark/
 ├── .gitignore                      # excludes .env, .venv, DocILE corpus, IDE-local files
 └── README.md                       # quickstart
 ```
+
+---
+
+## Appendix D — Side-by-Side Rendered Output Gallery
+
+This appendix shows the **actual extracted output from each stack** on a single representative page (`sec-10k-bank-01` — the JPMorgan Chase consolidated income statement). The same input image is processed by every stack with each stack's chosen prompt; the snippets below are the first ~600 characters of each stack's `raw_text` for direct visual comparison. The full per-page outputs are archived alongside this report.
+
+The contrast between output formats is itself a workshop finding: every stack solves OCR differently, and the choice of stack determines what your downstream pipeline must accept.
+
+### D.1 Docling — clean Markdown with proper table structure
+
+```
+JPMorgan Chase & Co. Consolidated statements of income
+
+| Year ended December 31, (in millions, except per share data)   | 2025     | 2024     | 2023     |
+|----------------------------------------------------------------|----------|----------|----------|
+| Revenue                                                        |          |          |          |
+| Investment banking fees                                        | $ 9,615  | $ 8,910  | $ 6,519  |
+| Principal transactions                                         | 27,212   | 24,787   | 24,460   |
+| Lending- and deposit-related fees                              | 9,093    | 7,606    | 7,413    |
+| Asset management fees                                          | 20,327   | 17,801   | 15,220   |
+```
+
+*Note*: Docling produces this from a **structural** pipeline (DocLayNet layout detection → TableFormer cell-level extraction → RapidOCR text recognition), not a generative VLM. Its output is the closest match to "what Azure DI's Layout API would return." 11 tables, 323 cells across the 8-page corpus.
+
+### D.2 Qwen3-VL-8B — Markdown with bold revenue subtotal
+
+```
+```markdown
+# JPMorgan Chase & Co.
+## Consolidated statements of income
+
+Year ended December 31, (in millions, except per share data)
+
+|  | 2025 | 2024 | 2023 |
+|---|---|---|---|
+| **Revenue** |  |  |  |
+| Investment banking fees | $ 9,615 | $ 8,910 | $ 6,519 |
+| Principal transactions | 27,212 | 24,787 | 24,460 |
+```
+
+*Note*: 8B's output wraps everything in a Markdown code fence (`\`\`\`markdown`) — a benign formatting quirk our raw_text scorer handles. Bold is correctly applied to the "Revenue" header row. 9 tables across the corpus.
+
+### D.3 Qwen3-VL-30B-A3B — split-cell artefact on currency-prefixed columns
+
+```
+| | 2025 | | 2024 | | 2023 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Revenue** | | | | | |
+| Investment banking fees | $ | 9,615 | $ | 8,910 | $ | 6,519 |
+| Principal transactions | | 27,212 | | 24,787 | | 24,460 |
+```
+
+*Note*: the MoE 30B-A3B variant emits the `$` symbol in its own column on currency-prefixed rows, doubling the column count and breaking the table topology. A prompt-tuning concern; the model's actual reading is correct, just the layout normalization is off. **This is the only Qwen size with this artefact.**
+
+### D.4 Qwen3-VL-32B — clean Markdown, bold subtotals (best of the Qwen sizes for 10-K tables)
+
+```
+# JPMorgan Chase & Co.  
+## Consolidated Statements of Income  
+
+Year ended December 31, (in millions, except per share data)  
+
+| | 2025 | 2024 | 2023 |
+|---|---|---|---|
+| **Revenue** | | | |
+| Investment banking fees | $ 9,615 | $ 8,910 | $ 6,519 |
+| Principal transactions | 27,212 | 24,787 | 24,460 |
+| ...
+| **Noninterest revenue** | **87,004** | **84,973** | **68,837** |
+```
+
+*Note*: the only Qwen size that bolds **both** section headers and computed subtotals (Noninterest revenue, Total net revenue, Net income, etc.) in the income statement. Subtotal-bolding is what Azure DI's Layout API does natively. 10 tables across the corpus, the highest of any Qwen size.
+
+### D.5 Qwen3-VL-235B-A22B — clean Markdown, no bold subtotals
+
+```
+```markdown
+# JPMorgan Chase & Co.
+## Consolidated statements of income
+
+| Year ended December 31, (in millions, except per share data) | 2025 | 2024 | 2023 |
+|--- | --- | --- | ---|
+| **Revenue** |  |  |  |
+| Investment banking fees | $ 9,615 | $ 8,910 | $ 6,519 |
+| Principal transactions | 27,212 | 24,787 | 24,460 |
+```
+
+*Note*: the 235B is more conservative on formatting — bolds only the "Revenue" section header, not subtotals. Higher per-token cost without a corresponding quality gain over the 32B on this page. Across the corpus, 235B extracts **fewer KV pairs (58)** than the 32B (114) — see §5.2 finding #2.
+
+### D.6 Baidu Qianfan-OCR-Fast — HTML table format
+
+```
+### JPMorgan Chase & Co. Consolidated statements of income
+
+<table><tr><td>Year ended December 31, (in millions, except per share data)</td><td>2025</td><td>2024</td><td>2023</td></tr><tr><td>Revenue</td><td></td><td></td><td></td></tr><tr><td>Investment banking fees</td><td>$9,615</td><td>$8,910</td><td>$6,519</td></tr><tr><td>Principal transactions</td><td>27,212</td><td>24,787</td><td>24,460</td></tr><tr><td>Lending- and deposit-related fees</td><td>$9,093</td><td>$7,606</td><td>$7,413</td></tr>
+```
+
+*Note*: Qianfan emits **HTML** rather than Markdown — `<table><tr><td>` syntax with proper row markers. Our HTML table parser handles this. **0.972 mean cell-content agreement with Docling under the original prompt** — the highest fidelity of any VLM in the bench-off, and Qianfan is the free option.
+
+### D.7 DeepSeek-OCR-2 — bbox-grounded typed-block format
+
+```
+sub_title[[65, 52, 401, 89]]
+## JPMorgan Chase & Co.
+Consolidated statements of income
+
+table[[66, 123, 928, 655]]
+<table>Year ended December 31, (in millions, except per share data)<td colspan="2">2025<td colspan="2">2024<td colspan="2">2023RevenueInvestment banking fees\( 9,615\) 8,910\( 6,519Principal transactions27,21224,78724,460Lending- and deposit-related fees9,0937,6067,413...
+```
+
+*Note*: a fundamentally different output shape. Each region is typed (`sub_title`, `text`, `table`, `image`, `list`) with **0–1000 normalized bounding-box coordinates**. Tables are emitted as HTML *without* `<tr>` row markers, which means cell-by-cell alignment for scoring is hard (Appendix B documents the parser limitation). For high-throughput pipelines that consume bbox-grounded output downstream, this is the richest format; for human-readable Markdown, it requires post-processing.
+
+### D.8 Pyzbar specialist — codes-only output (different page)
+
+For comparison, the `pyzbar` specialist's output on the synthetic codes page (not the JPM 10-K — pyzbar doesn't OCR text):
+
+```
+qr :: https://examplecorp.example/order/EXC-2026-05-09
+ean13 :: 5901234123457
+```
+
+*Note*: 19 ms latency, perfect 1.000 exact-match. **Drop-in specialist for the orchestration tier — recommended in any production replica that handles barcodes/QR codes.**
+
+---
+
+## Headline takeaway from the gallery
+
+Five different output formats from seven stacks on the same input page — that's the integration surface the client's orchestration layer must accept. The **recommended hybrid (Docling + Qwen-32B + Qianfan + pyzbar)** intentionally chooses stacks with three complementary output shapes (structural Markdown / Markdown VLM / HTML / decoded payload strings) — each playing the role it's best at, with normalisation happening at the orchestration tier rather than inside any single model.
 
 ---
 
