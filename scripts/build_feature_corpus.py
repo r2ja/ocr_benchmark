@@ -222,7 +222,7 @@ def build_codes_synthetic() -> None:
     from barcode.writer import ImageWriter
     from PIL import Image, ImageDraw, ImageFont
 
-    qr_payload = "https://logarithmtech.example/order/LT-2026-05-09"
+    qr_payload = "https://examplecorp.example/order/EXC-2026-05-09"
     ean_payload = "590123412345"  # 12 digits; library appends checksum to make 13
 
     page = Image.new("RGB", (1100, 900), "white")

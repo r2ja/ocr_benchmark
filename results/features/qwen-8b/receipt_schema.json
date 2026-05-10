@@ -1,0 +1,13 @@
+{
+  "page_id": "cord-receipt-01",
+  "stack_id": "qwen3-vl-8b",
+  "model_revision": "qwen/qwen3-vl-8b-instruct",
+  "raw_text": "{\"items\": [{\"name\": \"-TICKET CP\", \"quantity\": \"2\", \"price\": \"60.000\"}], \"subtotal\": \"60.000\", \"tax\": \"5.455\", \"total\": \"60.000\"}",
+  "text_blocks": [],
+  "layout": [],
+  "tables": [],
+  "kv_pairs": [],
+  "latency_ms": 4466.377000000648,
+  "raw_response_path": null,
+  "error": null
+}

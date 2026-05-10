@@ -1,13 +1,13 @@
 {
-  "page_id": "iam-handwriting-01",
+  "page_id": "cord-receipt-01",
   "stack_id": "deepseek-ocr-2",
   "model_revision": "deepseek/deepseek-ocr-2",
-  "raw_text": "\"Bella Bella Haire\" (Carphone), a lively song that changes tempo midway.",
+  "raw_text": "",
   "text_blocks": [],
   "layout": [],
   "tables": [],
   "kv_pairs": [],
-  "latency_ms": 1961.0074999945937,
+  "latency_ms": 1967.9022999989684,
   "raw_response_path": null,
   "error": null
 }

@@ -1,0 +1,13 @@
+{
+  "page_id": "docile-invoice-01",
+  "stack_id": "qwen3-vl-30b-a3b",
+  "model_revision": "qwen/qwen3-vl-30b-a3b-instruct",
+  "raw_text": "{\"invoice_number\": \"40378170\", \"invoice_date\": \"10/15/2012\", \"seller_name\": \"Patel, Thompson and Montgomery\", \"client_name\": \"Jackson, Odonnell and Jackson\", \"items\": [{\"description\": \"Leed's Wine Companion Bottle Corkscrew Opener Gift Box Set with Foil Cutter\", \"quantity\": \"1,00\", \"price\": \"7,50\"}], \"total\": \"$ 8,25\"}",
+  "text_blocks": [],
+  "layout": [],
+  "tables": [],
+  "kv_pairs": [],
+  "latency_ms": 3859.2298999974446,
+  "raw_response_path": null,
+  "error": null
+}

@@ -2,7 +2,7 @@
   "page_id": "docile-invoice-01",
   "stack_id": "qianfan-ocr-fast:free",
   "model_revision": "baidu/qianfan-ocr-fast:free",
-  "raw_text": "Invoice no: 40378170\n\nDate of issue:\n\n10/15/2012\n\n## Seller:\n\nPatel, Thompson and Montgomery\n\n356 Kyle Vista\n\nNew James, MA 46228\n\nTax Id: 958-74-3511\n\nIBAN: GB77WRBQ31965128414006\n\n## Client:\n\nJackson, Odonnell and Jackson\n\n267 John Track Suite 841\n\nJenniferville, PA 98601\n\nTax Id: 998-87-7723\n\n## I TEMS\n\n<table><tr><td>No.</td><td>Description</td><td>Qty</td><td>UM</td><td>Net price</td><td>Net worth</td><td>VAT [%]</td><td>Gross worth</td></tr><tr><td>1.</td><td>Leed&#x27;s Wine Companion Bottle Corkscrew Opener Gift Box Set with Foil Cutter</td><td>1,00</td><td>each</td><td>7,50</td><td>7,50</td><td>10%</td><td>8,25</td></tr></table>\n\n## SUMMARY\n\n<table><tr><td>VAT [%]</td><td>Net worth</td><td>VAT</td><td>Gross worth</td></tr><tr><td>10%</td><td>7.50</td><td>0.75</td><td>8.25</td></tr><tr><td>Total</td><td>$7.50</td><td>$0.75</td><td>$8.25</td></tr></table>\n\nKey-Value Pairs:\nInvoice no :: 40378170\nDate of issue :: 10/15/2012\nSeller name :: Patel, Thompson and Montgomery\nSeller address :: 356 Kyle Vista, New James, MA 46228\nSeller tax ID :: 958-74-3511\nSeller IBAN :: GB77WRBQ31965128414006\nClient name :: Jackson, Odonnell and Jackson\nClient address :: 267 John Track Suite 841, Jenniferville, PA 98601\nClient tax ID :: 998-87-7723\nItem description :: Leed's Wine Companion Bottle Corkscrew Opener Gift Box Set with Foil Cutter\nItem quantity :: 1,00\nItem unit of measure :: each\nItem net price :: 7,50\nItem net worth :: 7,50\nItem VAT rate :: 10%\nItem gross worth :: 8,25",
+  "raw_text": "Invoice no: 40378170\n\nDate of issue:\n\n10/15/2012\n\n## Seller:\n\nPatel, Thompson and Montgomery\n356 Kyle Vista\nNew James, MA 46228\n\nTax Id: 958-74-3511\nIBAN: GB77WRBQ31965128414006\n\n## Client:\n\nJackson, Odonnell and Jackson\n267 John Track Suite 841\nJenniferville, PA 98601\n\nTax Id: 998-87-7723\n\n## I TEMS\n\n<table><tr><td>No.</td><td>Description</td><td>Qty</td><td>UM</td><td>Net price</td><td>Net worth</td><td>VAT [%]</td><td>Gross worth</td></tr><tr><td>1.</td><td>Leed&#x27;s Wine Companion Bottle Corkscrew Opener Gift Box Set with Foil Cutter</td><td>1,00</td><td>each</td><td>7,50</td><td>7,50</td><td>10%</td><td>8,25</td></tr></table>\n\n## SUMMARY\n\n<table><tr><td>VAT [%]</td><td>Net worth</td><td>VAT</td><td>Gross worth</td></tr><tr><td>10%</td><td>7.50</td><td>0.75</td><td>8.25</td></tr><tr><td>Total</td><td>$7.50</td><td>$0.75</td><td>$8.25</td></tr></table>\n\nKey-Value Pairs:\nInvoice no :: 40378170\nDate of issue :: 10/15/2012\nSeller name :: Patel, Thompson and Montgomery\nSeller address :: 356 Kyle Vista, New James, MA 46228\nSeller tax ID :: 958-74-3511\nSeller IBAN :: GB77WRBQ31965128414006\nClient name :: Jackson, Odonnell and Jackson\nClient address :: 267 John Track Suite 841, Jenniferville, PA 98601\nClient tax ID :: 998-87-7723\nItem description :: Leed's Wine Companion Bottle Corkscrew Opener Gift Box Set with Foil Cutter\nItem quantity :: 1,00\nItem unit of measure :: each\nItem net price :: 7,50\nItem net worth :: 7,50\nItem VAT rate :: 10%\nItem gross worth :: 8,25",
   "text_blocks": [],
   "layout": [],
   "tables": [
@@ -361,7 +361,7 @@
       "confidence": null
     }
   ],
-  "latency_ms": 11097.126700000445,
+  "latency_ms": 10575.616499998432,
   "raw_response_path": null,
   "error": null
 }

@@ -5,7 +5,7 @@
   "expected_codes": [
     {
       "type": "qr",
-      "payload": "https://logarithmtech.example/order/LT-2026-05-09"
+      "payload": "https://examplecorp.example/order/EXC-2026-05-09"
     },
     {
       "type": "ean13",

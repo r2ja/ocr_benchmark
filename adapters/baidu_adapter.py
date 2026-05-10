@@ -18,9 +18,13 @@ class BaiduQianfanOCRAdapter(OpenAICompatibleVLMAdapter):
     DEFAULT_MODEL_SLUG = "baidu/qianfan-ocr-fast:free"
     DEFAULT_API_KEY_ENV = "OPENROUTER_API_KEY"
     ENV_PREFIX = "QIANFAN"
+    # Qianfan-OCR is documented to respond best to short, model-native phrasing
+    # ("Parse this document to Markdown.") rather than long English instructions.
+    # We append a brief KV instruction so the model emits the same Key-Value
+    # Pairs block our generic post-processor expects.
     DEFAULT_PROMPT = (
-        "Extract the full content of this document image as Markdown. Preserve "
-        "tables (use Markdown table syntax), headers, lists, and reading order. "
-        "If the document contains form fields or key-value pairs, list them at "
-        "the end under a 'Key-Value Pairs:' section, one per line as 'KEY :: VALUE'."
+        "Parse this document to Markdown. Preserve tables, headers, lists, and "
+        "reading order. If the document contains form fields or key-value pairs, "
+        "list them at the end under a 'Key-Value Pairs:' section, one per line "
+        "as 'KEY :: VALUE'."
     )

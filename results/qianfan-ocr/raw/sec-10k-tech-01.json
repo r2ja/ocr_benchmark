@@ -2,7 +2,7 @@
   "page_id": "sec-10k-tech-01",
   "stack_id": "qianfan-ocr-fast:free",
   "model_revision": "baidu/qianfan-ocr-fast:free",
-  "raw_text": "The following table sets forth, for the periods indicated, certain items in our Consolidated Statements of Income expressed as a percentage of revenue.\n\n<table><tr><td></td><td colspan=\"2\">Year Ended</td></tr><tr><td></td><td>Jan 25, 2026</td><td>Jan 26, 2025</td></tr><tr><td>Revenue</td><td>100.0%</td><td>100.0%</td></tr><tr><td>Cost of revenue</td><td>28.9</td><td>25.0</td></tr><tr><td>Gross profit</td><td>71.1</td><td>75.0</td></tr><tr><td>Operating expenses</td><td></td><td></td></tr><tr><td>Research and development</td><td>8.6</td><td>9.9</td></tr><tr><td>Sales, general and administrative</td><td>2.1</td><td>2.7</td></tr><tr><td>Total operating expenses</td><td>10.7</td><td>12.6</td></tr><tr><td>Operating income</td><td>60.4</td><td>62.4</td></tr><tr><td>Interest income</td><td>1.1</td><td>1.4</td></tr><tr><td>Interest expense</td><td>(0.1)</td><td>(0.2)</td></tr><tr><td>Other income, net</td><td>4.2</td><td>0.8</td></tr><tr><td>Total other income, net</td><td>5.2</td><td>2.0</td></tr><tr><td>Income before income tax</td><td>65.5</td><td>64.4</td></tr><tr><td>Income tax expense</td><td>9.9</td><td>8.6</td></tr><tr><td>Net income</td><td>55.6%</td><td>55.8%</td></tr></table>\n\n## Reportable Segments\n\nRevenue by Reportable Segments\n\n<table><tr><td></td><td colspan=\"6\">Year Ended</td></tr><tr><td></td><td colspan=\"2\">Jan 25,2026</td><td colspan=\"2\">Jan 26,2025</td><td>$ Change</td><td>% Change</td></tr><tr><td></td><td colspan=\"6\">($ in millions)</td></tr><tr><td>Compute&amp;Networking</td><td>$193,479</td><td colspan=\"2\">$116,193</td><td colspan=\"2\">$77,286</td><td>67%</td></tr><tr><td>Graphics</td><td>22,459</td><td colspan=\"2\">14,304</td><td colspan=\"2\">8,155</td><td>57%</td></tr><tr><td>Total</td><td>$215,938</td><td colspan=\"2\">$130,497</td><td colspan=\"2\">$85,441</td><td>65%</td></tr></table>\n\nOperating Income by Reportable Segments\n\n<table><tr><td></td><td colspan=\"4\">Year Ended</td></tr><tr><td></td><td>Jan 25, 2026</td><td>Jan 26, 2025</td><td>$ Change</td><td>% Change</td></tr><tr><td></td><td colspan=\"4\">($ in millions)</td></tr><tr><td>Compute &amp; Networking</td><td>$130,141</td><td>$82,875</td><td>$47,266</td><td>57%</td></tr><tr><td>Graphics</td><td>9,156</td><td>5,085</td><td>4,071</td><td>80%</td></tr><tr><td>Total</td><td>$139,297</td><td>$87,960</td><td>$51,337</td><td>58%</td></tr></table>\n\nCompute & Networking revenue \u2013 The year over year increase was driven by the major platform shifts \u2013 accelerated computing and AI. Revenue from Data Center computing grew 59% driven by demand for our Blackwell computing platform. Revenue from Data Center networking grew 142% driven by the introduction and continued ramp of NVLink compute fabric for GB200 and GB300 systems and the growth of Ethernet and InfiniBand platforms.",
+  "raw_text": "The following table sets forth, for the periods indicated, certain items in our Consolidated Statements of Income expressed as a percentage of revenue.\n\n<table><tr><td></td><td colspan=\"2\">Year Ended</td></tr><tr><td></td><td>Jan 25, 2026</td><td>Jan 26, 2025</td></tr><tr><td>Revenue</td><td>100.0%</td><td>100.0%</td></tr><tr><td>Cost of revenue</td><td>28.9</td><td>25.0</td></tr><tr><td>Gross profit</td><td>71.1</td><td>75.0</td></tr><tr><td>Operating expenses</td><td></td><td></td></tr><tr><td>Research and development</td><td>8.6</td><td>9.9</td></tr><tr><td>Sales, general and administrative</td><td>2.1</td><td>2.7</td></tr><tr><td>Total operating expenses</td><td>10.7</td><td>12.6</td></tr><tr><td>Operating income</td><td>60.4</td><td>62.4</td></tr><tr><td>Interest income</td><td>1.1</td><td>1.4</td></tr><tr><td>Interest expense</td><td>(0.1)</td><td>(0.2)</td></tr><tr><td>Other income, net</td><td>4.2</td><td>0.8</td></tr><tr><td>Total other income, net</td><td>5.2</td><td>2.0</td></tr><tr><td>Income before income tax</td><td>65.5</td><td>64.4</td></tr><tr><td>Income tax expense</td><td>9.9</td><td>8.6</td></tr><tr><td>Net income</td><td>55.6%</td><td>55.8%</td></tr></table>\n\n## Reportable Segments\n\nRevenue by Reportable Segments\n\n<table><tr><td></td><td colspan=\"6\">Year Ended</td></tr><tr><td></td><td>Jan 25,2026</td><td>Jan 26,2025</td><td>$ Change</td><td>% Change</td><td></td><td></td></tr><tr><td></td><td colspan=\"6\">($ in millions)</td></tr><tr><td>Compute&amp;Networking</td><td>$193,479</td><td>$116,193</td><td>$77,286</td><td>67%</td><td></td><td></td></tr><tr><td>Graphics</td><td>22,459</td><td>14,304</td><td>8,155</td><td>57%</td><td></td><td></td></tr><tr><td>Total</td><td>$215,938</td><td>$130,497</td><td>$85,441</td><td>65%</td><td></td><td></td></tr></table>\n\nOperating Income by Reportable Segments\n\n<table><tr><td></td><td colspan=\"4\">Year Ended</td></tr><tr><td></td><td>Jan 25, 2026</td><td>Jan 26, 2025</td><td>$ Change</td><td>% Change</td></tr><tr><td></td><td colspan=\"4\">($ in millions)</td></tr><tr><td>Compute &amp; Networking</td><td>$ 130,141</td><td>$ 82,875</td><td>$ 47,266</td><td>57 %</td></tr><tr><td>Graphics</td><td>9,156</td><td>5,085</td><td>4,071</td><td>80 %</td></tr><tr><td>Total</td><td>$ 139,297</td><td>$ 87,960</td><td>$ 51,337</td><td>58 %</td></tr></table>\n\nCompute & Networking revenue \u2013 The year over year increase was driven by the major platform shifts \u2013 accelerated computing and AI. Revenue from Data Center computing grew 59% driven by demand for our Blackwell computing platform. Revenue from Data Center networking grew 142% driven by the introduction and continued ramp of NVLink compute fabric for GB200 and GB300 systems and the growth of Ethernet and InfiniBand platforms.",
   "text_blocks": [],
   "layout": [],
   "tables": [
@@ -473,6 +473,22 @@
           "is_header": false
         },
         {
+          "row": 1,
+          "col": 5,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 6,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
           "row": 2,
           "col": 0,
           "rowspan": 1,
@@ -529,6 +545,22 @@
           "is_header": false
         },
         {
+          "row": 3,
+          "col": 5,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 6,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
           "row": 4,
           "col": 0,
           "rowspan": 1,
@@ -566,6 +598,22 @@
           "rowspan": 1,
           "colspan": 1,
           "text": "57%",
+          "is_header": false
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 4,
+          "col": 6,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
           "is_header": false
         },
         {
@@ -607,12 +655,28 @@
           "colspan": 1,
           "text": "65%",
           "is_header": false
+        },
+        {
+          "row": 5,
+          "col": 5,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
+        },
+        {
+          "row": 5,
+          "col": 6,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "",
+          "is_header": false
         }
       ],
       "bbox": null,
       "html": null,
       "n_rows": 6,
-      "n_cols": 5
+      "n_cols": 7
     },
     {
       "cells": [
@@ -701,7 +765,7 @@
           "col": 1,
           "rowspan": 1,
           "colspan": 1,
-          "text": "$130,141",
+          "text": "$ 130,141",
           "is_header": false
         },
         {
@@ -709,7 +773,7 @@
           "col": 2,
           "rowspan": 1,
           "colspan": 1,
-          "text": "$82,875",
+          "text": "$ 82,875",
           "is_header": false
         },
         {
@@ -717,7 +781,7 @@
           "col": 3,
           "rowspan": 1,
           "colspan": 1,
-          "text": "$47,266",
+          "text": "$ 47,266",
           "is_header": false
         },
         {
@@ -725,7 +789,7 @@
           "col": 4,
           "rowspan": 1,
           "colspan": 1,
-          "text": "57%",
+          "text": "57 %",
           "is_header": false
         },
         {
@@ -765,7 +829,7 @@
           "col": 4,
           "rowspan": 1,
           "colspan": 1,
-          "text": "80%",
+          "text": "80 %",
           "is_header": false
         },
         {
@@ -781,7 +845,7 @@
           "col": 1,
           "rowspan": 1,
           "colspan": 1,
-          "text": "$139,297",
+          "text": "$ 139,297",
           "is_header": false
         },
         {
@@ -789,7 +853,7 @@
           "col": 2,
           "rowspan": 1,
           "colspan": 1,
-          "text": "$87,960",
+          "text": "$ 87,960",
           "is_header": false
         },
         {
@@ -797,7 +861,7 @@
           "col": 3,
           "rowspan": 1,
           "colspan": 1,
-          "text": "$51,337",
+          "text": "$ 51,337",
           "is_header": false
         },
         {
@@ -805,7 +869,7 @@
           "col": 4,
           "rowspan": 1,
           "colspan": 1,
-          "text": "58%",
+          "text": "58 %",
           "is_header": false
         }
       ],
@@ -816,7 +880,7 @@
     }
   ],
   "kv_pairs": [],
-  "latency_ms": 14896.681799999897,
+  "latency_ms": 14251.731199998176,
   "raw_response_path": null,
   "error": null
 }

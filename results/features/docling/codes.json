@@ -2,7 +2,7 @@
   "page_id": "codes_synthetic",
   "stack_id": "docling",
   "model_revision": "docling@local-pip",
-  "raw_text": "Sample Shipping Label\n\nQR code links to the order tracking page. EAN-13 barcode encodes the SKU (590123412345).",
+  "raw_text": "Sample Shipping Label\n\nQR code links to the order tracking page. EAN-13 barcode encodes the SKU (590123412345).\n\n5901234123457",
   "text_blocks": [
     {
       "text": "Sample Shipping Label",
@@ -72,7 +72,7 @@
   ],
   "tables": [],
   "kv_pairs": [],
-  "latency_ms": 2774.3343000001914,
+  "latency_ms": 5561.004400005913,
   "raw_response_path": null,
   "error": null
 }

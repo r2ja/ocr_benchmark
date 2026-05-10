@@ -1,0 +1,107 @@
+{
+  "page_id": "cord-receipt-01",
+  "stack_id": "docling",
+  "model_revision": "docling@local-pip",
+  "raw_text": "|   901016 | -TICKET CP 60.000               | 60.000        |\n|----------|---------------------------------|---------------|\n|       04 | TOTAL DISCS TAX                 | -60,000 5.455 |\n|          | Subtotal TOTAL (Qty 2.00 60.000 | 60.000        |\n|          |                                 | 60.000        |\n|          | EDC CIMB NIAGA No:XX7730        |               |",
+  "text_blocks": [],
+  "layout": [],
+  "tables": [
+    {
+      "cells": [
+        {
+          "row": 0,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "901016",
+          "is_header": false
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "-TICKET CP 60.000",
+          "is_header": false
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "60.000",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "04",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "TOTAL DISCS TAX",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "-60,000 5.455",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Subtotal TOTAL (Qty 2.00 60.000",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "60.000",
+          "is_header": false
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "60.000",
+          "is_header": false
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "EDC CIMB NIAGA No:XX7730",
+          "is_header": false
+        }
+      ],
+      "bbox": {
+        "x0": 43.49257278442383,
+        "y0": 266.5197448730469,
+        "x1": 368.486328125,
+        "y1": 0.2841796875
+      },
+      "html": "<table><tbody><tr><td>901016</td><td>-TICKET CP 60.000</td><td>60.000</td></tr><tr><td>04</td><td>TOTAL DISCS TAX</td><td>-60,000 5.455</td></tr><tr><td></td><td>Subtotal TOTAL (Qty 2.00 60.000</td><td>60.000</td></tr><tr><td></td><td></td><td>60.000</td></tr><tr><td></td><td>EDC CIMB NIAGA No:XX7730</td><td></td></tr></tbody></table>",
+      "n_rows": 5,
+      "n_cols": 3
+    }
+  ],
+  "kv_pairs": [],
+  "latency_ms": 7730.510500001401,
+  "raw_response_path": null,
+  "error": null
+}

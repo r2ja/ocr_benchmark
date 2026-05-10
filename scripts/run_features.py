@@ -42,6 +42,7 @@ ADAPTER_REGISTRY = {
     "qwen-235b-a22b":("adapters.qwen_adapter",    "QwenVLAdapter"),
     "qianfan-ocr":  ("adapters.baidu_adapter",    "BaiduQianfanOCRAdapter"),
     "deepseek-ocr": ("adapters.deepseek_adapter", "DeepSeekOCRAdapter"),
+    "pyzbar":       ("adapters.pyzbar_adapter",   "PyzbarSpecialistAdapter"),
 }
 
 QWEN_SLUG_OVERRIDES = {
@@ -81,13 +82,36 @@ AXIS_PROMPTS = {
         "cannot decode the value, output the type and `UNDECODABLE`. If there "
         "are no codes, output: NO_CODES_FOUND"
     ),
+    "receipt_schema": (
+        "This image is a receipt. Extract the following fields and return ONLY "
+        "a single valid JSON object with these exact keys, no other text, no "
+        "Markdown, no commentary:\n"
+        "{\"items\": [{\"name\": \"\", \"quantity\": \"\", \"price\": \"\"}], "
+        "\"subtotal\": \"\", \"tax\": \"\", \"total\": \"\"}\n"
+        "Use null for any field that's not present. Numeric values stay as "
+        "strings exactly as printed."
+    ),
+    "invoice_schema": (
+        "This image is an invoice. Extract the following fields and return ONLY "
+        "a single valid JSON object with these exact keys, no other text, no "
+        "Markdown, no commentary:\n"
+        "{\"invoice_number\": \"\", \"invoice_date\": \"\", \"seller_name\": \"\", "
+        "\"client_name\": \"\", \"items\": [{\"description\": \"\", \"quantity\": \"\", "
+        "\"price\": \"\"}], \"total\": \"\"}\n"
+        "Use null for any field that's not present. Strings stay exactly as "
+        "printed. Date in MM/DD/YYYY if visible."
+    ),
 }
 
+# Schema-axes reuse pages from the general corpus (CORD receipt + DocILE invoice).
+CORPUS_DIR = REPO_ROOT / "corpus"
 AXIS_TO_PAGE = {
-    "checkboxes": ("checkboxes_w9", FEATURES_DIR / "checkboxes_w9.png"),
-    "signatures": ("signatures_jpm", FEATURES_DIR / "signatures_jpm.png"),
-    "formulas":   ("formulas_arxiv", FEATURES_DIR / "formulas_arxiv.png"),
-    "codes":      ("codes_synthetic", FEATURES_DIR / "codes_synthetic.png"),
+    "checkboxes":      ("checkboxes_w9",   FEATURES_DIR / "checkboxes_w9.png"),
+    "signatures":      ("signatures_jpm",  FEATURES_DIR / "signatures_jpm.png"),
+    "formulas":        ("formulas_arxiv",  FEATURES_DIR / "formulas_arxiv.png"),
+    "codes":           ("codes_synthetic", FEATURES_DIR / "codes_synthetic.png"),
+    "receipt_schema":  ("cord-receipt-01", CORPUS_DIR / "cord" / "receipt_01.png"),
+    "invoice_schema":  ("docile-invoice-01", CORPUS_DIR / "docile" / "invoice_01.png"),
 }
 
 
@@ -99,6 +123,9 @@ def _load_adapter(stack_id: str, prompt: str):
     if stack_id == "docling":
         # Docling has no prompt knob; it produces structured layout/tables/text.
         # We score against the raw text it returns, just like other axes.
+        return cls()
+    if stack_id == "pyzbar":
+        # pyzbar specialist: no prompt either, just decodes machine-readable codes.
         return cls()
     return cls(prompt=prompt)
 

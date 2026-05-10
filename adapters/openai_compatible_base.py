@@ -256,8 +256,8 @@ class OpenAICompatibleVLMAdapter(StackAdapter):
     DEFAULT_PROMPT: str = GENERIC_PROMPT
     ENV_PREFIX: str = ""  # e.g. "DOTS" → reads DOTS_BASE_URL, DOTS_MODEL_SLUG
 
-    HTTP_REFERER: str = "https://logarithmtech.example"
-    APP_TITLE: str = "Logarithm DocIntel Benchmark"
+    HTTP_REFERER: str = "https://examplecorp.example"
+    APP_TITLE: str = "DocIntel Benchmark"
     MAX_TOKENS: int = 4096
     REQUEST_TIMEOUT: int = 240
 

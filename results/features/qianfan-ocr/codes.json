@@ -2,12 +2,12 @@
   "page_id": "codes_synthetic",
   "stack_id": "qianfan-ocr-fast:free",
   "model_revision": "baidu/qianfan-ocr-fast:free",
-  "raw_text": "qr :: UNDECODABLE\nean13 :: 5901234123457",
+  "raw_text": "",
   "text_blocks": [],
   "layout": [],
   "tables": [],
   "kv_pairs": [],
-  "latency_ms": 3351.9466999969154,
+  "latency_ms": 1772.7568999980576,
   "raw_response_path": null,
-  "error": null
+  "error": "HTTP 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"baidu/qianfan-ocr-fast:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations\",\"provider_name\":\"Baidu\",\"is_byok\":false"
 }

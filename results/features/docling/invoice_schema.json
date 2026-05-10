@@ -1,0 +1,518 @@
+{
+  "page_id": "docile-invoice-01",
+  "stack_id": "docling",
+  "model_revision": "docling@local-pip",
+  "raw_text": "Invoice no: 40378170\n\nDate of issue:\n\nSeller:\n\nPatel, Thompson and Montgomery 356KyleVista New James, MA 46228\n\nTaxld:958-74-3511\n\nIBAN:GB77WRBQ31965128414006\n\nITEMS\n\n|   No. | Description                                                                | Qty   | UM   | Net price   | Net worth   | VAT [%]   | Gross worth   |\n|-------|----------------------------------------------------------------------------|-------|------|-------------|-------------|-----------|---------------|\n|    1. | Leed'sWine Companion Bottle Corkscrew Opener Gift Box Set with Foil Cutter | 1,00  | each | 7,50        | 7,50        | 10%       | 8,25          |\n\nSUMMARY\n\n| VAT [%]   | Net worth   | VAT    | Gross worth   |\n|-----------|-------------|--------|---------------|\n| 10%       | 7,50        | 0,75   | 8,25          |\n| Total     | $7,50       | $ 0,75 | $ 8,25        |\n\n10/15/2012\n\nClient:\n\nJackson, Odonnell and Jackson 267JohnTrackSuite841 Jenniferville,PA 98601\n\nTaxld:998-87-7723",
+  "text_blocks": [
+    {
+      "text": "Invoice no: 40378170",
+      "bbox": {
+        "x0": 199.11433919270834,
+        "y0": 3398.375,
+        "x1": 808.7919108072916,
+        "y1": 3345.3306477864585
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Date of issue:",
+      "bbox": {
+        "x0": 192.0660400390625,
+        "y0": 3299.35888671875,
+        "x1": 526.8600667317709,
+        "y1": 3241.0100911458335
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Seller:",
+      "bbox": {
+        "x0": 190.3039754231771,
+        "y0": 2850.250040690104,
+        "x1": 392.9424641927083,
+        "y1": 2784.8286946614585
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Patel, Thompson and Montgomery 356KyleVista New James, MA 46228",
+      "bbox": {
+        "x0": 206.16263834635416,
+        "y0": 2753.0020345052085,
+        "x1": 935.6612141927084,
+        "y1": 2590.3326822916665
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Taxld:958-74-3511",
+      "bbox": {
+        "x0": 206.16263834635416,
+        "y0": 2533.7520345052085,
+        "x1": 641.3948567708334,
+        "y1": 2487.7802734375
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "IBAN:GB77WRBQ31965128414006",
+      "bbox": {
+        "x0": 206.16263834635416,
+        "y0": 2480.707682291667,
+        "x1": 962.09228515625,
+        "y1": 2434.735921223958
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "ITEMS",
+      "bbox": {
+        "x0": 190.3039754231771,
+        "y0": 2374.618977864583,
+        "x1": 382.3700358072917,
+        "y1": 2312.73388671875
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "SUMMARY",
+      "bbox": {
+        "x0": 190.3039754231771,
+        "y0": 1890.1472981770833,
+        "x1": 502.1910400390625,
+        "y1": 1831.7985026041667
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "10/15/2012",
+      "bbox": {
+        "x0": 1198.210205078125,
+        "y0": 3299.35888671875,
+        "x1": 1476.6178385416667,
+        "y1": 3241.0100911458335
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Client:",
+      "bbox": {
+        "x0": 1233.45166015625,
+        "y0": 2848.481892903646,
+        "x1": 1436.0901692708333,
+        "y1": 2786.5968424479165
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Jackson, Odonnell and Jackson 267JohnTrackSuite841 Jenniferville,PA 98601",
+      "bbox": {
+        "x0": 1240.5,
+        "y0": 2749.4657389322915,
+        "x1": 1894.2293294270833,
+        "y1": 2592.100830078125
+      },
+      "confidence": null,
+      "reading_order": null
+    },
+    {
+      "text": "Taxld:998-87-7723",
+      "bbox": {
+        "x0": 1244.0240885416667,
+        "y0": 2533.7520345052085,
+        "x1": 1681.0183919270833,
+        "y1": 2486.0121256510415
+      },
+      "confidence": null,
+      "reading_order": null
+    }
+  ],
+  "layout": [
+    {
+      "label": "section_header",
+      "bbox": {
+        "x0": 199.11433919270834,
+        "y0": 3398.375,
+        "x1": 808.7919108072916,
+        "y1": 3345.3306477864585
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 192.0660400390625,
+        "y0": 3299.35888671875,
+        "x1": 526.8600667317709,
+        "y1": 3241.0100911458335
+      },
+      "confidence": null
+    },
+    {
+      "label": "section_header",
+      "bbox": {
+        "x0": 190.3039754231771,
+        "y0": 2850.250040690104,
+        "x1": 392.9424641927083,
+        "y1": 2784.8286946614585
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 206.16263834635416,
+        "y0": 2753.0020345052085,
+        "x1": 935.6612141927084,
+        "y1": 2590.3326822916665
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 206.16263834635416,
+        "y0": 2533.7520345052085,
+        "x1": 641.3948567708334,
+        "y1": 2487.7802734375
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 206.16263834635416,
+        "y0": 2480.707682291667,
+        "x1": 962.09228515625,
+        "y1": 2434.735921223958
+      },
+      "confidence": null
+    },
+    {
+      "label": "section_header",
+      "bbox": {
+        "x0": 190.3039754231771,
+        "y0": 2374.618977864583,
+        "x1": 382.3700358072917,
+        "y1": 2312.73388671875
+      },
+      "confidence": null
+    },
+    {
+      "label": "section_header",
+      "bbox": {
+        "x0": 190.3039754231771,
+        "y0": 1890.1472981770833,
+        "x1": 502.1910400390625,
+        "y1": 1831.7985026041667
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 1198.210205078125,
+        "y0": 3299.35888671875,
+        "x1": 1476.6178385416667,
+        "y1": 3241.0100911458335
+      },
+      "confidence": null
+    },
+    {
+      "label": "section_header",
+      "bbox": {
+        "x0": 1233.45166015625,
+        "y0": 2848.481892903646,
+        "x1": 1436.0901692708333,
+        "y1": 2786.5968424479165
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 1240.5,
+        "y0": 2749.4657389322915,
+        "x1": 1894.2293294270833,
+        "y1": 2592.100830078125
+      },
+      "confidence": null
+    },
+    {
+      "label": "text",
+      "bbox": {
+        "x0": 1244.0240885416667,
+        "y0": 2533.7520345052085,
+        "x1": 1681.0183919270833,
+        "y1": 2486.0121256510415
+      },
+      "confidence": null
+    }
+  ],
+  "tables": [
+    {
+      "cells": [
+        {
+          "row": 0,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "No.",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Description",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Qty",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "UM",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Net price",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 5,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Net worth",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 6,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "VAT [%]",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 7,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Gross worth",
+          "is_header": true
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "1.",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Leed'sWine Companion Bottle Corkscrew Opener Gift Box Set with Foil Cutter",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "1,00",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "each",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "7,50",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "7,50",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 6,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "10%",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 7,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "8,25",
+          "is_header": false
+        }
+      ],
+      "bbox": {
+        "x0": 197.24700927734375,
+        "y0": 2269.432373046875,
+        "x1": 2280.388916015625,
+        "y1": 1963.2607421875
+      },
+      "html": "<table><tbody><tr><th>No.</th><th>Description</th><th>Qty</th><th>UM</th><th>Net price</th><th>Net worth</th><th>VAT [%]</th><th>Gross worth</th></tr><tr><td>1.</td><td>Leed&#x27;sWine Companion Bottle Corkscrew Opener Gift Box Set with Foil Cutter</td><td>1,00</td><td>each</td><td>7,50</td><td>7,50</td><td>10%</td><td>8,25</td></tr></tbody></table>",
+      "n_rows": 2,
+      "n_cols": 8
+    },
+    {
+      "cells": [
+        {
+          "row": 0,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "VAT [%]",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Net worth",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "VAT",
+          "is_header": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Gross worth",
+          "is_header": true
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "10%",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "7,50",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "0,75",
+          "is_header": false
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "8,25",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "Total",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "$7,50",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "$ 0,75",
+          "is_header": false
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 1,
+          "text": "$ 8,25",
+          "is_header": false
+        }
+      ],
+      "bbox": {
+        "x0": 197.92889404296875,
+        "y0": 1789.1104736328125,
+        "x1": 2279.27978515625,
+        "y1": 1519.947509765625
+      },
+      "html": "<table><tbody><tr><th>VAT [%]</th><th>Net worth</th><th>VAT</th><th>Gross worth</th></tr><tr><td>10%</td><td>7,50</td><td>0,75</td><td>8,25</td></tr><tr><td>Total</td><td>$7,50</td><td>$ 0,75</td><td>$ 8,25</td></tr></tbody></table>",
+      "n_rows": 3,
+      "n_cols": 4
+    }
+  ],
+  "kv_pairs": [],
+  "latency_ms": 11589.954800001578,
+  "raw_response_path": null,
+  "error": null
+}

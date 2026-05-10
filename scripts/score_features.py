@@ -24,9 +24,10 @@ FEATURES_DIR = REPO_ROOT / "corpus" / "features"
 
 STACKS = [
     "docling", "qwen-8b", "qwen-30b-a3b", "qwen-32b", "qwen-235b-a22b",
-    "qianfan-ocr", "deepseek-ocr",
+    "qianfan-ocr", "deepseek-ocr", "pyzbar",
 ]
-AXES = ["checkboxes", "signatures", "formulas", "codes"]
+AXES = ["checkboxes", "signatures", "formulas", "codes", "receipt_schema", "invoice_schema"]
+CORPUS_DIR = REPO_ROOT / "corpus"
 
 
 def _norm(s: str) -> str:
@@ -35,12 +36,14 @@ def _norm(s: str) -> str:
 
 def _load_gold(axis: str) -> dict:
     fmap = {
-        "checkboxes": "checkboxes_w9.gold.json",
-        "signatures": "signatures_jpm.gold.json",
-        "formulas":   "formulas_arxiv.gold.json",
-        "codes":      "codes_synthetic.gold.json",
+        "checkboxes": FEATURES_DIR / "checkboxes_w9.gold.json",
+        "signatures": FEATURES_DIR / "signatures_jpm.gold.json",
+        "formulas":   FEATURES_DIR / "formulas_arxiv.gold.json",
+        "codes":      FEATURES_DIR / "codes_synthetic.gold.json",
+        "receipt_schema": CORPUS_DIR / "cord" / "receipt_01.gold.json",
+        "invoice_schema": CORPUS_DIR / "docile" / "invoice_01.gold.json",
     }
-    return json.loads((FEATURES_DIR / fmap[axis]).read_text(encoding="utf-8"))
+    return json.loads(fmap[axis].read_text(encoding="utf-8"))
 
 
 def _load_pred(stack: str, axis: str) -> dict | None:
@@ -175,11 +178,169 @@ def score_codes(gold: dict, pred_text: str) -> dict:
     }
 
 
+def _extract_json_block(text: str) -> dict | None:
+    """Find the first JSON object in the model's output. Tolerant of ```json
+    fences and surrounding prose."""
+    if not text:
+        return None
+    s = text
+    # Strip code fences
+    if "```" in s:
+        # take what's inside the first ``` block
+        parts = s.split("```")
+        for p in parts[1:]:
+            cand = p.strip()
+            if cand.startswith("json"):
+                cand = cand[4:].strip()
+            if cand.startswith("{"):
+                s = cand
+                break
+    start = s.find("{")
+    end = s.rfind("}")
+    if start < 0 or end < 0 or end <= start:
+        return None
+    try:
+        return json.loads(s[start : end + 1])
+    except json.JSONDecodeError:
+        # try to repair common issues like trailing commas
+        cleaned = re.sub(r",\s*([\]}])", r"\1", s[start : end + 1])
+        try:
+            return json.loads(cleaned)
+        except Exception:
+            return None
+
+
+def _field_score(pred: str | None, gold: str | None) -> float:
+    """0/1 fuzzy similarity for a single field."""
+    if not gold:
+        return float("nan")
+    if pred is None:
+        return 0.0
+    return rapidfuzz.fuzz.ratio(_norm(str(pred)), _norm(str(gold))) / 100.0
+
+
+def score_receipt_schema(gold: dict, pred_text: str) -> dict:
+    pred = _extract_json_block(pred_text) or {}
+    gt = gold.get("gt_parse") or {}
+
+    # Normalise CORD's gt_parse (where menu can be dict or list)
+    gold_menu = gt.get("menu")
+    if isinstance(gold_menu, dict):
+        gold_menu = [gold_menu]
+    elif gold_menu is None:
+        gold_menu = []
+    gold_subtotal = (gt.get("sub_total") or {}).get("subtotal_price")
+    gold_tax = (gt.get("sub_total") or {}).get("tax_price")
+    gold_total = (gt.get("total") or {}).get("total_price")
+
+    pred_items = pred.get("items") if isinstance(pred.get("items"), list) else []
+    n_gold_items = len(gold_menu)
+    n_pred_items = len(pred_items)
+
+    # Per-item alignment (greedy by name fuzzy)
+    item_score = 0.0
+    if n_gold_items and n_pred_items:
+        used: set[int] = set()
+        for g_item in gold_menu:
+            g_name = _norm(g_item.get("nm") or "")
+            best = (-1, 0.0)
+            for i, p_item in enumerate(pred_items):
+                if i in used or not isinstance(p_item, dict):
+                    continue
+                sim = rapidfuzz.fuzz.partial_ratio(_norm(p_item.get("name") or ""), g_name) / 100.0
+                if sim > best[1]:
+                    best = (i, sim)
+            if best[0] >= 0 and best[1] >= 0.5:
+                used.add(best[0])
+                item_score += best[1]
+        item_score /= n_gold_items
+
+    f_subtotal = _field_score(pred.get("subtotal"), gold_subtotal)
+    f_tax = _field_score(pred.get("tax"), gold_tax)
+    f_total = _field_score(pred.get("total"), gold_total)
+
+    field_scores = [s for s in [f_subtotal, f_tax, f_total] if s == s]  # drop NaN
+    field_mean = sum(field_scores) / len(field_scores) if field_scores else 0.0
+
+    schema_f1 = (item_score + field_mean) / 2 if (n_gold_items or field_scores) else 0.0
+    return {
+        "axis": "receipt_schema",
+        "schema_score": round(schema_f1, 3),
+        "items_score": round(item_score, 3),
+        "fields_score": round(field_mean, 3),
+        "n_gold_items": n_gold_items,
+        "n_pred_items": n_pred_items,
+        "json_parsed": pred is not None and bool(pred),
+    }
+
+
+def score_invoice_schema(gold: dict, pred_text: str) -> dict:
+    pred = _extract_json_block(pred_text) or {}
+    gt_str = gold.get("ground_truth") or ""
+    try:
+        gt = json.loads(gt_str).get("gt_parse", {}) if gt_str else {}
+    except json.JSONDecodeError:
+        gt = {}
+    header = gt.get("header") or {}
+    gold_items = gt.get("items") or []
+    if isinstance(gold_items, dict):
+        gold_items = [gold_items]
+
+    g_inv_no = header.get("invoice_no")
+    g_date = header.get("invoice_date")
+    g_seller = header.get("seller")
+    g_client = header.get("client")
+    g_total = (gt.get("summary") or {}).get("total_gross_worth") or header.get("total")
+
+    pred_items = pred.get("items") if isinstance(pred.get("items"), list) else []
+    n_gold_items = len(gold_items)
+    n_pred_items = len(pred_items)
+
+    item_score = 0.0
+    if n_gold_items and n_pred_items:
+        used: set[int] = set()
+        for g_item in gold_items:
+            g_desc = _norm(g_item.get("item_desc") or "")
+            best = (-1, 0.0)
+            for i, p_item in enumerate(pred_items):
+                if i in used or not isinstance(p_item, dict):
+                    continue
+                sim = rapidfuzz.fuzz.partial_ratio(_norm(p_item.get("description") or ""), g_desc) / 100.0
+                if sim > best[1]:
+                    best = (i, sim)
+            if best[0] >= 0 and best[1] >= 0.4:
+                used.add(best[0])
+                item_score += best[1]
+        item_score /= n_gold_items
+
+    f_inv = _field_score(pred.get("invoice_number"), g_inv_no)
+    f_date = _field_score(pred.get("invoice_date"), g_date)
+    f_seller = _field_score(pred.get("seller_name"), g_seller)
+    f_client = _field_score(pred.get("client_name"), g_client)
+    f_total = _field_score(pred.get("total"), g_total)
+
+    field_scores = [s for s in [f_inv, f_date, f_seller, f_client, f_total] if s == s]
+    field_mean = sum(field_scores) / len(field_scores) if field_scores else 0.0
+
+    schema_f1 = (item_score + field_mean) / 2 if (n_gold_items or field_scores) else 0.0
+    return {
+        "axis": "invoice_schema",
+        "schema_score": round(schema_f1, 3),
+        "items_score": round(item_score, 3),
+        "fields_score": round(field_mean, 3),
+        "n_gold_items": n_gold_items,
+        "n_pred_items": n_pred_items,
+        "json_parsed": pred is not None and bool(pred),
+    }
+
+
 SCORERS = {
     "checkboxes": score_checkboxes,
     "signatures": score_signatures,
     "formulas":   score_formulas,
     "codes":      score_codes,
+    "receipt_schema": score_receipt_schema,
+    "invoice_schema": score_invoice_schema,
 }
 
 
@@ -216,6 +377,8 @@ def main() -> None:
         "signatures": "detection_f1",
         "formulas":   "mean_similarity",
         "codes":      "exact_match_f1",
+        "receipt_schema": "schema_score",
+        "invoice_schema": "schema_score",
     }
     print("=" * 78)
     print("FEATURE-AXIS MATRIX (each cell is the headline score for that axis)")
