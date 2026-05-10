@@ -216,7 +216,15 @@ We did NOT do per-(stack, axis) prompt overrides for the feature axes. The Qwen 
 | **qwen-32b** | 0.052 | 1.839 | 10 | 364 | 0.583 | 0.659 | 11 216 |
 | **qwen-8b** | 0.000 | 0.301 | 9 | 378 | 0.583 | 0.791 | 9 966 |
 
-`Shape Jaccard vs Docling` is the intersection-over-union of table shapes (rows × cols) compared to Docling's structured output on the same page. `Table content vs Docling` is the mean fuzzy similarity (rapidfuzz ratio) of cell text on aligned positions.
+**Legend / How to read this table.**
+
+- **KV-F1 mean** (0–1, *higher better*). F1 of structured key-value extraction against the FUNSD + CORD golds, with fuzzy value matching. 0 means no KV pairs extracted or all wrong; 1 means every gold pair recovered. Best in column: `qwen-30b-a3b` (0.084). Worst: any stack at 0.000 — most stacks didn't follow our `KEY :: VALUE` prompt format. Caveat: FUNSD's auto-derived gold has known errors (§3.3); the absolute numbers are depressed across all stacks.
+- **CER on IAM** (0–1+, *lower better*). Character Error Rate on the single IAM handwriting line. 0 = perfect transcription; >1 = output longer than the gold (formatting artifact, not OCR failure). Best: `qianfan-ocr` and `qwen-30b-a3b` tied at 0.065. Worst: `qwen-32b` at 1.839 (markdown-formatting overhead, not transcription failure).
+- **Σ tables** (count). Total tables detected across the 8 pages. Docling at 11 is the structural reference; other stacks should be in the same range.
+- **Σ table cells** (count). Total cells across all detected tables — depth proxy. Larger means richer extraction.
+- **Shape Jaccard vs Docling** (0–1, *higher better*). Table-topology agreement: |shapes_pred ∩ shapes_docling| / |union|. 1 = identical row × col dimensions to Docling on every page.
+- **Table content vs Docling** (0–1, *higher better*). Mean rapidfuzz similarity of cell text on aligned positions, restricted to tables we can match by shape. Best: `qianfan-ocr` (0.864) for cleanest content fidelity. Worst: `deepseek-ocr` (0.005) — DeepSeek's table format has no `<tr>` row markers so we can't align cells.
+- **Median latency** (ms, *lower better*). Wall-clock per page. Best: Docling 3 239 ms (laptop GPU); Qwen-235B is slowest at 14 533 ms (network round-trip + larger model).
 
 ### 5.2 Headline findings on the general corpus
 
@@ -251,6 +259,15 @@ Six axes mirror Azure DI's "advanced" feature surface: selection marks, signatur
 
 `pyzbar` is included as a **specialist bolt-on** rather than a full stack: it wraps the open-source ZBar barcode reader and runs only on the codes axis. **It scores a perfect 1.000 at 19 ms**, vastly outperforming every VLM (which top out at 0.500). The lesson for the production replica: barcode/QR decoding should use a specialist library at the orchestration tier, not a VLM.
 
+**Legend / How to read this table.**
+
+- **Checkboxes F1** (0–1, *higher better*). Detection F1 against the IRS W-9 page-1 federal-tax-classification group (7 expected unchecked boxes). Match by fuzzy label similarity ≥0.65, then state correctness as a secondary metric. Best: `qwen-8b` (0.857). Worst: Docling and DeepSeek-OCR-2 (0.000) — neither produces conversational checkbox detection.
+- **Signatures F1** (0–1, *higher better*). Detection F1 on the synthetic 10-K signatures page (3 expected `/s/ Name + Role` entries). Best: four-way tie at 1.000 (Qwen-8B / 32B / 235B / Qianfan). Worst: 0.000 for the specialist OCR stacks.
+- **Formulas mean similarity** (0–1, *higher better*). Best-fuzzy-match per gold formula across the model's output lines, averaged over 3 canonical identities (Pythagorean theorem, Euler's identity, Gaussian integral). Best: `qwen-235b-a22b` (1.000) — the only stack to perfectly recover all three. Worst: Docling (0.311) — it picks up partial text but has no LaTeX output mode.
+- **Codes F1** (0–1, *higher better*). Exact-match decode of QR + EAN-13 payloads on the synthetic page. Best: `pyzbar` (1.000) — perfect on both, in 19 ms. Worst: Docling and DeepSeek-OCR-2 (0.000) — they don't decode codes. Every VLM tops out at 0.5 (gets one, misses the other).
+- **Receipt schema** (0–1, *higher better*). Macro-mean of fuzzy-matched field accuracy (subtotal / tax / total) plus per-item alignment on CORD's `gt_parse`. Best: four-way tie at 1.000 (Qwen-8B / 30B-A3B / 235B / Qianfan). Worst: Docling and DeepSeek-OCR-2 (0.000) — they don't emit valid JSON.
+- **Invoice schema** (0–1, *higher better*). Same scoring on DocILE's invoice gold (invoice_number / date / seller / client + items). Best: five-way tie at 0.908 (every Qwen size and Qianfan). The 0.092 gap to perfection is `invoice_date` formatting normalization. Worst: Docling and DeepSeek-OCR-2 (0.000).
+
 The schema axes test JSON-mode field extraction against CORD's receipt gold (`subtotal`, `tax`, `total`, item list with `name`/`quantity`/`price`) and DocILE's invoice gold (`invoice_number`, `invoice_date`, `seller`/`client` names, item list, `total`). The score is the macro-mean of fuzzy-matched field accuracy plus per-item alignment.
 
 ### 6.2 Headline findings on feature detection
@@ -271,7 +288,58 @@ The schema axes test JSON-mode field extraction against CORD's receipt gold (`su
 
 ---
 
-## 7. What We Had to Build
+## 7. Azure DI Feature Parity Matrix
+
+The matrix below maps every major Azure Document Intelligence feature to each candidate stack. Numerical cells are 0–1 normalized scores (higher better) drawn from the bench-off measurements; qualitative cells use ✓ / ✗ / — / "via prompt" indicators where the feature isn't directly scoreable. **The green-highlighted cell on each numerical row is the best-performing stack for that feature** (ties highlighted together).
+
+<!--PARITY_MATRIX_BEGIN-->
+
+
+<style>
+table.parity {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 7.5pt;
+  table-layout: fixed;
+  page-break-inside: auto;
+}
+table.parity th, table.parity td {
+  border: 1px solid #c8c8d0;
+  padding: 3px 4px;
+  vertical-align: top;
+}
+table.parity th { background:#eef0f4; font-weight:600; text-align:center; }
+table.parity td.feature { text-align:left; font-weight:500; }
+table.parity td.note { font-size:7pt; color:#555; }
+table.parity td.norm { text-align:center; }
+table.parity td.win  { text-align:center; background:#c8eccc; font-weight:600; color:#114011; }
+table.parity tr.section-row td {
+  background:#eaeaf0;
+  font-size:8pt;
+  letter-spacing:0.4px;
+  text-transform:uppercase;
+}
+table.parity colgroup col.feature { width: 22%; }
+table.parity colgroup col.stack   { width: 7%; }
+table.parity colgroup col.note    { width: 22%; }
+</style>
+<table class="parity"><colgroup><col class="feature"><col class="stack"><col class="stack"><col class="stack"><col class="stack"><col class="stack"><col class="stack"><col class="stack"><col class="stack"><col class="note"></colgroup><thead><tr><th class="feature">Azure DI feature</th><th>Docling</th><th>Qwen-8B</th><th>Qwen-30B-A3B</th><th>Qwen-32B</th><th>Qwen-235B</th><th>Qianfan</th><th>DeepSeek</th><th>pyzbar</th><th class="note">Notes</th></tr></thead><tbody><tr class="section-row"><td colspan="10"><strong>Read API</strong></td></tr><tr><td class="feature">Raw OCR text accuracy</td><td class="norm">✓</td><td class="norm">✓</td><td class="norm">✓</td><td class="norm">✓</td><td class="norm">✓</td><td class="norm">✓</td><td class="norm">✓</td><td class="norm">—</td><td class="note">All VLM stacks transcribe text. pyzbar is barcode-only.</td></tr><tr><td class="feature">Handwriting recognition (1−CER on IAM)</td><td class="norm">0.763</td><td class="norm">0.699</td><td class="win">0.935</td><td class="norm">0.000</td><td class="norm">0.000</td><td class="win">0.935</td><td class="norm">0.731</td><td class="norm">—</td><td class="note"></td></tr><tr><td class="feature">Multilingual coverage</td><td class="norm">80+</td><td class="norm">32</td><td class="norm">32</td><td class="norm">32</td><td class="norm">32</td><td class="norm">192</td><td class="norm">EN+ZH</td><td class="norm">—</td><td class="note">Per vendor docs. Qianfan-OCR is the multilingual leader (192 langs).</td></tr><tr class="section-row"><td colspan="10"><strong>Layout API</strong></td></tr><tr><td class="feature">Tables — structural extraction (count)</td><td class="win">11</td><td class="norm">9</td><td class="norm">9</td><td class="norm">10</td><td class="norm">9</td><td class="norm">9</td><td class="norm">8</td><td class="norm">—</td><td class="note"></td></tr><tr><td class="feature">Tables — content fidelity (vs Docling)</td><td class="norm">—</td><td class="norm">0.791</td><td class="norm">0.731</td><td class="norm">0.659</td><td class="norm">0.856</td><td class="win">0.864</td><td class="norm">0.005</td><td class="norm">—</td><td class="note"></td></tr><tr><td class="feature">Selection marks / checkboxes (F1)</td><td class="norm">0.000</td><td class="win">0.857</td><td class="norm">0.800</td><td class="norm">0.800</td><td class="norm">0.800</td><td class="norm">0.714</td><td class="norm">0.000</td><td class="norm">—</td><td class="note"></td></tr><tr><td class="feature">Reading order</td><td class="norm">✓</td><td class="norm">✓</td><td class="norm">✓</td><td class="norm">✓</td><td class="norm">✓</td><td class="norm">✓</td><td class="norm">✓ (bbox)</td><td class="norm">—</td><td class="note">Implicit in Markdown sequencing or bbox grounding. Not scored against gold.</td></tr><tr><td class="feature">Figures / pictures detection</td><td class="norm">✓ (DocLayNet)</td><td class="norm">~</td><td class="norm">~</td><td class="norm">~</td><td class="norm">~</td><td class="norm">~</td><td class="norm">✓ (image bbox)</td><td class="norm">—</td><td class="note">Docling has native Picture class. DeepSeek emits image[[bbox]]. Qwen-family detect via prompt.</td></tr><tr><td class="feature">Formulas / equations (mean LaTeX similarity)</td><td class="norm">0.311</td><td class="norm">0.958</td><td class="norm">0.944</td><td class="norm">0.919</td><td class="win">1.000</td><td class="norm">0.569</td><td class="norm">0.819</td><td class="norm">—</td><td class="note"></td></tr><tr class="section-row"><td colspan="10"><strong>General Document</strong></td></tr><tr><td class="feature">KV extraction (F1, FUNSD+CORD)</td><td class="norm">0.000</td><td class="norm">0.000</td><td class="win">0.084</td><td class="norm">0.052</td><td class="norm">0.077</td><td class="norm">0.000</td><td class="norm">0.000</td><td class="norm">—</td><td class="note"></td></tr><tr><td class="feature">Per-field confidence (calibrated)</td><td class="norm">element-level</td><td class="norm">✗</td><td class="norm">✗</td><td class="norm">✗</td><td class="norm">✗</td><td class="norm">✗</td><td class="norm">✗</td><td class="norm">✗</td><td class="note">Generative VLMs only emit token-likelihoods. Real gap requiring in-house calibration classifier.</td></tr><tr class="section-row"><td colspan="10"><strong>Prebuilt Verticals</strong></td></tr><tr><td class="feature">Receipt schema extraction</td><td class="norm">0.000</td><td class="win">1.000</td><td class="win">1.000</td><td class="norm">0.500</td><td class="win">1.000</td><td class="win">1.000</td><td class="norm">0.000</td><td class="norm">—</td><td class="note"></td></tr><tr><td class="feature">Invoice schema extraction</td><td class="norm">0.000</td><td class="win">0.908</td><td class="win">0.908</td><td class="win">0.908</td><td class="win">0.908</td><td class="norm">0.906</td><td class="norm">0.000</td><td class="norm">—</td><td class="note"></td></tr><tr><td class="feature">Other verticals (W-2, 1099, ID, etc.)</td><td class="norm">✗</td><td class="norm">via prompt</td><td class="norm">via prompt</td><td class="norm">via prompt</td><td class="norm">via prompt</td><td class="norm">via prompt</td><td class="norm">✗</td><td class="norm">—</td><td class="note">Inferred from receipt/invoice results: VLMs handle schema-locked extraction generically.</td></tr><tr class="section-row"><td colspan="10"><strong>Add-ons</strong></td></tr><tr><td class="feature">Signature / seal detection (F1)</td><td class="norm">0.000</td><td class="win">1.000</td><td class="norm">0.667</td><td class="win">1.000</td><td class="win">1.000</td><td class="win">1.000</td><td class="norm">0.000</td><td class="norm">—</td><td class="note"></td></tr><tr><td class="feature">Barcodes / QR (exact-match F1)</td><td class="norm">0.000</td><td class="norm">0.500</td><td class="norm">0.500</td><td class="norm">0.500</td><td class="norm">0.500</td><td class="norm">0.500</td><td class="norm">0.000</td><td class="win">1.000</td><td class="note"></td></tr><tr><td class="feature">Office formats (DOCX/XLSX/PPTX)</td><td class="norm">✓ native</td><td class="norm">✗</td><td class="norm">✗</td><td class="norm">✗</td><td class="norm">✗</td><td class="norm">✗</td><td class="norm">✗</td><td class="norm">—</td><td class="note">Only Docling supports natively.</td></tr><tr><td class="feature">Searchable PDF output</td><td class="norm">✓</td><td class="norm">✗</td><td class="norm">✗</td><td class="norm">✗</td><td class="norm">✗</td><td class="norm">✗</td><td class="norm">✗</td><td class="norm">—</td><td class="note">Only Docling.</td></tr><tr><td class="feature">Multi-page document handling</td><td class="norm">✓</td><td class="norm">✓ (per-page)</td><td class="norm">✓</td><td class="norm">✓</td><td class="norm">✓</td><td class="norm">✓</td><td class="norm">✓</td><td class="norm">✓</td><td class="note">All can process pages serially; cross-page coherence not benched.</td></tr><tr><td class="feature">Median latency (per page, lower better)</td><td class="win">3239 ms</td><td class="norm">9966 ms</td><td class="norm">12093 ms</td><td class="norm">11215 ms</td><td class="norm">14533 ms</td><td class="norm">8045 ms</td><td class="norm">4028 ms</td><td class="norm">—</td><td class="note"></td></tr><tr class="section-row"><td colspan="10"><strong>Custom Training</strong></td></tr><tr><td class="feature">Custom model trainer UI (Studio equivalent)</td><td class="norm">✗</td><td class="norm">✗</td><td class="norm">✗</td><td class="norm">✗</td><td class="norm">✗</td><td class="norm">✗</td><td class="norm">✗</td><td class="norm">—</td><td class="note">No OSS equivalent of Azure DI Studio. Replace with Label Studio + Kubeflow Pipelines.</td></tr><tr><td class="feature">Fine-tuning available</td><td class="norm">✓ (per component)</td><td class="norm">✓ (LoRA)</td><td class="norm">✓ (LoRA)</td><td class="norm">✓ (LoRA, multi-GPU)</td><td class="norm">✓ (multi-GPU)</td><td class="norm">✓ (ERNIEKit)</td><td class="norm">✓ (Unsloth)</td><td class="norm">—</td><td class="note">All have published fine-tune recipes; Qwen-8B is the cheapest path.</td></tr></tbody></table>
+
+<!--PARITY_MATRIX_END-->
+
+**Legend / How to read this matrix.**
+
+- **Numerical cells**: 0–1 normalised score from the bench measurements; the **green box** marks the row winner (best score). For latency, "best" = lowest milliseconds. For CER, the value is reported as `1 − CER` (higher = better) so it's directionally consistent with the rest of the matrix.
+- **Qualitative cells**:
+  - **✓** = native support
+  - **✓ (note)** = supported with the qualifier shown (e.g., "via prompt", "DocLayNet", "per-page")
+  - **~** = partial / inferred
+  - **✗** = no support
+  - **—** = not applicable (e.g., pyzbar on text-extraction features)
+- **Sectioning** mirrors Azure DI's API surface (Read API → Layout API → General Document → Prebuilt Verticals → Add-ons → Custom Training).
+- **What the matrix is NOT**: it isn't a head-to-head with Azure DI itself. Azure DI is the proprietary baseline being replaced and is not a row in any column. The matrix shows the OSS candidates, with notes pointing back to which Azure DI feature each row maps to.
+
+## 8. What We Had to Build
 
 The repository at https://github.com/r2ja/ocr_benchmark contains the full harness. The custom code we wrote, in order of leverage:
 
@@ -292,9 +360,9 @@ The repository at https://github.com/r2ja/ocr_benchmark contains the full harnes
 
 ---
 
-## 8. Discussion and Recommendations
+## 9. Discussion and Recommendations
 
-### 8.1 The hybrid stack the client should deploy
+### 9.1 The hybrid stack the client should deploy
 
 There is **no single OSS model that replaces Azure DI**. The credible production replica is a three-tier hybrid orchestrated on RHOAI:
 
@@ -327,7 +395,7 @@ There is **no single OSS model that replaces Azure DI**. The credible production
 
 A `pyzbar` (or `zxing-cpp`) sidecar on the orchestrator handles barcode/QR decoding cheaply.
 
-### 8.2 What still requires in-house engineering
+### 9.2 What still requires in-house engineering
 
 1. **Per-field confidence calibration.** Generative VLMs only emit token-likelihoods; Docling has element-level only. **Solution: train a calibration classifier on top of model outputs, or use dual-seed agreement as a proxy.** ~1–2 FTE-weeks.
 2. **Custom Document Models trainer UI.** No OSS equivalent of DI Studio exists. **Solution: Label Studio + Kubeflow Pipelines DAG for the SFT loop, schema registry in Postgres/MinIO.** ~3–4 FTE-weeks for an MVP.
@@ -335,7 +403,7 @@ A `pyzbar` (or `zxing-cpp`) sidecar on the orchestrator handles barcode/QR decod
 4. **Barcode / QR decoding.** Bolt on `pyzbar` (or `zxing-cpp`) at the orchestration tier; OSS VLMs do not natively decode barcode protocols. ~2 hours of integration.
 5. **Selection-marks specialist** for the highest-volume forms. A small CV-detection model (YOLO-class) on top of Docling's layout output, feeding the VLM as auxiliary tokens. *Optional* — Qwen handles checkbox detection at 0.857 F1 via prompting, which may already meet the client's accuracy bar.
 
-### 8.3 Migration path
+### 9.3 Migration path
 
 1. **Phase 1 (4 weeks):** Deploy Docling + Qwen3-VL-32B on RHOAI. Replace Azure DI's Read + Layout + General Document calls. Accept ~75% feature parity, keep Azure DI alongside for confidence-critical paths.
 2. **Phase 2 (4 weeks):** Add Qianfan-OCR or PaddleOCR-VL for raw transcription. Bolt on `pyzbar` for codes. Train a calibration classifier on the highest-volume document types.
